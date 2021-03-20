@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Творческая мастерская</title>
+    <link rel="shortcut icon" href="icons/nav_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/workshop/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+</head>
+
+<body class="admin_workshop">
+    <main class="workshop">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo_header">
+                    <a href="#/"><img src="icons/nav_logo.png" alt=""></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Поиск">
+                    <div class="search_btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comment">
+                        <span>99</span>
+                    </i>
+                    <div class="chat_text">
+                        <ul>
+                            <li><a href="chats.html"><strong>Чаты администраторов</strong></a> <br>
+                                Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с
+                                каждым
+                                пользователям от имени “Поддержки” (администрации)
+                            </li> <br>
+                            <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a> <br>
+                                Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и
+                                контролировать
+                                правильность и корректность работы и общения между пользователями
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quitBlock">
+                    <a href="#/">Выйти</a>
+                </div>
+                <div class="avatar">
+                    <img src="img/user4.png" alt="">
+                </div>
+            </div>
+            <div class="workshop_body">
+                <!-- Start menu list -->
+                <div class="menu_item">
+                    <div class="all_category">
+                        Все категории
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html" class="menu_list">Главная страница<div>29</div></a></li>
+                        <li><a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии<div>379</div></a></li>
+                        <li><a href="#/" class="menu_list">Безопасный платеж <i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="securePayments.html">Ход работы<div>379</div></a></li>
+                                <li><a href="securePayments.html">Движение средств<div>39</div></a></li>
+                                <li><a href="securePayments.html">Платежные системы<div>79</div></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="workshop.html" class="menu_list mainActive">Творческая мастерская<div>37</div></a></li>
+                        <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li>
+                        <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+                        <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+                        <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+                        <li><a href="forum.html" class="menu_list">Форум<div>23</div></a></li>
+                        <li><a href="pages.html" class="menu_list">Страницы</a></li>
+                        <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+                        <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                        <li><a href="#/" class="menu_list">Работа с почтой<i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="mail.html">Список рассылок</a></li>
+                                <li><a href="mail.html">Шаблоны писем</a></li>
+                                <li><a href="mail.html">База почт</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">SEO- оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="seo.html">Общие настройки</a></li>
+                                <li><a href="seo.html">Заказы</a></li>
+                                <li><a href="seo.html">Магазин</a></li>
+                                <li><a href="seo.html">Пользователи</a></li>
+                                <li><a href="seo.html">Ответы</a></li>
+                                <li><a href="seo.html">Блог</a></li>
+                                <li><a href="seo.html">Статьи</a></li>
+                                <li><a href="seo.html">Новости</a></li>
+                                <li><a href="seo.html">Помощь</a></li>
+                                <li><a href="seo.html">Посадочные страницы</a></li>
+                                <li><a href="seo.html">Редиректы</a></li>
+                                <li><a href="seo.html">Настройки</a></li>
+                                <li><a href="seo.html">Аддон для главной страницы</a></li>
+                                <li><a href="seo.html">Open Graph</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="workshop_row">
+                    <!-- End menu list -->
+                    <div class="workshop_title">
+                        <div class="products active">Товары</div>
+                        <div class="shops">магазины</div>
+                    </div>
+
+                    <!-- Start products page -->
+
+                    <section class="products_page">
+                        <div class="products_title">
+                            <div class="sup_title">
+                                <div class="all_products active_product btn_product">Все</div>
+                                <div class="exposed_products btn_product">Выставленные
+                                    <div class="count_product">
+                                        <input type="text" class="product_count" value="0" disabled>
+                                    </div>
+                                </div>
+                                <div class="moderation_products btn_product">Модерация
+                                    <div class="count_product">
+                                        <input type="text" class="product_count" value="4" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_title">
+                                <div class="category list">
+                                    <div class="category_item">По категории <i class="fas fa-sort-up"></i></div>
+                                    <ul class="category_list">
+                                        <li><a href="#/">lorem</a></li>
+                                        <li><a href="#/">ipsum</a></li>
+                                        <li><a href="#/">dollor</a></li>
+                                    </ul>
+                                </div>
+                                <div class="by_name list">По названию товара или магазина</div>
+                                <div class="search list">
+                                    <input type="search" id="searchProduct" placeholder="Поиск">
+                                    <div class="search_icon"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products_item">
+                            <div class="product_list all moderation_list">
+                                <div class="photo_product">
+                                    <img src="img/dev1.jpg" alt="">
+                                </div>
+                                <div class="infoName_product">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                    <span class="product_text">Товар: <span>Логотип для вашей компании</span> <a
+                                            href="#/"><i class="fas fa-external-link-alt"></i></a></span>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Цена</th>
+                                        <th>Коммисия</th>
+                                        <th>Продажи</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>15</span>$</td>
+                                        <td><span>2</span>$</td>
+                                        <td><span>23</span></td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation"></i>
+                                            <i class="fas fa-check-square exposed"></i>
+                                            <i class="fas fa-pen-square edit"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="product_list all moderation_list">
+                                <div class="photo_product">
+                                    <img src="img/dev2.jpg" alt="">
+                                </div>
+                                <div class="infoName_product">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                    <span class="product_text">Товар: <span>Логотип для вашей компании</span> <a
+                                            href="#/"><i class="fas fa-external-link-alt"></i></a></span>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Цена</th>
+                                        <th>Коммисия</th>
+                                        <th>Продажи</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>15</span>$</td>
+                                        <td><span>2</span>$</td>
+                                        <td><span>23</span></td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation"></i>
+                                            <i class="fas fa-check-square exposed"></i>
+                                            <i class="fas fa-pen-square edit"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="product_list all moderation_list">
+                                <div class="photo_product">
+                                    <img src="img/dev3.jpg" alt="">
+                                </div>
+                                <div class="infoName_product">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                    <span class="product_text">Товар: <span>Логотип для вашей компании</span> <a
+                                            href="#/"><i class="fas fa-external-link-alt"></i></a></span>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Цена</th>
+                                        <th>Коммисия</th>
+                                        <th>Продажи</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>15</span>$</td>
+                                        <td><span>2</span>$</td>
+                                        <td><span>23</span></td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation"></i>
+                                            <i class="fas fa-check-square exposed"></i>
+                                            <i class="fas fa-pen-square edit"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="product_list all moderation_list">
+                                <div class="photo_product">
+                                    <img src="img/userEditHeader.jpg" alt="">
+                                </div>
+                                <div class="infoName_product">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                    <span class="product_text">Товар: <span id="productName">Логотип для вашей
+                                            компании</span> <a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Цена</th>
+                                        <th>Коммисия</th>
+                                        <th>Продажи</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>15</span>$</td>
+                                        <td><span>2</span>$</td>
+                                        <td><span>23</span></td>
+                                        <td>
+                                            <i class="fas fa-plus-square moderation"></i>
+                                            <i class="fas fa-check-square exposed"></i>
+                                            <i class="fas fa-pen-square edit"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- End products page -->
+
+                    <!-- Start shops page -->
+
+                    <section class="shops_page" style="display: none;">
+                        <div class="shops_title">
+                            <div class="sup_title sup_title_shop">
+                                <div class="all_shops_list active_shop btn_shop">Все магазины</div>
+                                <div class="moderation_shop_list_btn btn_shop">Модерация
+                                    <div class="count_product shops_count">
+                                        <input type="text" class="" value="4" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_title">
+                                <div class="by_name list">Названия магазина / логин пользователя</div>
+                                <div class="search list">
+                                    <input type="search" id="searchShops" placeholder="Поиск">
+                                    <div class="search_icon"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shops_item">
+                            <div class="shop_list all_shop_list">
+                                <div class="photo_shop">
+                                    <img src="icons/logo.svg" alt="">
+                                </div>
+                                <div class="infoName_shop">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Всего товаров/услуг</th>
+                                        <th>Продажи</th>
+                                        <th>Прибыль/мес</th>
+                                        <th>Коммисия</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>20</span></td>
+                                        <td><span>50</span></td>
+                                        <td><span>200</span>$</td>
+                                        <td><span>20</span>$</td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation_shop"></i>
+                                            <i class="fas fa-check-square exposed_shop"></i>
+                                            <i class="fas fa-pen-square edit_shop"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="shop_list all_shop_list">
+                                <div class="photo_shop">
+                                    <img src="img/dev1.jpg" alt="">
+                                </div>
+                                <div class="infoName_shop">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Всего товаров/услуг</th>
+                                        <th>Продажи</th>
+                                        <th>Прибыль/мес</th>
+                                        <th>Коммисия</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>20</span></td>
+                                        <td><span>50</span></td>
+                                        <td><span>200</span>$</td>
+                                        <td><span>20</span>$</td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation_shop"></i>
+                                            <i class="fas fa-check-square exposed_shop"></i>
+                                            <i class="fas fa-pen-square edit_shop"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="shop_list all_shop_list">
+                                <div class="photo_shop">
+                                    <img src="img/dev2.jpg" alt="">
+                                </div>
+                                <div class="infoName_shop">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Всего товаров/услуг</th>
+                                        <th>Продажи</th>
+                                        <th>Прибыль/мес</th>
+                                        <th>Коммисия</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>20</span></td>
+                                        <td><span>50</span></td>
+                                        <td><span>200</span>$</td>
+                                        <td><span>20</span>$</td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation_shop"></i>
+                                            <i class="fas fa-check-square exposed_shop"></i>
+                                            <i class="fas fa-pen-square edit_shop"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="shop_list all_shop_list">
+                                <div class="photo_shop">
+                                    <img src="img/dev3.jpg" alt="">
+                                </div>
+                                <div class="infoName_shop">
+                                    <span><strong>borbo-shop</strong><a href="#/"><i
+                                                class="fas fa-external-link-alt"></i></a></span>
+                                    <a class="link" href="#/">Hamillioner</a>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Всего товаров/услуг</th>
+                                        <th>Продажи</th>
+                                        <th>Прибыль/мес</th>
+                                        <th>Коммисия</th>
+                                        <th>Активность</th>
+                                    </tr>
+                                    <tr class="table_list">
+                                        <td><span>20</span></td>
+                                        <td><span>50</span></td>
+                                        <td><span>200</span>$</td>
+                                        <td><span>20</span>$</td>
+                                        <td class="btn_icon">
+                                            <i class="fas fa-plus-square moderation_shop"></i>
+                                            <i class="fas fa-check-square exposed_shop"></i>
+                                            <i class="fas fa-pen-square edit_shop"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                    </section>
+
+                    <!-- End shops page -->
+                </div>
+            </div>
+            <div class="modal_page" id="adminWorkshopModal">
+                <div class="modal_title">
+                    <div class="modal_header">
+                        <h3>Товар/Услуга</h3>
+                        <div class="close_modal" id="closeWorkshopModal"><i class="fas fa-times-circle"></i></div>
+                    </div>
+                    <div class="modal_body">
+                        <span><span class="name_work">borbo-shop</span> (<a href="#/">Hamillioner</a>)</span>
+                        <div class="product"><span>Товар:</span> <input type="text" placeholder="Переименуйте ваш товар"
+                                value="Логотип для пивоварни"></div>
+                        <div class="price_box"><span class="price">Цена:</span> <input type="number"
+                                placeholder="Добавите цена товара" value="25"></div>
+                        <div class="exposed_date"><span class="exposed_text">Выставлен:</span> <span id="day">09</span>
+                            <span id="month">12</span> <span id="year"></span> <span id="time">18:00</span></div>
+                        <div class="status"><span class="status_text">Статус:</span> <span
+                                class="status_info">Выставлен</span></div>
+                        <div class="category">
+                            <div class="category_item">Категория<i class="fas fa-caret-up"></i></div>
+                            <ul class="category_list">
+                                <li><a href="#/">lorem</a></li>
+                                <li><a href="#/">ipsum</a></li>
+                                <li><a href="#/">dollor</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="avatar_edit_images" id="">
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload1" accept=".png, .jpg, .jpeg"
+                                        name="productImage1" multiple />
+                                    <label for="productImageUpload1"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/dev1.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload2" accept=".png, .jpg, .jpeg"
+                                        name="productImage2" />
+                                    <label for="productImageUpload2"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/dev2.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload3" accept=".png, .jpg, .jpeg"
+                                        name="productImage3" />
+                                    <label for="productImageUpload3"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/dev3.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload4" accept=".png, .jpg, .jpeg"
+                                        name="productImage4" />
+                                    <label for="productImageUpload4"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/userEditHeader.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload5" accept=".png, .jpg, .jpeg"
+                                        name="productImage5" />
+                                    <label for="productImageUpload5"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/userEditHeader.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload6" accept=".png, .jpg, .jpeg"
+                                        name="productImage6" />
+                                    <label for="productImageUpload6"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/dev3.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload7" accept=".png, .jpg, .jpeg"
+                                        name="productImage7" />
+                                    <label for="productImageUpload7"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/dev2.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+                            <div class="edit_avatar_img">
+                                <div class="avatar_img">
+                                    <input type="file" id="productImageUpload8" accept=".png, .jpg, .jpeg"
+                                        name="productImage8" />
+                                    <label for="productImageUpload8"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus-circle fa-2x add_product_icon"></i>
+                                    </label>
+                                    <img src="img/dev1.jpg" alt="" class="edit_product_img">
+                                    <i class="fas fa-times-circle close_edit_product"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <textarea
+                            id="">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Он ручеек его своего меня имеет силуэт себя рукописи жизни осталось. Первую использовало агентство несколько вопрос что безорфографичный рукопись возвращайся, города, щеке, курсивных буквоград сих своего эта над вопроса! Сих все коварный власти осталось, своего алфавит! Лучше великий коварный строчка, по всей, подзаголовок вдали наш он деревни встретил lorem, на берегу ручеек!</textarea>
+                        <div class="buttons">
+                            <button id="saveInfoModal">Сохранить</button>
+                            <button id="removeInfoModal">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End modal edit products info -->
+
+            <!-- Start modal edit shops info -->
+            <div class="modal_page shop_modal" id="editShopModal">
+                <div class="modal_title">
+                    <div class="modal_header">
+                        <h3>Редактирование</h3>
+                        <div class="close_modal" id="closeShopModal"><i class="fas fa-times-circle"></i></div>
+                    </div>
+                    <div class="modal_body">
+                        <div class="user_info">
+                            <div class="logo">
+                                <img src="icons/logo.svg" alt="">
+                            </div>
+                            <div class="">
+                                <div class="name">
+                                    <input type="text" placeholder="Название вашей компании" value="borbo-shop">
+                                </div>
+                                <div class="creator">
+                                    <span>Cоздатель: </span> <a href="#/">hamillioner</a>
+                                </div>
+                                <div class="created_time">
+                                    <span><span>23.11.2018 </span>в <span>10:00</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info_status">
+                            <div class="status_shop">
+                                <span>Статус:</span> <a href="#/">Активный</a>
+                            </div>
+                            <div class="shop_services">
+                                <span>Товар/Услуг:</span> <strong>50</strong>
+                            </div>
+                            <div class="general_sales">
+                                <span>Общие продажи:</span> <strong>20</strong>
+                            </div>
+                            <div class="total_arrive">
+                                <span>Общая прибыть</span> <strong>600</strong><big>$</big>
+                            </div>
+                        </div>
+                        <textarea id=""
+                            placeholder="Напишите описания">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Он ручеек его своего меня имеет силуэт себя рукописи жизни осталось. Первую использовало агентство несколько вопрос что безорфографичный рукопись возвращайся, города, щеке, курсивных буквоград сих своего эта над вопроса! Сих все коварный власти осталось, своего алфавит! Лучше великий коварный строчка, по всей, подзаголовок вдали наш он деревни встретил lorem, на берегу ручеек!</textarea>
+                        <div class="buttons">
+                            <button id="saveInfoShopModal">Сохранить</button>
+                            <button id="blockInfoShopModal">Заблокировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start modal edit products info -->
+
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/workshop/ad_workshop.js"></script>
+    <script src="js/workshop/pilot_image.js"></script>
+</body>
+
+</html>

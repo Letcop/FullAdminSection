@@ -1,0 +1,2403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 16px;
+}
+
+.container {
+  width: 1170px;
+  margin: 10px auto 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+::-moz-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: #00cf4d;
+  font-family: "Montserrat" !important;
+}
+
+button:hover,
+.start_new:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #00cf4d;
+  box-shadow: 0px 0px 13px 2px #00cf4d;
+  color: #ffffff;
+}
+
+.mainActive{
+  color: #ffffff !important;
+  background: #00cf4d !important;
+}
+
+.menuActive{
+  color: #ffffff !important;
+  background: #00cf4d !important;
+}
+
+.title_text {
+  font-size: 25px;
+  font-weight: 700;
+  color: #253556;
+  padding-bottom: 10px;
+}
+
+.admin_settings {
+  font-family: "Montserrat";
+  background: url("../../img/1.jpg");
+  backdrop-filter: blur(2px);
+  height: 150vh;
+  /* Track */
+  /* Handle */
+}
+
+.admin_settings textarea::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.admin_settings textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.admin_settings textarea::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_settings .header_admin {
+  height: 100vh;
+  padding: 10px 0;
+}
+
+.admin_settings .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.admin_settings .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_settings .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -130px;
+}
+
+.admin_settings .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.admin_settings .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_settings .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_settings .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+  -ms-transform: 5s;
+  transform: 5s;
+}
+
+.admin_settings .navbar .quitBlock a {
+  color: #ffffff;
+  -webkit-transform: 0.5s;
+  -ms-transform: 0.5s;
+  transform: 0.5s;
+}
+
+.admin_settings .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+
+.admin_settings .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_settings .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.admin_settings .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_settings .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_settings .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_settings .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_settings .navbar .chat .chat_text li a {
+  color: #100f41;
+}
+
+.admin_settings .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_settings .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_settings .block {
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: space-between;
+}
+
+.admin_settings .block .sub_menu {
+  display: none;
+}
+
+.admin_settings .block .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_settings .block .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_settings .block .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_settings .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_settings .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_settings .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_settings .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.admin_settings .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_settings .menu_item .menu_list .todown {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.toup{
+  transform: rotate(180deg);
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+.admin_settings .menu_item .menu_list .toup.upactive {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.admin_settings .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.container .block main {
+  width: 830px;
+}
+.container .block main section.general_settings {
+  width: 100%;
+  border: 1px solid #12114A;
+  background: url('../../img/userEditHeader.jpg')
+}
+.container .block main section.general_settings.display-none {
+  display: none;
+}
+.container .block main section.general_settings .block_general_settings {
+  width: 100%;
+}
+.container .block main section.general_settings .block_general_settings .GS_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.general_settings .block_general_settings .GS_header .GS_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.general_settings .block_general_settings .GS_header .GS_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.general_settings .block_general_settings .GS_header .GS_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.general_settings .block_general_settings .GS_body {
+  width: 100%;
+  padding: 10px 10px;
+}
+.container .block main section.general_settings .block_general_settings .GS_body .navbar_tabs_buttons {
+  width: 100%;
+  border-bottom: 1px solid #00cf4d;
+  padding: 0px 10px;
+}
+.container .block main section.general_settings .block_general_settings .GS_body .navbar_tabs_buttons .navbar_tab_button {
+  padding: 6px 4px;
+  margin: 0px 2px;
+  display: inline-block;
+  font-size: 14px;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #01002b;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .block main section.general_settings .block_general_settings .GS_body .navbar_tabs_buttons .navbar_tab_button:hover{
+  color: #00cf4d !important;
+}
+.container .block main section.general_settings .block_general_settings .GS_body .navbar_tabs_buttons .navbar_tab_button:focus {
+  outline: none;
+}
+.container .block main section.general_settings .block_general_settings .GS_body .navbar_tabs_buttons .navbar_tab_button.active {
+  background-color: white;
+  border-color: #00cf4d;
+  color: #00cf4d;
+}
+.container .block main section.general_settings .block_general_settings .GS_body .navbar_tabs_buttons .navbar_tab_button.active::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.container .block main section.general_settings .block_general_settings .root_GS {
+  width: 100%;
+  padding: 9px;
+  height: 457px;
+  overflow-y: auto;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS {
+  width: 100%;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS.display-none {
+  display: none;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4px 0px;
+  font-size: 14px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-4 {
+  width: 20%;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-4 .title {
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+#cke_1_top{  
+  height: 108px !important;
+  overflow-y: auto !important;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-4 .underTitle {
+  color: #aaa;
+  font-size: 12px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 {
+  width: 95%;
+  padding: 0px 8px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 > input {
+  padding: 4px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #12114A;
+  transition: all 0.2s ease-out;
+  font-family: "Montserrat";
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 > input:focus {
+  border: 1px solid #00cf4d;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 > textarea {
+  width: 100%;
+  min-height: 100px;
+  max-height: 600px;
+  resize: vertical;
+  border: 1px solid #12114A;
+  transition: all 0.2s ease-out;
+  padding: 4px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 > textarea:focus {
+  border: 1px solid #00cf4d;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline .form-group, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group {
+  display: inline-block;
+  padding-right: 10px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline .form-group input, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group input {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline .form-group label, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group label {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline span, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 span {
+  color: #aaa;
+  letter-spacing: 1px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline .select-group, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .select-group {
+  display: inline-block;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline .select-group select, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .select-group select {
+  display: inline-block;
+  padding: 4px;
+  height: 30px;
+  border-radius: 5px;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .form-group-inline .select-group select:focus, .container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .select-group select:focus {
+  outline: none;
+  border: 1px solid #00cf4d;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+}
+.container .block main section.general_settings .block_general_settings .root_GS .content_GS .col-12 .col-8 .br {
+  padding: 4px 0px;
+}
+.container .block main section.general_settings .block_general_settings .GS_footer {
+  width: 100%;
+  padding: 8px 30px;
+  background-color: #eee;
+}
+.container .block main section.general_settings .block_general_settings .GS_footer button.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  background-color: #00cf4d;
+  transition: all 0.2s ease-out;
+}
+.container .block main section.general_settings .block_general_settings .GS_footer button.btn:hover {
+  box-shadow: 5px 5px 5px -2px #12114A;
+}
+.container .block main section.general_settings .block_general_settings .GS_footer button.btn:focus {
+  outline: none;
+}
+.container .block main section.general_settings .block_general_settings .GS_footer button.btn.active {
+  background-color: #12114A;
+  color: white;
+}
+.container .block main section.system_settings {
+  width: 100%;
+  border: 1px solid #12114A;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.system_settings.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .SS_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.system_settings .block_system_settings .SS_header .SS_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.system_settings .block_system_settings .SS_header .SS_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.system_settings .block_system_settings .SS_header .SS_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.system_settings .block_system_settings .SS_body {
+  width: 100%;
+  padding: 15px 10px;
+}
+.container .block main section.system_settings .block_system_settings .SS_body .tab_menu_btns_group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #12114A;
+  padding-bottom: 5px;
+}
+.container .block main section.system_settings .block_system_settings .SS_body .tab_menu_btns_group button.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Montserrat";
+}
+.container .block main section.system_settings .block_system_settings .SS_body .tab_menu_btns_group button.btn:hover {
+  background-color: #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .SS_body .tab_menu_btns_group button.btn:focus {
+  outline: none;
+}
+.container .block main section.system_settings .block_system_settings .SS_body .tab_menu_btns_group button.btn.active {
+  color: #00cf4d;
+}
+
+
+.container .block main section.system_settings .block_system_settings .SS_body .tab_menu_btns_group button.btn.active:hover {
+  color: #ffffff;
+}
+.container .block main section.system_settings .block_system_settings .root_SS {
+  width: 100%;
+  padding: 10px;
+  height: 407px;
+  overflow-y: auto;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .info_interrogation {
+  position: fixed;
+  z-index: 2000;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 250px;
+  min-height: 50px;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #00cf4d;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #00000070;
+  font-size: 12px;
+  color: #12114A;
+  display: block;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .info_interrogation.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .info_interrogation:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+  border-top: 1px solid #00cf4d;
+  border-left: 1px solid #00cf4d;
+  z-index: 2001;
+  background-color: #fff;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-4,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-4 {
+  width: 30%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-4 .title,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-4 .title {
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 4px 0px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-4 .title.bold,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-4 .title.bold {
+  font-weight: bold;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-4 .underTitle,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-4 .underTitle {
+  letter-spacing: 1px;
+  color: #aaa;
+  font-size: 12px;
+  padding: 4px 0px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 {
+  width: 70%;
+  padding: 0px 8px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .select,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .select {
+  padding: 4px 0px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .select select,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .select select {
+  width: 110px;
+  padding: 6px 2px;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: all 0.2s ease-out;
+  font-family: "Montserrat";
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .select select:focus,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .select select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .infoComponent,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .infoComponentInput,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .infoComponent,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .infoComponentInput {
+  padding: 4px 0px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group {
+  padding: 4px 0px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group input,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group input {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group label,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group label {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group-inline,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group-inline {
+  padding: 4px 0px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group-inline input,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group-inline input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+
+
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group-inline input:focus,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group-inline:focus {
+ outline: none;
+ box-shadow: 0px 0px 5px 0px #00cf4d;
+ border: 2px solid #00cf4d;
+}
+
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group-inline .infoInput,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group-inline .infoInput {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  background-color: #ccc;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+  margin-left: -7px;
+  padding-top: 5px;
+  border: 2px solid black;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .form-group-inline .interrogation,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .form-group-inline .interrogation {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .input,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .input {
+  padding: 4px 0px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .input input,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .input input {
+  width: 70%;
+  padding: 6px;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+  border: 2px solid #12114A;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .input input:focus,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .input input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 2px solid #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .textarea,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .textarea {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .textarea textarea,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .textarea textarea {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 800px;
+  transition: all 0.2s ease-out;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .textarea textarea:focus,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .textarea textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .button button,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .button button {
+  padding: 4px 8px;
+  background-color: #D5E6E6;
+  color: #12114A;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 11px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .button button:focus,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .button button:focus {
+  outline: none;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .col-8 .button button:active,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .col-8 .button button:active {
+  box-shadow: inset 0px 3px 5px 2px #eee;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .open_content,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .open_content {
+  width: 100%;
+  padding: 0px 10px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .col-12 .open_content.display-none,
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .open_content .col-12 .open_content.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .navbar_tabs_buttons {
+  width: 100%;
+  border-bottom: 1px solid #00cf4d;
+  padding: 0px 10px;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .navbar_tabs_buttons .navbar_tab_button {
+  padding: 6px 4px;
+  margin: 0px 2px;
+  display: inline-block;
+  font-size: 14px;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #01002b;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .navbar_tabs_buttons .navbar_tab_button:focus {
+  outline: none;
+  color: #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .navbar_tabs_buttons .navbar_tab_button.active {
+  background-color: white;
+  border-color: #00cf4d;
+  color: #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .navbar_tabs_buttons .navbar_tab_button.active::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #00cf4d;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_4 {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_4 .content_SS_4 {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_4 .content_SS_4.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_5 {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_5 .content_SS_5 {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_5 .content_SS_5.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_17 {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_17 .content_SS_17 {
+  width: 100%;
+}
+.container .block main section.system_settings .block_system_settings .root_SS .content_SS .root_SS_17 .content_SS_17.display-none {
+  display: none;
+}
+.container .block main section.system_settings .block_system_settings .SS_footer {
+  width: 100%;
+  padding: 8px 30px;
+  background-color: #eee;
+}
+.container .block main section.system_settings .block_system_settings .SS_footer button.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  background-color: #00cf4d;
+  transition: all 0.2s ease-out;
+}
+.container .block main section.system_settings .block_system_settings .SS_footer button.btn:hover {
+  box-shadow: 5px 5px 5px -2px #12114A;
+}
+.container .block main section.system_settings .block_system_settings .SS_footer button.btn:focus {
+  outline: none;
+}
+.container .block main section.system_settings .block_system_settings .SS_footer button.btn.active {
+  background-color: #12114A;
+  color: white;
+}
+.container .block main section.counters_and_code {
+  width: 100%;
+  border: 1px solid #12114A;
+}
+.container .block main section.counters_and_code.display-none {
+  display: none;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code {
+  width: 100%;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code.display-none {
+  display: none;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_header .CAC_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_header .CAC_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_header .CAC_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 0px;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-4 {
+  width: 25%;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-4 .title {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-4 .title.crimson {
+  color: crimson;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 {
+  width: 75%;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 input,
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  transition: all 0.2s ease-out;
+  font-family: "Montserrat";
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 input[type="checkbox"],
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 textarea[type="checkbox"] {
+  width: unset;
+  font-family: "Montserrat";
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 input:focus,
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 textarea {
+  min-height: 100px;
+  max-height: 600px;
+  resize: vertical;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 select {
+  width: 200px;
+  padding: 4px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  font-family: "Montserrat";
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_body .col-12 .col-8 select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer {
+  padding: 10px 20px;
+  background: #eee;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer .btn {
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: none;
+  color: white;
+  transition: all 0.1s ease-out;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer .btn:focus {
+  outline: none;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer .btn.save {
+  background-color: #00cf4d;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer .btn.save:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer .btn.cancel {
+  background-color: #12114A;
+}
+.container .block main section.counters_and_code .add_block_counters_and_code .CAC_footer .btn.cancel:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.counters_and_code .block_counters_and_code {
+  width: 100%;
+}
+.container .block main section.counters_and_code .block_counters_and_code.display-none {
+  display: none;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_add_btn {
+  cursor: pointer;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_add_btn.display-none {
+  visibility: hidden;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_add_btn .btn {
+  letter-spacing: 1px;
+  color: #ffffff;
+  height: 20px;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_add_btn .btn:hover {
+  text-decoration: underline;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_header .CAC_header_add_btn .btn img {
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  height: 556px;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .CAC_items_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #12114A;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .CAC_items_header .id {
+  width: 10%;
+  text-align: center;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .CAC_items_header .name {
+  width: 50%;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .CAC_items_header .dateCreate {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .CAC_items_header .actions {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC {
+  width: 100%;
+  color: #ffffff;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .id {
+  width: 10%;
+  text-align: center;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .name {
+  width: 50%;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .dateCreate {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .actions {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .actions .actionBtn {
+  transition: all 0.15s ease-out;
+  height: 20px;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .actions .actionBtn:hover {
+  box-shadow: 0px 5px 2px -2px #00cf4d;
+}
+.container .block main section.counters_and_code .block_counters_and_code .CAC_body .root_CAC .CAC_item .actions .actionBtn img {
+  height: 20px;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code {
+  width: 100%;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code.display-none {
+  display: none;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_header .CAC_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_header .CAC_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_header .CAC_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: url('../../img/userEditHeader.jpg')
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 0px;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-4 {
+  width: 25%;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-4 .title {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-4 .title.crimson {
+  color: crimson;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 {
+  width: 75%;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 input,
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  transition: all 0.2s ease-out;
+  font-family: "Montserrat";
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 input[type="checkbox"],
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 textarea[type="checkbox"] {
+  width: unset;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 input:focus,
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 textarea {
+  min-height: 100px;
+  max-height: 600px;
+  resize: vertical;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 select {
+  width: 200px;
+  padding: 4px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  font-family: "Montserrat";
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_body .col-12 .col-8 select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer {
+  padding: 10px 20px;
+  background: #eee;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn {
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: none;
+  color: white;
+  transition: all 0.1s ease-out;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn:focus {
+  outline: none;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn.save {
+  background-color: #00cf4d;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn.save:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn.delete {
+  background-color: crimson;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn.delete:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn.cancel {
+  background-color: #12114A;
+}
+.container .block main section.counters_and_code .edit_block_counters_and_code .CAC_footer .btn.cancel:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.currencies_list {
+  width: 100%;
+  border: 1px solid #12114A;
+}
+.container .block main section.currencies_list.display-none {
+  display: none;
+}
+.container .block main section.currencies_list .add_block_currencies_list {
+  width: 100%;
+}
+.container .block main section.currencies_list .add_block_currencies_list.display-none {
+  display: none;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_header .CL_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_header .CL_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_header .CL_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0px;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-4 {
+  width: 25%;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-4 .title {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-4 .title.crimson {
+  color: crimson;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 {
+  width: 75%;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  font-family: "Montserrat";
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 input.miniInput {
+  display: inline-block;
+  width: 100px;
+}
+
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 span a {
+  color: #00cf4d;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 input.miniInput + span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #eee;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_body .col-12 .col-8 input[type="checkbox"] {
+  width: unset;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer {
+  padding: 10px 20px;
+  background: #eee;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer .btn {
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: none;
+  color: white;
+  transition: all 0.1s ease-out;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer .btn:focus {
+  outline: none;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer .btn.save {
+  background-color: #00cf4d;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer .btn.save:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer .btn.cancel {
+  background-color: #12114A;
+}
+.container .block main section.currencies_list .add_block_currencies_list .CL_footer .btn.cancel:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.currencies_list .block_currencies_list {
+  width: 100%;
+}
+.container .block main section.currencies_list .block_currencies_list.display-none {
+  display: none;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_add_btn {
+  cursor: pointer;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_add_btn .btn {
+  letter-spacing: 1px;
+  color: #ffffff;
+  height: 20px;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_add_btn .btn:hover {
+  text-decoration: underline;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_header .CL_header_add_btn .btn img {
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: url('../../img/userEditHeader.jpg');
+  color: #ffffff;
+  height: 556px;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .CL_items_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #12114A;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .CL_items_header .id {
+  width: 10%;
+  text-align: center;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .CL_items_header .name {
+  width: 70%;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .CL_items_header .actions {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL {
+  width: 100%;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item .id {
+  width: 10%;
+  text-align: center;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item .name {
+  width: 70%;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item .actions {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item .actions .actionBtn {
+  transition: all 0.15s ease-out;
+  height: 20px;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item .actions .actionBtn:hover {
+  box-shadow: 0px 5px 2px -2px #00cf4d;
+}
+.container .block main section.currencies_list .block_currencies_list .CL_body .root_CL .CL_item .actions .actionBtn img {
+  height: 20px;
+}
+.container .block main section.currencies_list .edit_block_currencies_list {
+  width: 100%;
+}
+.container .block main section.currencies_list .edit_block_currencies_list.display-none {
+  display: none;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_header .CL_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_header .CL_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_header .CL_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0px;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-4 {
+  width: 25%;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-4 .title {
+  color: #fff;
+  letter-spacing: 1px;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-4 .title.crimson {
+  color: crimson;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 {
+  width: 75%;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  font-family: "Montserrat";
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 input.miniInput {
+  display: inline-block;
+  width: 100px;
+}
+
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 span a {
+  color: #00cf4d;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 input.miniInput + span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #eee;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_body .col-12 .col-8 input[type="checkbox"] {
+  width: unset;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer {
+  padding: 10px 20px;
+  background: #eee;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn {
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: none;
+  color: white;
+  transition: all 0.1s ease-out;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn:focus {
+  outline: none;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn.save {
+  background-color: #00cf4d;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn.save:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn.delete {
+  background-color: crimson;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn.delete:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn.cancel {
+  background-color: #12114A;
+}
+.container .block main section.currencies_list .edit_block_currencies_list .CL_footer .btn.cancel:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.regions_countries {
+  width: 100%;
+  border: 1px solid #12114A;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.regions_countries.display-none {
+  display: none;
+}
+.container .block main section.regions_countries .block_regions_countries {
+  width: 100%;
+}
+.container .block main section.regions_countries .block_regions_countries.display-none {
+  display: none;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_header .RG_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_header .RG_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.regions_countries .block_regions_countries .RG_header .RG_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_body {
+  width: 100%;
+  padding: 15px 10px 5px 10px;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_body .navbar_tabs_buttons {
+  width: 100%;
+  border-bottom: 1px solid #00cf4d;
+  padding: 0px 10px;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_body .navbar_tabs_buttons .navbar_tab_button {
+  padding: 6px 4px;
+  margin: 0px 2px;
+  display: inline-block;
+  font-size: 14px;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #01002b;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_body .navbar_tabs_buttons .navbar_tab_button:focus {
+  outline: none;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_body .navbar_tabs_buttons .navbar_tab_button.active {
+  background-color: white;
+  border-color: #00cf4d;
+  color: #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .RG_body .navbar_tabs_buttons .navbar_tab_button.active::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG {
+  width: 100%;
+  padding: 10px;
+  height: 506px;
+  overflow-y: auto;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG {
+  width: 100%;
+  font-size: 14px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG.display-none {
+  display: none;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #12114A;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items_header .id {
+  width: 10%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items_header .name {
+  width: 50%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items_header .keyword {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items_header .actions {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items {
+  width: 100%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ccc;
+  color: #ffffff;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .id {
+  width: 10%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .name {
+  width: 50%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .keyword {
+  width: 20%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .actions {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .actions .actionBtn {
+  transition: all 0.15s ease-out;
+  height: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .actions .actionBtn:hover {
+  box-shadow: 0px 5px 2px -2px #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG .RG_items .RG_item .actions .actionBtn img {
+  height: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000080;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1.display-none,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1.display-none {
+  display: none;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country {
+  width: 600px;
+  height: 330px;
+  position: fixed;
+  z-index: 10001;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid #00cf4d60;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .header,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .header {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #eee;
+  position: relative;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .header span,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .header span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .header button,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .header button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body {
+  width: 100%;
+  padding: 10px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-4,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-4 {
+  width: 25%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-4 .title,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-4 .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #12114A;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 {
+  padding-left: 5px;
+  width: 75%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input {
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  font-family: "Montserrat";
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input:focus,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini {
+  display: inline-block;
+  width: 25%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini + span,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini + span {
+  display: inline-block;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini + span a,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini + span a {
+  text-decoration: none;
+  font-size: 12px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini + span a:hover,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input.mini + span a:hover {
+  text-decoration: underline;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input[type="checkbox"],
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input[type="checkbox"] {
+  width: unset;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input[type="checkbox"] + span,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .body .col-12 .col-8 input[type="checkbox"] + span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer {
+  width: 100%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer button,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer button:focus,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer button:focus {
+  outline: none;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer button.btn_add,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer button.btn_add {
+  background-color: #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer button.btn_add:hover,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer button.btn_add:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer button.btn_cancel,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer button.btn_cancel {
+  background-color: #12114A;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_block_regions_countries_1 .modal_window_add_country .footer button.btn_cancel:hover,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .edit_block_regions_countries_1 .modal_window_add_country .footer button.btn_cancel:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_btn_country {
+  display: inline-block;
+  padding: 0px 0px 5px 10px;
+  cursor: pointer;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_btn_country .btn {
+  letter-spacing: 1px;
+  color: #ffffff;
+  height: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_btn_country .btn:hover {
+  text-decoration: underline;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="1"] .add_btn_country .btn img {
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000080;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2.display-none,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2.display-none {
+  display: none;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country {
+  width: 600px;
+  position: fixed;
+  z-index: 10001;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid #00cf4d60;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .header,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .header {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #eee;
+  position: relative;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .header span,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .header span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .header button,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .header button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body {
+  width: 100%;
+  padding: 10px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-4,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-4 {
+  width: 25%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-4 .title,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-4 .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #12114A;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 {
+  padding-left: 5px;
+  width: 75%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 input,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 select,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 input,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 select {
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  font-family: "Montserrat";
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 input:focus,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 select:focus,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 input:focus,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 input.mini,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 select.mini,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 input.mini,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .body .col-12 .col-8 select.mini {
+  display: inline-block;
+  width: 40%;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer button,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer button:focus,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer button:focus {
+  outline: none;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer button.btn_add,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer button.btn_add {
+  background-color: #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer button.btn_add:hover,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer button.btn_add:hover {
+  box-shadow: 5px 5px 10px -5px #12114A;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer button.btn_cancel,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer button.btn_cancel {
+  background-color: #12114A;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .add_block_regions_countries_2 .modal_window_add_country .footer button.btn_cancel:hover,
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .edit_block_regions_countries_2 .modal_window_add_country .footer button.btn_cancel:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 0.5px dashed #ccc;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .filter_country {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .filter_country span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 4px;
+  color: #ffffff;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .filter_country select {
+  padding: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  transition: all 0.2s ease-out;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .filter_country select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #00cf4d;
+  border: 1px solid #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .add_btn_region {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .add_btn_region .btn {
+  letter-spacing: 1px;
+  height: 20px;
+  cursor: pointer;
+  color: #ffffff
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .add_btn_region .btn:hover {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_country_and_add_btn .add_btn_region .btn img {
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_choosen {
+  color: #fff;
+}
+
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_choosen span {
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_choosen span:hover {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+.container .block main section.regions_countries .block_regions_countries .root_RG .content_RG[data-open-RG="2"] .filter_block .filter_choosen span.active {
+  text-decoration: underline;
+  color: darkblue;
+}
+.container .block main section.system_state {
+  width: 100%;
+  border: 1px solid #12114A;
+}
+.container .block main section.system_state.display-none {
+  display: none;
+}
+.container .block main section.system_state .block_system_state .SS_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main section.system_state .block_system_state .SS_header .SS_header_title .header_title_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main section.system_state .block_system_state .SS_header .SS_header_title .header_title_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main section.system_state .block_system_state .SS_header .SS_header_title .header_title_text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main section.system_state .block_system_state .SS_body {
+  width: 100%;
+  padding: 10px 20px;
+  height: 506px;
+  background: url('../../img/userEditHeader.jpg');
+}
+.container .block main section.system_state .block_system_state .SS_body .system_info {
+  width: 100%;
+  background-color: #fff1ad;
+  border: 1px solid #ffe24f;
+  border-radius: 5px;
+  padding: 30px 10px;
+}
+.container .block main section.system_state .block_system_state .SS_body .system_info .date_time {
+  margin-bottom: 5px;
+}
+.container .block main section.system_state .block_system_state .SS_body .system_info .date_time span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #12114A;
+  margin-right: 5px;
+}
+.container .block main section.system_state .block_system_state .SS_body .system_info .text_rec {
+  color: #61551a;
+}
+.container .block main section.system_state .block_system_state .SS_body .system_info .text_rec a {
+  color: darkblue;
+  text-decoration: none;
+}
+.container .block main section.system_state .block_system_state .SS_body .system_info .text_rec a:hover {
+  text-decoration: underline;
+}
+.container .block main section.system_state .block_system_state .SS_footer {
+  width: 100%;
+  padding: 10px 0px 10px 30px;
+  background: #eee;
+}
+.container .block main section.system_state .block_system_state .SS_footer .btn_check_again {
+  padding: 7px 14px;
+  border-radius: 5px;
+  border: 1px solid #12114A;
+  background-color: #262649;
+  color: #fff;
+  text-align: center;
+}
+.container .block main section.system_state .block_system_state .SS_footer .btn_check_again:hover {
+  box-shadow: 5px 5px 10px -5px #00cf4d;
+}
+.container .block main section.system_state .block_system_state .SS_footer .btn_check_again:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */

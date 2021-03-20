@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/seo/main.css">
+    <title>SEO оптимизация</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/seo/style.css">
+    <script src="ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+</head>
+<body class="admin_home">
+    <div class="wrap">
+        <div class="container">
+            <!----------------- header ----------------->
+            <div class="navbar">
+                <div class="logo_header">
+                  <a href="#/"><img src="icons/nav_logo.png" alt=""></a>
+                </div>
+                <div class="search">
+                  <input type="text" placeholder="Поиск">
+                  <div class="search_btn">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <div class="chat">
+                  <i class="fas fa-comment">
+                    <span>99</span>
+                  </i>
+                  <div class="chat_text">
+                    <ul>
+                      <li><a href="chats.html"><strong>Чаты администраторов</strong></a><br>
+                        Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с каждым
+                        пользователям от имени “Поддержки” (администрации)
+                      </li> <br>
+                      <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a><br>
+                        Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и контролировать
+                        правильность и корректность работы и общения между пользователями
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="quitBlock">
+                  <a href="#/">Выйти</a>
+               </div>
+                <div class="avatar">
+                  <img src="img/user4.png" alt="">
+                </div>
+            </div>
+            <div class="header_title">
+              <div class="menu">
+                <div class="menu_item">
+                  <div class="all_category">
+                    Все категории
+                    <i class="fas fa-bars"></i>
+                  </div>
+                  <ul>
+                    <li><a href="index.html" class="menu_list first_menu">Главная страница<div>29</div></a></li>
+                            <li><a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии<div>379</div></a></li>
+                            <li><a href="#/" class="menu_list">Безопасный платеж 
+                                <i class="fas fa-level-down-alt todown"></i></a>
+                               <ul class="sub_menu">
+                                   <li><a href="securePayments.html">Ход работы<div>379</div></a></li>
+                                   <li><a href="securePayments.html">Движение средств<div>39</div></a></li>
+                                   <li><a href="securePayments.html">Платежные системы<div>79</div></a></li>
+                               </ul>
+                             </li>
+                            <!-- <li><a href="workshop.html" class="menu_list">Творческая мастерская<div>37</div></a></li>
+                            <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li> -->
+                            <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+                            <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+                            <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+                            <li><a href="forum.html" class="menu_list">Форум<div>23</div></a></li>
+                            <li><a href="pages.html" class="menu_list">Страницы</a></li>
+                            <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+                            <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                             <li><a href="#/" class="menu_list drop_menu_link_mail">Работа с почтой <i class="fas fa-level-down-alt todown"></i> </a>
+                                <ul class="sub_menu">
+                                    <li ><a href="mail.html">Список рассылок</a></li>
+                                    <li ><a href="mail.html">Шаблоны писем</a></li>
+                                    <li ><a href="mail.html">База почт</a></li>
+                                </ul>
+                            </li> 
+                           <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>                        
+                        </li>
+                         <li><a href="#/" class="menu_list drop_menu_link_mail change_back">SEO-оптимизация <i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                              <li> <a class="drop_menu_mail_item change" data-open="first-section" href="#/">Общие настройки</a> </li>
+                              <li> <a class="drop_menu_mail_item " data-open="second-section" href="#/"> Заказы</a></li>
+                              <li> <a  class="drop_menu_mail_item " data-open="third-section" href="#/">Магазин</a> </li>
+                              <li> <a  class="drop_menu_mail_item " data-open="four-section" href="#/">Пользователи</a></li>
+                              <li> <a  class="drop_menu_mail_item " data-open="fifth-section" href="#/">Ответы</a> </li>
+                              <li> <a  class="drop_menu_mail_item " data-open="six-section" href="#/">Блог</a> </li>
+                              <li> <a  class="drop_menu_mail_item " data-open="seven-section" href="#/"> Статьи</a></li>
+                              <li> <a  class="drop_menu_mail_item " data-open="eight-section" href="#/">Новости</a> </li>
+                              <li> <a  class="drop_menu_mail_item " data-open="nine-section" href="#/"> Помощь</a></li>
+                              <li> <a  class="drop_menu_mail_item " data-open="ten-section" href="#/">Посадочные страницы</a> </li>
+                              <li> <a  class="drop_menu_mail_item " data-open="eleven-section" href="#/"> Редиректы</a></li>
+                              <li> <a  class="drop_menu_mail_item " data-open="twelve-section" href="#/"> Настройки</a></li>
+                              <li> <a  class="drop_menu_mail_item " data-open="thirteen-section" href="#/">Аддон для главной страницы</a> </li>
+                              <li> <a  class="drop_menu_mail_item " data-open="fourteen-section" href="#/">Open Graph</a> </li>
+                            </ul>
+                        </li> 
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+                  </ul>
+                  
+              </div>
+              </div>
+                <!---------------------- bar menu ----------------------->
+                
+                  <!--------------------------------------- 1-razdel Общие настройки ----------------------------->
+                  <div class="blocks">
+                    <div class="block general_settings" data-open="first-section">
+                      <div class="header">
+                            <div class="header_icon">
+                               <img src="icons/edit.webp" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="header_text">SEO / Общие настройки</div>
+                      </div>
+                      <div class="body">
+                        <div class="body_left">
+                          <div class="body_left_header">СТРАНИЦЫ:</div>
+                          <div class="left_text main" data-show="first_razdel">
+                            <div class="body_left_under_header">Статические страницы</div>
+                          </div>
+                          <div class="left_text" data-show="second_razdel">
+                            <div class="body_left_under_header">Карта сайта</div>
+                          </div>
+                          <div class="left_text" data-show="third_razdel">
+                            <div class="body_left_under_header" >Связь с администрацией</div>
+                          </div>
+                          <div class="left_text" data-show="four_razdel">
+                            <div class="body_left_under_header">Услуги</div>
+                          </div>
+                          <div class="left_text" data-show="fifth-razdel">
+                            <div class="body_left_under_header">Выключение сайта</div>
+                          </div>
+                        </div>
+                        <div class="body_right">
+                          <!-- первыц раздел Общий настройки -->
+                          <section class="general_settings_first show" data-show="first_razdel">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{title} | {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn meta_base" id="btn_meta">meta-base</button>
+                               <button class="mak_btn title" id="btn_title">title</button>
+                               <button class="mak_btn site_title" id="btn_site">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          <!-- второй раздел Общий настройки -->
+                          <section class="general_settings_second display-none" data-show="second_razdel">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" onfocus = "selectElement(this)" id="input" value="Карта сайта | {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" onfocus = "selectElement(this)" cols="20" rows="10"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" onfocus = "selectElement(this)" cols="20" rows="10"></textarea>
+                              <label for="heading1">Заголовок H1:</label> <br>
+                              <input type="text" name="heading1" onfocus = "selectElement(this)" value="Карта сайта">
+                           </form>
+                           <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                              <button class="mak_btn site_title" id="map_btn_site">site.title</button>
+                             </div>
+                             <div class="save">
+                              <button class="save_btn">Save</button>
+                            </div>
+                          </section>
+                          <!-- третий раздел Общий настройки -->
+                          <section class="general_settings_third display-none" data-show="third_razdel">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" onfocus = "selectElement(this)" id="input" value="Задать вопрос"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" onfocus = "selectElement(this)" cols="20" rows="10"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" onfocus = "selectElement(this)" cols="20" rows="10"></textarea>
+                              <label for="heading1">Заголовок H1:</label> <br>
+                              <input type="text" name="heading1" onfocus = "selectElement(this)" value="Задать вопрос">
+                           </form>
+                           <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                              <button class="mak_btn site_title" id="connect_btn_site">site.title</button>
+                             </div>
+                             <div class="save">
+                              <button class="save_btn">Save</button>
+                            </div>
+                          </section>
+                          <!-- четвертый раздел Общий настройки -->
+                          <section class="general_settings_four display-none" data-show="four_razdel">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" onfocus = "selectElement(this)" id="input" value="Платные сервисы"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" onfocus = "selectElement(this)" cols="20" rows="10"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" onfocus = "selectElement(this)" cols="20" rows="10"></textarea>
+                              <label for="heading1">Заголовок H1:</label> <br>
+                              <input type="text" name="heading1" onfocus = "selectElement(this)" value="Платные сервисы">
+                           </form>
+                           <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                              <button class="mak_btn site_title" id="uslugi_btn_site">site.title</button>
+                             </div>
+                             <div class="save">
+                              <button class="save_btn">Save</button>
+                            </div>
+                          </section>
+                          <!-- пятый раздел Общий настройки -->
+                          <section class="general_settings_fifth display-none" data-show="fifth-razdel">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn site_title" id="off_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!---------------------------------------- 2-razdel Заказы ------------------------------------->
+                    <div class="block orders display-show" data-open="second-section">
+                      <div class="header">
+                         <div class="header_icon">
+                            <img src="icons/edit.webp" alt="">
+                         </div>
+                         <div class="line"></div>
+                         <div class="header_text">SEO / Заказы</div>
+                     </div>
+                     <div class="body">
+                      <div class="body_left">
+                        <div class="body_left_header">СТРАНИЦЫ:</div>
+                        <div class="left_text  main " data-show="zakaz_razdel1">
+                          <div class="body_left_under_header">Список заказов (главная)</div>
+                        </div>
+                        <div class="left_text" data-show="zakaz_razdel2">
+                          <div class="body_left_under_header">Список заказов - услуги (специализация)</div>
+                        </div>
+                        <div class="left_text" data-show="zakaz_razdel3">
+                          <div class="body_left_under_header" >Список заказов - товары (категория)</div>
+                        </div>
+                        <div class="left_text" data-show="zakaz_razdel4">
+                          <div class="body_left_under_header">Поиск заказов (по ключевому слову)</div>
+                        </div>
+                        <div class="left_text" data-show="zakaz_razdel5">
+                          <div class="body_left_under_header">Добавление заказа</div>
+                        </div>
+                        <div class="left_text" data-show="zakaz_razdel6">
+                          <div class="body_left_under_header">Просмотр заказа</div>
+                        </div>
+                      </div>
+                      <div class="body_right">
+                        <!-- первыц раздел Заказы. Список заказов  -->
+                        <section class="list_order_first show display-none" data-show="zakaz_razdel1">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{type} {region.in} {country.in} {page} | {site.title}"> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">биржа труда, работа, заказы</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{site.title} - биржа удаленной работы</textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn type" id="list_order_btn_type">type</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn country" id="list_order_btn_country">country</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- второй раздел Заказы. Список заказов - услуги  -->
+                        <section class="list_order_second display-none" data-show="zakaz_razdel2">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Услуги: {spec} {region} {country} {page} | {site.title}"> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor1"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                             <button class="mak_btn spec" id="service_spec_btn">spec</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn country" id="service_btn_country">country</button>
+                             <button class="mak_btn page" id="service_btn_page">page</button>
+                             <button class="mak_btn site_title" id="service_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- третий раздел Заказы. Список заказов - товары  -->
+                        <section class="list_order_third display-none" data-show="zakaz_razdel3">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Товары: {category} {region} {country} {page} | {site.title}"> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor2"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                             <button class="mak_btn category" id="service_category">category</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn country" id="service_btn_country">country</button>
+                             <button class="mak_btn page" id="service_btn_page">page</button>
+                             <button class="mak_btn site_title" id="service_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- четвертый раздел Заказы. Поиск заказов   -->
+                        <section class="list_order_four display-none" data-show="zakaz_razdel4">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='Поиск заказов: "{query}"" {page} | {site.title}'> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn query" id="btn_query">query</button>
+                             <button class="mak_btn page" id="btn_page">page</button>
+                             <button class="mak_btn site_title" id="btn_site">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- пятый раздел Заказы. Добавление заказа   -->
+                        <section class="list_order_fifth display-none" data-show="zakaz_razdel5">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='Добавление заказа на {site.title}'> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn site_title" id="btn_site">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- шестой раздел Заказы. Просмотр заказа   -->
+                        <section class="list_order_six display-none" data-show="zakaz_razdel6">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} на {site.title}'> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{tags}</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                            <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} - {price}'> <br>
+                            <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                            <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn title" id="btn_title">title</button>
+                             <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                             <button class="mak_btn desc" id="btn_desc">description</button>
+                             <button class="mak_btn price" id="btn_price">price</button>
+                             <button class="mak_btn tags" id="btn_tags">tags</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn spec" id="service_spec_btn">spec</button>
+                             <button class="mak_btn category" id="service_category">category</button>
+                             <button class="mak_btn site_title" id="btn_site">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                      </div>
+                     </div>
+                    </div>
+                    <!---------------------------------------- 3-razdel Магазин ------------------------------------->
+                    <div class="block shop display-show" data-open="third-section">
+                      <div class="header">
+                        <div class="header_icon">
+                           <img src="icons/edit.webp" alt="">
+                        </div>
+                        <div class="line"></div>
+                        <div class="header_text">SEO / Магазин</div>
+                      </div>
+                    <div class="body">
+                      <div class="body_left">
+                        <div class="body_left_header">СТРАНИЦЫ:</div>
+                        <div class="left_text  main" data-show="magazin_razdel1">
+                          <div class="body_left_under_header ">Список  (все категории)</div>
+                        </div>
+                        <div class="left_text" data-show="magazin_razdel2">
+                          <div class="body_left_under_header">Список (категория)</div>
+                        </div>
+                        <div class="left_text" data-show="magazin_razdel3">
+                          <div class="body_left_under_header" >Поиск товаров (по ключевому слову)</div>
+                        </div>
+                        <div class="left_text" data-show="magazin_razdel4">
+                          <div class="body_left_under_header">Просмотр товара</div>
+                        </div>
+                      </div>
+                      <div class="body_right">
+                        <!-- первый раздел Магазины. Список  (все категории)   -->
+                        <section class="shop_first show display-none" data-show="magazin_razdel1">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Магазин {page} | {site.title}"> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">биржа труда, работа, заказы</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{site.title} - биржа удаленной работы</textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor3"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- второй раздел Магазины. Список (категория)   -->
+                        <section class="shop_second display-none" data-show="magazin_razdel2">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Магазин: {category} {page} | {site.title}"> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor4"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                             <button class="mak_btn category" id="service_category">category</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- третий раздел Магазины. Поиск товаров (по ключевому слову)   -->
+                        <section class="shop_third display-none" data-show="magazin_razdel3">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)" value='Поиск товаров: "{query}" {page} | {site.title}'> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn query" id="btn_query">query</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                        <!-- четвертый раздел Магазины. Просмотр товара  -->
+                        <section class="shop_four display-none" data-show="magazin_razdel4">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} на {site.title}'> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{tags}</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description} {tags}</textarea>
+                            <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title.full}'> <br>
+                            <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                            <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn title" id="btn_title">title</button>
+                             <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                             <button class="mak_btn desc" id="btn_desc">description</button>
+                             <button class="mak_btn tags" id="btn_tags">tags</button>
+                             <button class="mak_btn site_title" id="btn_site">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                        </section>
+                      </div>
+                    </div>
+                    </div>
+                    <!---------------------------------------- 4-razdel Пользователи ------------------------------------->
+                    <div class="block users display-show" data-open="four-section">
+                      <div class="header">
+                        <div class="header_icon">
+                           <img src="icons/edit.webp" alt="">
+                        </div>
+                        <div class="line"></div>
+                        <div class="header_text">SEO / Пользователи</div>
+                      </div>
+                      <div class="above_body">
+                        <div class="body_header">
+                          <div class="body_header_section first delete_under_border" data-display="head_sec1">Общие</div>
+                          <div class="body_header_section second" data-display="head_sec2">Профиль пользователя</div>
+                          <div class="body_header_section third" data-display="head_sec3">Прайс</div>
+                        </div>
+                      </div>
+                      <div class="body">
+                        <div class="horizontal_sections first " data-display="head_sec1">
+                          <div class="body_left">
+                            <div class="body_left_header">СТРАНИЦЫ:</div>
+                            <div class="left_text main" data-show="user_razdel1">
+                              <div class="body_left_under_header">Список исполнителей (главная)</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel2">
+                              <div class="body_left_under_header">Список исполнителей (категория)</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel3">
+                              <div class="body_left_under_header" >Список исполнителей (специализация)</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel4">
+                              <div class="body_left_under_header">Поиск исполнителей (по ключевому слову)</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel5">
+                              <div class="body_left_under_header">Авторизация</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel6">
+                              <div class="body_left_under_header">Регистрация</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel7">
+                              <div class="body_left_under_header">Забыли пароль</div>
+                            </div>
+                          </div>
+                          <div class="body_right">
+                            <!-- первыц раздел Пользователи. Список исполнителей  -->
+                          <section class="user_first show display-none" data-show="user_razdel1">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Исполнители {region} {country} {page} | {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label >SEO текст:</label> <br>
+                              <textarea id="text_redaktor5"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn region" id="list_order_btn_region">region</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn page" id="list_order_btn_page">page</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                           <!-- второй раздел Пользователи. Список исполнителей  -->
+                           <section class="user_second display-none" data-show="user_razdel2">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Исполнители: {title} {region} {country} {page} | {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                              <label >SEO текст:</label> <br>
+                              <textarea id="text_redaktor6"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                               <button class="mak_btn title" id="btn_title">title</button>
+                               <button class="mak_btn region" id="list_order_btn_region">region</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn page" id="list_order_btn_page">page</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          <!-- третий раздел Пользователи. Список исполнителей  -->
+                          <section class="user_third display-none" data-show="user_razdel3">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Исполнители: {title} {region} {country} {page} | {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                              <label >SEO текст:</label> <br>
+                              <textarea id="text_redaktor7"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                               <button class="mak_btn title" id="btn_title">title</button>
+                               <button class="mak_btn region" id="list_order_btn_region">region</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn page" id="list_order_btn_page">page</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          <!-- четвертый раздел Пользователи. Список исполнителей  -->
+                          <section class="user_four display-none" data-show="user_razdel4">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)" value='Поиск исполнителей: "{query}" {page} | {site.title}'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn query" id="btn_query">query</button>
+                               <button class="mak_btn page" id="list_order_btn_page">page</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          <!-- пятый раздел Пользователи. Авторизация  -->
+                          <section class="user_fifth display-none" data-show="user_razdel5">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)" value='Авторизация на {site.title}'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          <!-- шестой раздел Пользователи. Регистрация  -->
+                          <section class="user_six display-none" data-show="user_razdel6">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)" value='Регистрация на {site.title}'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          <!-- седьмой раздел Пользователи. Авторизация  -->
+                          <section class="user_seven display-none" data-show="user_razdel7">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)" value='Восстановление пароля на {site.title}'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                          </div>
+                        </div>
+
+                        <div class="horizontal_sections second display-section" data-display="head_sec2">
+                          <div class="body_left">
+                            <div class="body_left_header">СТРАНИЦЫ:</div>
+                            <div class="left_text" data-show="user_razdel8">
+                              <div class="body_left_under_header">Информация</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel9">
+                              <div class="body_left_under_header">Заказы</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel10">
+                              <div class="body_left_under_header">Отзывы</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel11">
+                              <div class="body_left_under_header">Вопросы</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel12">
+                              <div class="body_left_under_header">Портфолио: список</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel13">
+                              <div class="body_left_under_header">Портфолио: работа</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel14">
+                              <div class="body_left_under_header">Магазин: список</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel15">
+                              <div class="body_left_under_header">Магазин: товар</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel16">
+                              <div class="body_left_under_header">Прайс</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel17">
+                              <div class="body_left_under_header">Блог: список</div>
+                            </div>
+                            <div class="left_text" data-show="user_razdel18">
+                              <div class="body_left_under_header">Блог: просмотр поста</div>
+                            </div>
+                        </div>
+                        <div class="body_right">
+                          <section class="user_eight show display-none" data-show="user_razdel8">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{name} {surname} [{login}], {city}, {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">Персональная страница пользователя {name} {surname} [{login}] - {tab}, {city}</textarea>
+                              <label >SEO текст:</label> <br>
+                              <textarea id="text_redaktor5"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_nine display-none" data-show="user_razdel9">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Заказы: {name} {surname} [{login}] {page}, {city}, {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea> 
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn page" id="list_order_btn_page">page</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_ten display-none" data-show="user_razdel10">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Отзывы: {name} {surname} [{login}], {city}, {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn page" id="list_order_btn_page">page</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_eleven display-none" data-show="user_razdel11">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Вопросы: {name} {surname} [{login}], {city}, {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_twelve display-none" data-show="user_razdel12">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Портфолио: {name} {surname} [{login}] {city}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn desc" id="btn_desc">description</button>
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_thirteen display-none" data-show="user_razdel13">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} - {name} {surname} [{login}]'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{title.full}</textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                              <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title.full}'>{title.full}<br>
+                              <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                              <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn title" id="btn_title">title</button>
+                               <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                               <button class="mak_btn desc" id="btn_desc">description</button>
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="btn_site">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_fourteen display-none" data-show="user_razdel14">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Магазин: {name} {surname} [{login}] {city}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn desc" id="btn_desc">description</button>
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_fifteen display-none" data-show="user_razdel15">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} - {name} {surname} [{login}]'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{title.full} {tags}</textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                              <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title.full}'><br>
+                              <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                              <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn title" id="btn_title">title</button>
+                               <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                               <button class="mak_btn desc" id="btn_desc">description</button>
+                               <button class="mak_btn tags" id="btn_tags">tags</button>
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="btn_site">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_sixteen display-none" data-show="user_razdel16">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=""> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_seventeen display-none" data-show="user_razdel17">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Блог: {name} {surname} [{login}] {page}, {city}, {site.title}"> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+
+                          <section class="user_eighteen display-none" data-show="user_razdel18">
+                            <form action="" class="form">
+                              <label for="heading">Заголовок:</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} - {name} {surname} [{login}]'> <br>
+                              <label for="keyword">Ключевые слова:</label> <br>
+                              <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{title.full} {tags}</textarea>
+                              <label for="descript">Описание:</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                              <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title.full}'><br>
+                              <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                              <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                              <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                              <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                           </form>
+                           <div class="makros">
+                             <div class="makros_head">Макросы:</div>
+                             <div class="makros_btns">
+                               <button class="mak_btn title" id="btn_title">title</button>
+                               <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                               <button class="mak_btn desc" id="btn_desc">description</button>
+                               <button class="mak_btn tags" id="btn_tags">tags</button>
+                               <button class="mak_btn name" id="list_order_btn_name">name</button>
+                               <button class="mak_btn surname" id="list_order_btn_surname">surname</button>
+                               <button class="mak_btn login" id="list_order_btn_login">login</button>
+                               <button class="mak_btn city" id="list_order_btn_city">city</button>
+                               <button class="mak_btn country" id="list_order_btn_country">country</button>
+                               <button class="mak_btn site_title" id="btn_site">site.title</button>
+                             </div>
+                           </div>
+                           <div class="save">
+                             <button class="save_btn">Save</button>
+                           </div>
+                          </section>
+                        </div>
+                      </div>
+
+                      <div class="horizontal_sections third display-section" data-display="head_sec3">
+                        <div class="body_left">
+                          <div class="body_left_header">СТРАНИЦЫ:</div>
+                          <div class="left_text" data-show="user_razdel19">
+                            <div class="body_left_under_header">Прайс (главная)</div>
+                          </div>
+                          <div class="left_text" data-show="user_razdel20">
+                            <div class="body_left_under_header">Прайс (категория)</div>
+                          </div>
+                          <div class="left_text" data-show="user_razdel21">
+                            <div class="body_left_under_header">Прайс (специализация)</div>
+                          </div>
+                          <div class="left_text" data-show="user_razdel22">
+                            <div class="body_left_under_header">Прайс (просмотр услуги)</div>
+                          </div>
+                      </div>
+                      <div class="body_right">
+                        <section class="user_nineteen show display-none" data-show="user_razdel19">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=""> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor8"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn country" id="list_order_btn_country">country</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                         </section>
+
+                         <section class="user_twenty display-none" data-show="user_razdel20">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=""> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor9"></textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                             <button class="mak_btn title" id="btn_title">title</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn country" id="list_order_btn_country">country</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                         </section>
+
+                         <section class="user_twentyone display-none" data-show="user_razdel21">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=""> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor10">{meta-base}</textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                             <button class="mak_btn title" id="btn_title">title</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn country" id="list_order_btn_country">country</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                         </section>
+
+                         <section class="user_twentytwo display-none" data-show="user_razdel22">
+                          <form action="" class="form">
+                            <label for="heading">Заголовок:</label> <br>
+                            <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{title} {region.in}"> <br>
+                            <label for="keyword">Ключевые слова:</label> <br>
+                            <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{title} {region.in}</textarea>
+                            <label for="descript">Описание:</label> <br>
+                            <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{title} {region.in}</textarea>
+                            <label >SEO текст:</label> <br>
+                            <textarea id="text_redaktor10">{meta-base}</textarea>
+                         </form>
+                         <div class="makros">
+                           <div class="makros_head">Макросы:</div>
+                           <div class="makros_btns">
+                             <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                             <button class="mak_btn title" id="btn_title">title</button>
+                             <button class="mak_btn region" id="list_order_btn_region">region</button>
+                             <button class="mak_btn page" id="list_order_btn_page">page</button>
+                             <button class="mak_btn country" id="list_order_btn_country">country</button>
+                             <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                           </div>
+                         </div>
+                         <div class="save">
+                           <button class="save_btn">Save</button>
+                         </div>
+                         </section>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <!---------------------------------------- 5-razdel Ответы ------------------------------------->
+            <div class="block answers display-show" data-open="fifth-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Ответы</div>
+              </div>
+              <div class="body">
+                <div class="body_left">
+                  <div class="body_left_header">СТРАНИЦЫ:</div>
+                  <div class="left_text main" data-show="answer_razdel1">
+                    <div class="body_left_under_header">Список</div>
+                  </div>
+                  <div class="left_text" data-show="answer_razdel2">
+                    <div class="body_left_under_header">Список (категория)</div>
+                  </div>
+                  <div class="left_text" data-show="answer_razdel3">
+                    <div class="body_left_under_header" >Список (специализация)</div>
+                  </div>
+                  <div class="left_text" data-show="answer_razdel4">
+                    <div class="body_left_under_header">Поиск по ключевому слову</div>
+                  </div>
+                  <div class="left_text" data-show="answer_razdel5">
+                    <div class="body_left_under_header">Просмотр вопроса</div>
+                  </div>
+                </div>
+                <div class="body_right">
+                  <!-- первый раздел ответы -->
+                  <section class="answer_first show display-none" data-show="answer_razdel1">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Вопросы и ответы {page} | {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor11"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- второй раздел ответы -->
+                  <section class="answer_second display-none" data-show="answer_razdel2">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Вопросы и ответы: {title} {page} | {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor12"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- третий раздел ответы -->
+                  <section class="answer_third display-none" data-show="answer_razdel3">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Вопросы и ответы: {title} {page} | {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor13"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- четвертый раздел ответы -->
+                  <section class="answer_four display-none" data-show="answer_razdel4">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='Поиск вопросов: "{query}" {page} | {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn query" id="btn_query">query</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- пятый раздел ответы -->
+                  <section class="answer_fifth display-none" data-show="answer_razdel5">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} | Вопросы на {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title.full}'><br>
+                      <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                       <button class="mak_btn desc" id="btn_desc">description</button>
+                       <button class="mak_btn site_title" id="btn_site">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!---------------------------------------- 6-razdel Блог ------------------------------------->
+            <div class="block blog display-show" data-open="six-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Блог</div>
+              </div>
+              <div class="body">
+                <div class="body_left">
+                  <div class="body_left_header">СТРАНИЦЫ:</div>
+                  <div class="left_text main" data-show="blog_razdel1">
+                    <div class="body_left_under_header ">Список (главная)</div>
+                  </div>
+                  <div class="left_text" data-show="blog_razdel2">
+                    <div class="body_left_under_header">Список (категория)</div>
+                  </div>
+                  <div class="left_text" data-show="blog_razdel3">
+                    <div class="body_left_under_header">Поиск по ключевому слову</div>
+                  </div>
+                  <div class="left_text" data-show="blog_razdel4">
+                    <div class="body_left_under_header">Просмотр поста</div>
+                  </div>
+                </div>
+                <div class="body_right">
+                  <!-- первый раздел Блога.  -->
+                  <section class="blog_first show display-none" data-show="blog_razdel1">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Блог {page} | {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor14"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- второй раздел Блога.  -->
+                  <section class="blog_second display-none" data-show="blog_razdel2">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{category} | Блог {page} {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor15"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                       <button class="mak_btn category" id="service_category">category</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- третий раздел блога -->
+                  <section class="blog_third display-none" data-show="blog_razdel3">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='Поиск записей: "{query}" {page} | {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn query" id="btn_query">query</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- чеивериый раздел блога -->
+                  <section class="blog_four display-none" data-show="blog_razdel4">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} | Блог {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{title.full} {tags}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title}'><br>
+                      <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                       <button class="mak_btn desc" id="btn_desc">description</button>
+                       <button class="mak_btn tags" id="btn_tags">tags</button>
+                       <button class="mak_btn site_title" id="btn_site">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!---------------------------------------- 7-razdel Статьи ------------------------------------->
+            <div class="block articles display-show" data-open="seven-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Статьи</div>
+              </div>
+              <div class="body">
+                <div class="body_left">
+                  <div class="body_left_header">СТРАНИЦЫ:</div>
+                  <div class="left_text main" data-show="article_razdel1">
+                    <div class="body_left_under_header">Список (главная)</div>
+                  </div>
+                  <div class="left_text" data-show="article_razdel2">
+                    <div class="body_left_under_header">Список (категория)</div>
+                  </div>
+                  <div class="left_text" data-show="article_razdel3">
+                    <div class="body_left_under_header">Просмотр статьи</div>
+                  </div>
+                </div>
+                <div class="body_right">
+                  <!-- первый раздел Статьи -->
+                  <section class="article_first show display-none" data-show="article_razdel1">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Статьи {page} | {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor16"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- второй раздел Статьи -->
+                  <section class="article_second display-none" data-show="article_razdel2">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{category} | Статьи {page} {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor17"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                       <button class="mak_btn category" id="service_category">category</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- третий раздел Статьи -->
+                  <section class="article_third display-none" data-show="article_razdel3">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} | Статьи {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{title.full} {tags}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title}'><br>
+                      <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                       <button class="mak_btn desc" id="btn_desc">description</button>
+                       <button class="mak_btn tags" id="btn_tags">tags</button>
+                       <button class="mak_btn site_title" id="btn_site">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!---------------------------------------- 8-razdel Новости ------------------------------------->
+            <div class="block news display-show" data-open="eight-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Новости</div>
+              </div>
+              <div class="body">
+                <div class="body_left">
+                  <div class="body_left_header">СТРАНИЦЫ:</div>
+                  <div class="left_text main" data-show="news_razdel1">
+                    <div class="body_left_under_header">Список (главная)</div>
+                  </div>
+                  <div class="left_text" data-show="news_razdel2">
+                    <div class="body_left_under_header">Список (категория)</div>
+                  </div>
+                  <div class="left_text" data-show="news_razdel3">
+                    <div class="body_left_under_header">Просмотр статьи</div>
+                  </div>
+                </div>
+                <div class="body_right">
+                  <!-- первый раздел новости -->
+                  <section class="news_first show display-none" data-show="news_razdel1">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="Новости {page} | {site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor18"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- второй раздел новости -->
+                  <section class="news_second display-none" data-show="news_razdel2">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='Поиск новостей: "{tag}" {page} | {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                      <button class="mak_btn tags" id="btn_tags">tags</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                  <!-- третий раздел новости -->
+                  <section class="news_third display-none" data-show="news_razdel3">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title} | {site.title}'> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{meta-base}</textarea>
+                      <label for="heading">Заголовок (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{title.full}'><br>
+                      <label for="descript">Описание (поделиться в соц. сетях):</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)">{description}</textarea>
+                      <label for="heading">Название сайта (поделиться в соц. сетях):</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value='{site.title}'> <br>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn title_full" id="btn_title_full">title.full</button>
+                       <button class="mak_btn desc" id="btn_desc">description</button>
+                       <button class="mak_btn tags" id="btn_tags">tags</button>
+                       <button class="mak_btn site_title" id="btn_site">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!---------------------------------------- 9-razdel Помощь ------------------------------------->
+            <div class="block help display-show" data-open="nine-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Помощь</div>
+              </div>
+              <div class="body">
+                <div class="body_left">
+                  <div class="body_left_header">СТРАНИЦЫ:</div>
+                  <div class="left_text main" data-show="help_razdel1">
+                    <div class="body_left_under_header">Главная</div>
+                  </div>
+                  <div class="left_text" data-show="help_razdel2">
+                    <div class="body_left_under_header">Список в категории</div>
+                  </div>
+                  <div class="left_text" data-show="help_razdel3">
+                    <div class="body_left_under_header">Поиск вопроса</div>
+                  </div>
+                  <div class="left_text" data-show="help_razdel4">
+                    <div class="body_left_under_header">Просмотр вопроса</div>
+                  </div>
+                </div>
+                <div class="body_right">
+                  <!-- первый раздел помощьи -->
+                  <section class="help_first show display-none" data-show="help_razdel1">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=""> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor19"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                   <!-- второй раздел помощьи -->
+                   <section class="help_second display-none" data-show="help_razdel2">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=''> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn meta_base" id="service_meta_base">meta-base</button>
+                       <button class="mak_btn category" id="service_category">category</button>
+                       <button class="mak_btn category_rev" id="service_category_rev">categories.reverse</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                   <!-- третий раздел помощьи -->
+                   <section class="help_third display-none" data-show="help_razdel3">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=''> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn query" id="btn_query">query</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                   <!-- четвертый раздел помощьи -->
+                   <section class="help_four display-none" data-show="help_razdel4">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value=''> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn title" id="btn_title">title</button>
+                       <button class="mak_btn textshort" id="btn_textshort">textshort</button>
+                       <button class="mak_btn query" id="btn_query">query</button>
+                       <button class="mak_btn page" id="list_order_btn_page">page</button>
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+             <!---------------------------------------- 10-razdel Посадочные страницы ------------------------------------->
+             <div class="block landing_page display-show" id="landing_page1" data-open="ten-section">
+              <div class="header">
+                <div class="left_side">
+                    <div class="span">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="header_text">SEO / Посадочные страницы</div>
+                </div>
+                <div class="right_side">
+                    <a class="add_page" id="link" href="#/" onclick="add_page()">+ добавить страницу</a>
+                </div> 
+            </div>
+            <div class="body">
+              <div class="landing_page_body">
+                <div class="search_input">
+                  <input class="search_url" type="search" placeholder="Название / URL / ID Посадочные страницы">
+                  <button class="find_search">найти</button>
+                  <button class="throw_search">сбросить</button>
+                </div>
+                <div class="search_body_header">
+                  <div class="search_header id">ID</div>
+                  <div class="search_header landing_url">Посадочный URL</div>
+                  <div class="search_header original_url">Оригинальный URL</div>
+                  <div class="search_header action">Действие</div>
+                </div>
+                <div class="search_body_line"></div>
+                <div class="search_body_content"></div>
+              </div>
+            </div>
+             </div> 
+             <div class="block landing_page2 display-show" id="landing_page2">
+              <div class="header">
+                <div class="left_side">
+                  <div class="header_icon">
+                    <img src="icons/edit.webp" alt="">
+                 </div>
+                    <div class="line"></div>
+                    <div class="header_text">SEO / Посадочные страницы / Добавление</div>
+                </div>
+               </div>
+            <div class="body">
+              <div class="body_left">
+                <div class="url_input_text first">Посадочный URL*</div>
+                <div class="url_input_text second">Оригинальный URL*</div>
+                <div class="url_input_text third">Комментарий</div>
+                <div class="url_input_text four">Заголовок</div>
+                <div class="url_input_text five">Ключевые слова</div>
+                <div class="url_input_text six">Описание: (meta description)</div>
+                <div class="url_input_text seven">Хлебная крошка</div>
+                <div class="url_input_text eight">Заголовок H1</div>
+                <div class="url_input_text nine">SEO текст</div>
+                <div class="url_input_text ten">Макросы</div>
+                <div class="url_input_text eleven">Включена</div>
+              </div>
+              <div class="body_right">
+                <form action="">
+                  <input type="text" class="url_input" onfocus = "selectElement(this)">
+                  <input type="text" class="url_input" onfocus = "selectElement(this)">
+                  <input type="text" class="url_input" onfocus = "selectElement(this)">
+                  <input type="text" class="url_input" onfocus = "selectElement(this)">
+                  <textarea id="url_textarea" class="url_input" rows="5" onfocus = "selectElement(this)"></textarea>
+                  <textarea id="url_textarea" class="url_input" rows="5" onfocus = "selectElement(this)"></textarea>
+                  <input type="text" class="url_input" onfocus = "selectElement(this)">
+                  <input type="text" class="url_input" onfocus = "selectElement(this)">
+                  <textarea id="text_redaktor21"></textarea>
+                  <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                  <label class="checkbox un">
+                    <input type="checkbox" id="client1">
+                    <span class="checkmark"></span>
+                  </label>
+                </form>
+              </div>
+            </div>
+             <div class="buttons">
+                <button class="save_btn">Save</button>
+                <button class="cancel_btn" id="cancel">Cancel</button>
+             </div>
+             </div>
+              <!---------------------------------------- 11-razdel Редиректы ------------------------------------->
+              <div class="block redirects display-show" data-open="eleven-section">
+                <div class="header">
+                  <div class="left_side">
+                      <div class="span">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                      <div class="line"></div>
+                      <div class="header_text">SEO / Редиректы</div>
+                  </div>
+                  <div class="right_side">
+                      <a class="add_page" id="link" href="#/" onclick="add_redict()">+ добавить редирект</a>
+                  </div> 
+               </div>
+               <div class="body">
+                 <div class="redirects_body">
+                  <div class="search_input">
+                    <input class="search_url" type="search" placeholder="Название / URL редиректа">
+                    <button class="find_search">найти</button>
+                    <button class="throw_search">сбросить</button>
+                  </div>
+                  <div class="redirect_under_header">
+                    <div class="redirect_under_header_text">Откуда</div>
+                    <div class="redirect_under_header_text">Куда</div>
+                    <div class="redirect_under_header_text_right">
+                        <div class="redirect_under_header_text status">Status</div>
+                        <div class="redirect_under_header_text">Действие</div>
+                    </div>
+                  </div>
+                  <div class="redirect_body_line"></div>
+                  <div class="nothing_found">Nothing found</div>
+                  <div class="redirect_input"></div>
+                 </div>
+               </div>
+              </div>
+
+              <div class="block redirects2">
+                <div class="header">
+                  <div class="left_side">
+                    <div class="header_icon">
+                      <img src="icons/edit.webp" alt="">
+                   </div>
+                      <div class="line"></div>
+                      <div class="header_text">SEO / Редиректы / Добавление</div>
+                  </div>
+                 </div>
+                 <div class="body">
+                   <div class="redirects_body">
+                        <div class="body_inner">
+                          <div class="body_inner_left">Исходный URL*:</div>
+                          <input type="text" class="url_input redirect" onfocus = "selectElement(this)">
+                        </div>
+                       <div class="body_inner">
+                          <div class="body_inner_left">Итоговый URL*:</div>
+                          <input type="text" class="url_input redirect" onfocus = "selectElement(this)">
+                        </div>
+                        <div class="body_inner">
+                          <div class="body_inner_left"></div>
+                          <div class="makros_btns">
+                            <button class="mak_btn sitehost" id="btn_title">{sitehost}</button>
+                            <button class="mak_btn extra" id="btn_textshort">{extra}</button>
+                          </div>
+                        </div>
+                        <div class="body_inner">
+                          <div class="body_inner_left"></div>
+                          <label class="checkbox un">
+                            <input type="checkbox" id="client1"> <div class="checkbox_text">Использовать локализацию/регион и подобные настройки из исходного URL, например <span class="check_btn">/en/</span> или <span class="check_btn">/en/city/</span> </div> 
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="body_inner">
+                          <div class="body_inner_left"></div>
+                          <label class="checkbox un">
+                            <input type="checkbox" id="client1"> <div class="checkbox_text">Использовать параметры запроса из исходного URL, например <span class="check_btn">?page=1</span> </div> 
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="body_inner drop">
+                          <div class="body_inner_left">Status:</div>
+                          <div class="drop_num">
+                            <select name="number" id="number">
+                                <option value="20">301</option>
+                                <option value="40">302</option>
+                            </select>
+                           </div>
+                        </div>
+                        <div class="body_inner">
+                          <div class="body_inner_left">Включен:</div>
+                          <label class="checkbox un">
+                            <input type="checkbox" id="client1"> 
+                            <span class="checkmark last"></span>
+                          </label>
+                        </div>
+                   </div>
+                  
+                 </div>
+                 <div class="buttons">
+                    <button class="save_btn">Save</button>
+                    <button class="cancel_btn" id="cancel_rec">Cancel</button>
+                 </div>
+              </div>
+               <!---------------------------------------- 12-razdel Настройки ------------------------------------->
+               <div class="block settings display-show" data-open="twelve-section">
+                <div class="header">
+                  <div class="header_icon">
+                     <img src="icons/search.jpg" alt="">
+                  </div>
+                  <div class="line"></div>
+                  <div class="header_text">SEO / Настройки</div>
+                </div>
+                <div class="body">
+                  <div class="setting_body_inner">
+                    <div class="setting_body_inner_header">Для возможности управления данными настройками вам необходимо удалить исходный файл <span class="body_inner_span">/public_html/robots.txt</span> <button class="setting_delete">delete</button> </div>
+                    <div class="body_header">
+                      <div class="body_header_setting first delete_under_border" data-setting="set1" id="robot">Robots.txt</div>
+                      <div class="body_header_setting second" data-setting="set2" id="sitemap">Sitemap.xml</div>
+                    </div>
+                    <div class="setting robots" data-setting="set1">
+                      <textarea disabled class="disallowed" id="disallowed" cols="80" rows="15">{sitemap}{sitemap}User-agent:* &#13;&#10; Disallow:/ </textarea>
+                      <div class="body_inner_textarea_left">
+                        <div class="body_inner_textarea_text">Макросы:</div>
+                        <a href="#/" class="body_inner_link">{sitemap}</a>
+                        <div class="link_text">Ссылка на файл Sitemap.xml</div>
+                      </div>
+                    </div>
+                    <div class="setting sitemap close" data-setting="set2">
+                      <div class="sitemap_text">Файл <span>Sitemap.xml</span>  обновляется автоматически раз в сутки.</div> 
+                      <a href="#/" class="sitemap_btn">Обновить принудительно</a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+            <!---------------------------------------- 13-razdel Аддон для вида главной страницы ------------------------------------->
+            <div class="block addon display-show" data-open="thirteen-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Аддон для вида главной страницы</div>
+              </div>
+              <div class="body">
+                <div class="body_left">
+                  <div class="body_left_header">СТРАНИЦЫ:</div>
+                  <div class="left_text main" data-show="addon_razdel1">
+                    <div class="body_left_under_header">Главная страница</div>
+                  </div>
+                </div>
+                <div class="body_right">
+                  <section class="addon_first show display-none" data-show="addon_razdel1">
+                    <form action="" class="form">
+                      <label for="heading">Заголовок:</label> <br>
+                      <input type="text" name="heading" id="input" onfocus = "selectElement(this)"value="{site.title}"> <br>
+                      <label for="keyword">Ключевые слова:</label> <br>
+                      <textarea name="keyword" id="textarea" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label for="descript">Описание:</label> <br>
+                      <textarea name="descript" id="textarea1" cols="20" rows="10" onfocus = "selectElement(this)"></textarea>
+                      <label >SEO текст:</label> <br>
+                      <textarea id="text_redaktor20"></textarea>
+                   </form>
+                   <div class="makros">
+                     <div class="makros_head">Макросы:</div>
+                     <div class="makros_btns">
+                       <button class="mak_btn site_title" id="list_order_site_title">site.title</button>
+                     </div>
+                   </div>
+                   <div class="save">
+                     <button class="save_btn">Save</button>
+                   </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          <!---------------------------------------- 14-razdel Open Graph ------------------------------------->
+            <div class="block open_graph display-show" data-open="fourteen-section">
+              <div class="header">
+                <div class="header_icon">
+                   <img src="icons/edit.webp" alt="">
+                </div>
+                <div class="line"></div>
+                <div class="header_text">SEO / Open Graph</div>
+              </div>
+              <div class="body">
+                <form action="" class="form">
+                  <label for="heading">Название сайта / site name</label> <br>
+                  <input type="text" name="heading" id="site_name" > <br>
+                  <label for="heading">Заглавие / title</label> <br>
+                  <input type="text" name="heading" id="title" > <br>
+                  <label for="heading">Описание / description</label> <br>
+                  <input type="text" name="heading" id="description"> <br>
+                  <label for="heading">URL</label> <br>
+                  <input type="text" name="heading" id="url"> <br>
+                  <label for="heading">Тип сайта / type</label> <br>
+                  <input type="text" name="heading" id="type"> <br>
+                  <label for="heading">Секция / section</label> <br>
+                  <input type="text" name="heading" id="section"> <br>
+                  <label for="heading">Тег / tag</label> <br>
+                  <input type="text" name="heading" id="tag"> <br>
+                  <div class="image_openGraph">
+                    <div class="image_meta">
+                      <label for="heading">Изображение / image</label> <br>
+                      <input type="file" name="heading" id="image"> <br>
+                    </div>
+                    <div class="image_meta">
+                      <label for="heading">Изображение безопасный url / image secure_url</label> <br>
+                    <input type="file" name="heading" id="image"> <br>
+                    </div>
+                  </div> 
+                    <div class="image_openGraph">
+                      <div class="image_meta">
+                        <label for="heading">Ширина Изображения / image width</label> <br>
+                        <input type="text" name="heading" id="image"> <br>
+                      </div>
+                      <div class="image_meta">
+                        <label for="heading">Высота Изображения / image height</label> <br>
+                        <input type="text" name="heading" id="image"> <br>
+                      </div>
+                    </div>
+                    <div class="opengraph_buttons">
+                      <button class="opengraph_btn">Отправить</button>
+                    </div>
+                    
+                    
+                   
+                   
+                  
+                   
+                  
+                </form>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script>
+      // Replace the <textarea id="editor1"> with a CKEditor 4
+      // instance, using default configuration.
+      CKEDITOR.replace( 'text_redaktor' );
+   </script> 
+   <script>
+    CKEDITOR.replace( 'text_redaktor1' );
+    CKEDITOR.replace( 'text_redaktor2' );
+    CKEDITOR.replace( 'text_redaktor3' );
+    CKEDITOR.replace( 'text_redaktor4' );
+    CKEDITOR.replace( 'text_redaktor5' );
+    CKEDITOR.replace( 'text_redaktor6' );
+    CKEDITOR.replace( 'text_redaktor7' );
+    CKEDITOR.replace( 'text_redaktor8' );
+    CKEDITOR.replace( 'text_redaktor9' );
+    CKEDITOR.replace( 'text_redaktor10' );
+    CKEDITOR.replace( 'text_redaktor11' );
+    CKEDITOR.replace( 'text_redaktor12' );
+    CKEDITOR.replace( 'text_redaktor13' );
+    CKEDITOR.replace( 'text_redaktor14' );
+    CKEDITOR.replace( 'text_redaktor15' );
+    CKEDITOR.replace( 'text_redaktor16' );
+    CKEDITOR.replace( 'text_redaktor17' );
+    CKEDITOR.replace( 'text_redaktor18' );
+    CKEDITOR.replace( 'text_redaktor19' );
+    CKEDITOR.replace( 'text_redaktor20' );
+    CKEDITOR.replace( 'text_redaktor21' );
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/seo/main.js"></script>    
+</body>
+</html>

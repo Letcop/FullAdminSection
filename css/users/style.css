@@ -1,0 +1,2985 @@
+@charset "UTF-8";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Изменение цвета выделения на старнице */
+
+::-moz-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: #00cf4d;
+}
+
+button:hover,
+.start_new:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #00cf4d;
+  box-shadow: 0px 0px 13px 2px #00cf4d;
+  color: #ffffff !important;
+}
+
+.admin_users {
+  font-family: "Montserrat";
+  /* Track */
+  /* Handle */
+  /* Track */
+  /* Handle */
+}
+
+.admin_users .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.admin_users textarea::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.admin_users textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.admin_users textarea::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_users div::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.admin_users div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.admin_users div::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_users .header_admin {
+  padding: 10px 0;
+}
+
+.admin_users .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.admin_users .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_users .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -130px;
+}
+
+.admin_users .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.admin_users .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_users .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_users{
+  background: url(../../img/1.jpg);
+  backdrop-filter: blur(2px);
+  height: 150vh;
+}
+
+.admin_users .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_users .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+.admin_users .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+      -ms-transform: 5s;
+          transform: 5s;
+}
+
+.admin_users .navbar .quitBlock a {
+  color: #ffffff;
+  -webkit-transform: 0.5s;
+      -ms-transform: 0.5s;
+          transform: 0.5s;
+}
+
+.admin_users .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+
+.admin_users .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_users .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_users .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_users .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_users .navbar .chat .chat_text li a {
+  color: #000000;
+}
+
+.admin_users .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_users .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_users main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.admin_users main .menu {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+
+
+.admin_users .menu .sub_menu {
+  display: none;
+}
+
+.admin_users .menu .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_users .menu .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_users .menu .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_users .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_users .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_users .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.menu{
+  margin-top: 10px;
+}
+
+.admin_users .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_users .menu_item .menu_list .todown {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_users .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+
+
+.admin_users main .info .box {
+  width: 824px;
+}
+
+.admin_users main .info .box-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  
+  color: #00cf4d !important;
+}
+
+.admin_users main .info .tabsBar {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+
+.admin_users main .info .tabsBar span {
+  cursor: pointer;
+}
+
+.admin_users main .info .tabsBar .tab {
+  padding: 10px 45px 10px 45px;
+  margin-right: 10px;
+  background: #ffffff;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.admin_users main .info .tabsBar .tab:hover {
+  background: #00cf4d;
+}
+
+.admin_users main .info .tabsBar .tab:hover a {
+  color: #ffffff;
+}
+
+.admin_users main .info .tabsBar .tab a {
+  color: #100f41;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.admin_users main .info .tabsBar .tab-active {
+  background: #00cf4d;
+}
+
+.admin_users main .info .tabsBar .tab-active a {
+  color: #ffffff;
+}
+
+.admin_users main .info .actionBar .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.admin_users main .info .actionBar .form select {
+  height: 32px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_users main .info .actionBar .form select:focus {
+  border: 1px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .actionBar .form .dateInput {
+  width: 96px;
+  height: 32px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_users main .info .actionBar .form .dateInput:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .actionBar .form .dateInput::-webkit-calendar-picker-indicator {
+  padding: 0;
+  margin: 0;
+}
+
+.admin_users main .info .actionBar .form .searchInput {
+  padding: 5px;
+  width: 270px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline-style: none;
+}
+
+.admin_users main .info .actionBar .form .searchInput:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .actionBar .form input[type="text"] {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.admin_users main .info .actionBar .form button {
+  padding: 7px 15px;
+  background: #ffffff;
+  border: 1px solid #00cf4d;
+  color: #00cf4d;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_users main .info .actionBar .form button:hover {
+  background: #00cf4d;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.admin_users main .info .addUserBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .addUserBlock a {
+  color: #00cf4d;
+  font-weight: 700;
+}
+
+.admin_users main .info .addUserBlock a:hover {
+  color: #ffffff;
+}
+
+.admin_users main .info .addUserWrapper {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+}
+
+.admin_users main .info .addUserWrapper a,
+.admin_users main .info .addUserWrapper p,
+.admin_users main .info .addUserWrapper h3,
+.admin_users main .info .addUserWrapper button,
+.admin_users main .info .addUserWrapper label,
+.admin_users main .info .addUserWrapper input {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow {
+  font-size: 12px !important;
+  width: 400px;
+  padding: 20px;
+  background: url(../../img/userEditHeader.jpg);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: #ffffff !important;
+  /* FORM */
+  /*---------------------------------------*/
+  /* Track */
+  /* Handle */
+  /* Тип (исполнитель или заказчик) */
+  /* Заказчик */
+  /* Исполнитель */
+  /* Пароль */
+  /* Глазок */
+  /* Button */
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .opacNullity {
+  /*opacity: 0;*/
+  display: none;
+  height: 10px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .opacActivity {
+  /*opacity: 1;*/
+  display: block;
+  margin-bottom: 10px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .err__spanity {
+  color: #ff8cb2;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .form__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid #3a3889;
+  color: #00cf4d;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .form__head .closeAddUserWrapperBtn {
+  color: #9c3d3d;
+  font-size: 18px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .form__head .closeAddUserWrapperBtn:hover {
+  color: red;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .form {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .form label {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormIteam {
+  width: 100%;
+  position: relative;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .activeList {
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .activeList i {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormList {
+  padding: 5px 0;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: #0f0f41;
+  height: 187px;
+  z-index: 99;
+  border-radius: 0 0 10px 10px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormList::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormList::-webkit-scrollbar-thumb {
+  background-color: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryListIteam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryListIteam:hover {
+  background-color: #3a3889;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .contryFormBtn {
+  border-radius: 20px;
+  background-color: #0f0f41;
+  padding: 4px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 100;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .contryFormBtn i {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .activeSublist {
+  opacity: 1;
+  top: 23px;
+  visibility: visible;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .form input {
+  width: 100%;
+  margin: 10px 0 5px;
+  padding: 4px 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 60px;
+  background-color: #0f0f41;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow form input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow form input::-moz-placeholder {
+  color: #aaa;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow form input:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow form input::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow form input::placeholder {
+  color: #aaa;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .in__name {
+  font-weight: 500;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .typ {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .radio {
+  cursor: pointer;
+  display: none;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .fake {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .fake::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #00cf4d;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .radio:checked + .fake::before {
+  opacity: 1;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .radio__label {
+  cursor: pointer;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .radio__label:checked {
+  color: #00cf4d;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow #zak {
+  width: 12px;
+  margin: 0;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow #zak__text {
+  margin-left: 5px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow #zak__text:hover {
+  color: #00cf4d;
+  text-shadow: 0 0 10px #00cf4d;
+  text-decoration: underline;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .isp {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow #isp {
+  width: 12px;
+  margin: 0;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow #isp__text {
+  margin: 5px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow #isp__text:hover {
+  color: #00cf4d;
+  text-shadow: 0 0 10px #00cf4d;
+  text-decoration: underline;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .generate {
+  font-size: 11px;
+  font-weight: 400;
+  color: #8381ef;
+  /*#8381ef*/
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .generate:hover {
+  color: #00cf4d !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .inp__password {
+  position: relative;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .icon {
+  position: absolute;
+  top: 6.5px;
+  right: 7px;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3a3889;
+  cursor: pointer;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .inp__repassword {
+  -webkit-transition: border-width 0.5s linear;
+  -o-transition: border-width 0.5s linear;
+  transition: border-width 0.5s linear;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .btn {
+  width: 200px;
+  height: 27px;
+  cursor: pointer;
+  background-color: #0f0f41;
+  border-radius: 25px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormBlock {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .countryFormBlock .err__spanity {
+  margin-top: 8px;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .filled:hover {
+  -webkit-box-shadow: 0 0 15px #00cf4d;
+          box-shadow: 0 0 15px #00cf4d;
+  /*rgba(40,140,255,1)*/
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .btn__submit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 27px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .btn__submit:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .disabled,
+.admin_users main .info .addUserWrapper .addUserWindow .btn-disabled {
+  cursor: context-menu;
+}
+
+.admin_users main .info .addUserWrapper .addUserWindow .btn__div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 100%;
+  font-size: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: #00cf4d;
+}
+
+
+.actionBar .form {
+  color: #00cf4d;  font-weight: 700 !important;
+}
+
+.admin_users main .info .allTable {
+  width: 100%;
+
+
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff !important;
+
+
+  
+}
+
+th{
+  background-color: #00cf4d !important;
+  border-radius: 5px;
+}
+
+.admin_users main .info .allTable thead {
+  padding: 0;
+}
+
+.admin_users main .info .allTable thead,
+.admin_users main .info .allTable tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_users main .info .allTable th {
+  text-align: center;
+  font-size: 14px;
+}
+.mainActive{
+  background: #00cf4d !important;
+  color: #fff !important;
+}
+.admin_users main .info .allTable td {
+  text-align: center;
+}
+tbody {
+  display: block;
+  overflow-y: auto;
+  height: 410px !important ;
+}
+
+.allTable tbody {
+  display: block;
+  overflow-y: auto;
+  height: 500px ;
+
+}
+
+.admin_users main .info .allTable tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_users main .info .allTable tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_users main .info .allTable tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_users main .info .allTable tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_users main .info .allTable tbody .stroke {
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.admin_users main .info .allTable tbody .stroke_id {
+  width: 20px;
+}
+
+.admin_users main .info .allTable tbody .stroke_email {
+  width: 160px;
+}
+
+.admin_users main .info .allTable tbody .stroke_name {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .stroke_login {
+  width: 80px;
+}
+
+.admin_users main .info .allTable tbody .stroke_login a {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+
+.admin_users main .info .allTable tbody .stroke_verification {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .stroke_verification i {
+  color: #00cf4d;
+  font-size: 15px;
+}
+
+.admin_users main .info .allTable tbody .stroke_act {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .stroke_activity {
+  width: 100px;
+  text-align: end;
+}
+
+.admin_users main .info .allTable tbody .stroke_activity a {
+  color: #00cf4d;
+  font-size: 15px;
+}
+
+.admin_users main .info .allTable tbody .stroke_activity a i {
+  margin-left: 5px;
+}
+
+.admin_users main .info .allTable tbody .stroke_activity a:hover {
+  color: #fff;
+}
+
+.admin_users main .info .allTable tbody .stroke_activity a.editProfileBtn {
+  margin-right: 20px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke {
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_id {
+  width: 20px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_email {
+  width: 160px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_name {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_login {
+  width: 80px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_login a {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_verification {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_verification i {
+  color: #00cf4d;
+  font-size: 15px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_act {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_activity {
+  width: 100px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_activity a {
+  color: #00cf4d;
+  font-size: 15px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_activity a i {
+  margin-left: 5px;
+}
+
+.admin_users main .info .allTable tbody .newUsersStroke .stroke_activity a:hover {
+  color: #fff;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke {
+  display: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_id {
+  width: 20px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_email {
+  width: 160px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_name {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_login {
+  width: 80px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_login a {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_verification {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_verification i {
+  color: #00cf4d;
+  font-size: 15px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_act {
+  width: 120px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity {
+  width: 100px;
+  text-align: center;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity a {
+  color: #00cf4d;
+  font-size: 15px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity a i {
+  margin-left: 5px;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity a:hover {
+  color: #fff;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity a.deleteUser {
+  color: #b95757;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity a.deleteUser:hover {
+  color: #af0000;
+}
+
+.admin_users main .info .allTable tbody .blockedStroke .stroke_activity a.editProfileBtn {
+  margin-right: 0px;
+}
+
+.admin_users main .info .userEditWrapper {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock {
+  font-size: 12px !important;
+  width: 1100px;
+  height: 610px;
+  background: url(../../img/userEditHeader.jpg);
+  padding: 3px 20px 10px 20px;
+  border-radius: 10px;
+  color: #ffffff !important;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs {
+  margin: 10px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs .userEditTab {
+  padding: 5px 20px;
+  color: #ffffff;
+  border: 2px solid #00cf4d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs .userEditTab:hover {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs .userEditTab.user-active {
+  background: #00cf4d;
+  color: #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs .userEditTab:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs .xCloseUserEdit {
+  margin-left: 51%;
+  color: #b44b4b;
+  font-size: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditTabs .xCloseUserEdit:hover {
+  color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock {
+  margin-top: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock select,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock input {
+  font-family: "Montserrat";
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 5px !important;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft {
+  width: 500px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto input {
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1111;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto:hover p {
+  opacity: 1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto p {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 42%;
+  opacity: 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto img {
+  width: 100%;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .avatarPhoto:hover p {
+  opacity: 1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText p a {
+  font-size: 15px;
+  color: #00cf4d;
+  padding: 2px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText p a:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText p a:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+  padding: 0px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText p a i {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText .outLog {
+  color: #00cf4d;
+  text-decoration: underline;
+  padding: 2px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText .outLog:hover {
+  color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .mainInfoText .outLog:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+  padding: 0px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .loginLink {
+  color: #00cf4d;
+  text-decoration: underline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .loginLink:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+  padding: 0px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .loginLink:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .typeAccount select {
+  width: 49%;
+  background-color: #0f0f41;
+  padding: 4px 10px;
+  position: relative;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  border-color: #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .typeAccount select:focus {
+  outline: none;
+  border-color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .typeAccount select option {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  padding: 5px 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  left: 0;
+  background-color: #0f0f41;
+  height: 187px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .typeAccount select option i {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .mainInfo .mainInfoTexts .typeAccount select option:hover {
+  color: #3a3889;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .inputs .inputBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .inputs .inputBlock input {
+  width: 85%;
+  padding: 2px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .inputs .inputBlock input:focus {
+  border: 2px solid #00cf4d;
+  outline: 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit .inpPassword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 28px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit .inpPassword input {
+  padding: 2px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit .inpPassword input:focus {
+  border: 2px solid #00cf4d;
+  outline: 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit a {
+  color: #00cf4d;
+  margin-left: 5px;
+  text-decoration: underline;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit a:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit a:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+  padding: 0px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit #done {
+  display: none;
+  color: #00cf4d;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .passwordEdit #done:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating a {
+  color: #00cf4d;
+  text-decoration: underline;
+  padding: 2px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating a:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+  padding: 0px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating a:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating a.doneRating {
+  font-size: 18px;
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area {
+  overflow: hidden;
+  margin: -6px 10px 0 20px;
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area label {
+  color: gold;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area:not(:checked) > input {
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area:not(:checked) > label {
+  float: right;
+  width: 22px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 23px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area:not(:checked) > label:before {
+  content: "★";
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area:not(:checked) > label:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area > input:checked + label:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area > input:checked + label:hover ~ label,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area > input:checked ~ label:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area > input:checked ~ label:hover ~ label,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rate-area > label:active {
+  position: relative;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-result {
+  margin: 0 10px 2px 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-result span {
+  padding: 0;
+  width: 22px;
+  font-size: 23px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-result > span:before {
+  content: "★";
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .rating .rating-result > span.active {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .registrationBlock,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .authorizationBlock {
+  margin-top: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .registrationBlock span,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .authorizationBlock span {
+  margin-left: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .authorizationBlock {
+  margin-bottom: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block {
+  width: 49%;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam {
+  width: 100%;
+  position: relative;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .active__sublist {
+  opacity: 1;
+  top: 23px;
+  visibility: visible;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .active__list {
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .active__list i {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .contry__form_btn {
+  border-radius: 20px;
+  background-color: #0f0f41;
+  padding: 4px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .contry__form_btn i {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .country__form_list {
+  padding: 5px 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  left: 0;
+  background-color: #0f0f41;
+  height: 187px;
+  border-radius: 0 0 10px 10px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  display: none;
+  opacity: 1;
+  z-index: 1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .country__form_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .country__form_list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .country__form_list::-webkit-scrollbar-thumb {
+  background-color: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .country__form_list .country__list_iteam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .country__form_iteam .country__form_list .country__list_iteam:hover {
+  background-color: #3a3889;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .opacNull {
+  display: none;
+  height: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .country__form_block .err__span {
+  color: #ff8cb2;
+  margin-top: 8px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block {
+  width: 49%;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam {
+  width: 100%;
+  position: relative;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .active__sublist-city {
+  opacity: 1;
+  top: 23px;
+  visibility: visible;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .active__list-city {
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .active__list-city i {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_btn {
+  border-radius: 20px;
+  background-color: #0f0f41;
+  padding: 4px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_btn i {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_list {
+  padding: 5px 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  left: 0;
+  background-color: #0f0f41;
+  height: 187px;
+  border-radius: 0 0 10px 10px;
+  overflow-y: auto;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  display: none;
+  opacity: 1;
+  z-index: 1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_list::-webkit-scrollbar-thumb {
+  background-color: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_list .city__list_iteam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .city__form_iteam .city__form_list .city__list_iteam:hover {
+  background-color: #3a3889;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .opacNull-city {
+  display: none;
+  height: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection .city__form_block .err__span-city {
+  color: #ff8cb2;
+  margin-top: 8px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection select {
+  margin: 0 5px 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .countrySelection select:focus {
+  outline: none;
+  padding: 0px;
+  border-color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers {
+  margin: 5px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .topExtraSkillsBlock {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .performers_info {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  /* 
+                                        padding: 10px 0; */
+  height: 64px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .performers_info a {
+  border: 1px solid #253556;
+  padding: 2px 5px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #253556;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .performers_info a:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+  border: 1px solid #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .add_skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 68%;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .add_skill input {
+  width: 50%;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #0f0f41;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .add_skill input::first-letter {
+  text-transform: uppercase;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .add_skill #returnErrorText {
+  color: #f83d7b;
+  margin-right: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .add_skill .add_skill_btn {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 18px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .add_skill .add_skill_btn:hover {
+  color: #ffffff;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers option {
+  height: 200px !important;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .skill_box {
+  padding: 6px;
+  margin-left: 5px;
+  margin-top: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #00cf4d;
+  background: #ffffff;
+  color: #100f41;
+  position: relative;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .skill_box i {
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+  font-size: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .skill_bgc {
+  background-color: #00cf4d !important;
+  border: 1px solid #00cf4d !important;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formLeft .edit_similar_performers .skill_bgc:hover {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight {
+  width: 500px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .descriptionTitle {
+  margin: 10px 0 5px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight textarea:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .trustBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .trustBlock input:checked ~ .checkbox .checked {
+  opacity: 1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .trustBlock label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .trustBlock label .radio {
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .trustBlock .checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  border: 1px solid #00cf4d;
+  cursor: pointer;
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .trustBlock .checkbox .checked {
+  opacity: 0;
+  color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes input:checked ~ .checkbox .checked {
+  opacity: 1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes label .radio {
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes .checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  border: 1px solid #00cf4d;
+  cursor: pointer;
+  margin: 0 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes .checkbox .checked {
+  opacity: 0;
+  color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .formRight .checkboxes .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper {
+  position: fixed;
+  background: #00000077;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy {
+  padding: 20px;
+  border-radius: 30px 0 30px 0;
+  background: url("../../img/userEditHeader.jpg");
+  width: 700px;
+  height: 610px;
+  border: 2px solid #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock .templateOne,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock .templateTwo,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock .templateThree {
+  cursor: pointer;
+  border-radius: 10px;
+  color: #100f41;
+  background: #ffffff;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock .templateOne:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock .templateTwo:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .templatesBlock .templateThree:hover {
+  background: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+  color: #100f41;
+  font-family: "Montserrat";
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy textarea:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .buttons {
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .buttons .blockingBtn {
+  background-color: #9c3d3d;
+  padding: 5px 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .buttons .blockingBtn:hover {
+  background-color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .buttons .cancelBlockingBtn {
+  background-color: #9c3d3d;
+  padding: 5px 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .blockedWhyWrapper .blockedWhy .buttons .cancelBlockingBtn:hover {
+  background-color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper {
+  position: fixed;
+  background: #00000077;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy {
+  padding: 20px;
+  border-radius: 30px 0 30px 0;
+  background: url("../../img/userEditHeader.jpg");
+  width: 700px;
+  height: 610px;
+  border: 2px solid #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock .templateOne,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock .templateTwo,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock .templateThree {
+  cursor: pointer;
+  border-radius: 10px;
+  color: #100f41;
+  background: #ffffff;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock .templateOne:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock .templateTwo:hover,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .templatesBlock .templateThree:hover {
+  background: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy textarea {
+  width: 100%;
+  height: 130px;
+  resize: none;
+  color: #100f41;
+  font-family: "Montserrat";
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy textarea:focus {
+  border: 2px solid #00cf4d;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .buttons {
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .buttons .blockingBtn {
+  background-color: #9c3d3d;
+  padding: 5px 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .buttons .blockingBtn:hover {
+  background-color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .buttons .cancelBlockingBtn {
+  background-color: #9c3d3d;
+  padding: 5px 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .formBlocks .deleteWhyWrapper .deleteWhy .buttons .cancelBlockingBtn:hover {
+  background-color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons .saveEndExitBtn {
+  margin: 10px 0 5px;
+  padding: 8px 40px;
+  color: #00cf4d;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons .saveEndExitBtn:hover {
+  background: #00cf4d;
+  color: #ffffff;
+  border: 1px solid #00cf4d;
+  text-shadow: 1px 1px 2px red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons .saveEndExitBtn:focus {
+  border: 1px solid #100f41;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons .cancelBtn {
+  padding: 8px 36px;
+  color: #00cf4d;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons .cancelBtn:hover {
+  background: #00cf4d;
+  color: #ffffff;
+  border: 1px solid #00cf4d;
+  text-shadow: 1px 1px 2px red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .middleButtons .cancelBtn:focus {
+  border: 1px solid #100f41;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .blockBtn {
+  padding: 8px 20px;
+  color: red;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .blockBtn:hover {
+  background: red;
+  color: #ffffff;
+  border: 1px solid red;
+  text-shadow: 1px 1px 2px red;
+  -webkit-box-shadow: 0px 0px 13px 2px red;
+          box-shadow: 0px 0px 13px 2px red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .blockBtn:focus {
+  border: 1px solid #100f41;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .deleteBtn {
+  padding: 8px 41.5px;
+  color: red;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .deleteBtn:hover {
+  background: red;
+  color: #ffffff;
+  border: 1px solid red;
+  text-shadow: 1px 1px 2px red;
+  -webkit-box-shadow: 0px 0px 13px 2px red;
+          box-shadow: 0px 0px 13px 2px red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditAccountBlock .buttons .deleteBtn:focus {
+  border: 1px solid #100f41;
+  outline: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock {
+  display: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock p {
+  margin-bottom: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock p span {
+  font-weight: 700;
+  margin: 0 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock p i {
+  color: #00cf4d;
+  font-size: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock p a {
+  color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock p a:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock .verifyTel {
+  margin-top: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock .buttons {
+  margin-top: 20px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock .buttons .acceptBtn {
+  background-color: #5e945398;
+  padding: 5px 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock .buttons .acceptBtn:hover {
+  background-color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock .buttons .rejectBtn {
+  background-color: #9c3d3d;
+  padding: 5px 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditVerifyBlock .buttons .rejectBtn:hover {
+  background-color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 540px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock {
+  width: 500px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .avatarBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 5px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .avatarBlock .imageBlock {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .avatarBlock .nameLogin a {
+  color: #00cf4d;
+  text-decoration: underline;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .avatarBlock .nameLogin a:hover {
+  color: #3663dd;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .avatarBlock .nameLogin a:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .commentText {
+  width: 100%;
+  border: 2px solid #00cf4d;
+  height: 100px;
+  background: #ffffff;
+  overflow: auto;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .commentText p {
+  color: #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .commentInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .commentInfo .orderText {
+  margin: 0 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .commentInfo a {
+  color: #9c3d3d;
+  text-decoration: underline;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditCommentsBlock .commentBlock .commentInfo a:hover {
+  color: red;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar {
+  margin: 20px 0 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar span {
+  cursor: pointer;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar .fundTab {
+  padding: 4px 45px 5px 5px;
+  margin-right: 3px;
+  background: transparent;
+  border: 2px solid #00cf4d;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar .fundTab:hover {
+  background: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar .fundTab:hover a {
+  color: #ffffff;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar .fundTab a {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar .fund-active {
+  background: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock .fundTabsBar .fund-active a {
+  color: #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 10px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock form input {
+  width: 300px;
+  height: 30px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  border-radius: 10px 0 0 10px;
+  padding: 2px;
+  border: none;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: none;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock form input:focus {
+  outline: none;
+  border-color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock form button {
+  padding: 6.5px 20px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  border: 1px solid #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock form button:focus {
+  outline: none;
+  border-color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table thead {
+  padding: 10px 0;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table thead tr {
+  background: #00cf4d;
+  height: 40px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table thead,
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody {
+  display: block;
+  height: 370px !important;
+  overflow-y: auto;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody .fundStroke {
+  padding: 5px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody .fundStroke .stroke_id {
+  width: 50px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody .fundStroke .stroke_order {
+  width: 466px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody .fundStroke .stroke_order .stroke_link i {
+  margin-right: 5px;
+  color: #00cf4d;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody .fundStroke .date {
+  width: 200px;
+}
+
+.admin_users main .info .userEditWrapper .userEditBlock .userEditFundsBlock table .tbody .fundStroke .stroke_amount {
+  width: 160px;
+}

@@ -1,0 +1,1647 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Изменение цвета выделения на странице */
+
+::-moz-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: #00cf4d;
+}
+
+button:hover,
+.start_new:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #00cf4d;
+  box-shadow: 0px 0px 13px 2px #00cf4d;
+  color: #ffffff !important;
+}
+
+.title_text {
+  font-size: 25px;
+  font-weight: 700;
+  color: #253556;
+  padding-bottom: 10px;
+}
+
+/* ------------ Ход работы ------------- */
+.mainActive{
+  background: #00cf4d !important;
+  color: #ffffff !important;
+}
+
+.menuActive{
+  background: #00cf4d !important;
+  color: #ffffff !important;
+}
+
+.admin_home {
+  font-family: "Montserrat";
+  background: url("../../img/1.jpg");
+  backdrop-filter: blur(2px);
+  height: 150vh;
+  /* Track */
+  /* Handle */
+}
+
+.admin_home .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.admin_home textarea::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.admin_home textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.admin_home textarea::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_home .header_admin {
+  height: 100vh;
+  padding: 10px 0;
+}
+
+.admin_home .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.admin_home .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_home .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -130px;
+}
+
+.admin_home .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.admin_home .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_home .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_home .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+  -ms-transform: 5s;
+  transform: 5s;
+}
+
+.admin_home .navbar .quitBlock a {
+  color: #ffffff;
+  -webkit-transform: 0.5s;
+  -ms-transform: 0.5s;
+  transform: 0.5s;
+}
+
+.admin_home .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+
+.admin_home .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_home .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.admin_home .avatar p {
+  color: #ffffff;
+}
+
+
+.admin_home .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_home .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_home .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_home .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_home .navbar .chat .chat_text li a {
+  color: #100f41;
+}
+
+.admin_home .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_home .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_home .menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin_home .menu .sub_menu {
+  display: none;
+}
+
+.admin_home .menu .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_home .menu .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_home .menu .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_home .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_home .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_home .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_home .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.admin_home .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+
+.toup{
+  transform: rotate(180deg);
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todown{
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_home .menu_item .menu_list .toup.upactive {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.admin_home .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.admin_home .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+.admin_home .menu .process_home{
+  width: 816px;
+}
+
+
+.admin_home .menu .process_home .box-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home .tabsBar {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_home .menu .process_home .tabsBar span {
+  cursor: pointer;
+}
+
+.admin_home .menu .process_home .tabsBar .tab {
+  padding: 5px 45px 5px 5px;
+  background: #ffffff;
+  border-top: 1px solid #00cf4d;
+  border-left: 1px solid #00cf4d;
+  border-right: 1px solid #00cf4d;
+  border-bottom: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_home .menu .process_home .tabsBar .tab:hover {
+  background: #00cf4d;
+}
+
+.admin_home .menu .process_home .tabsBar .tab:hover a {
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .tabsBar .tab a {
+  color: #00cf4d;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.admin_home .menu .process_home .tabsBar .tab-active {
+  background: #00cf4d;
+}
+
+.admin_home .menu .process_home .tabsBar .tab-active a {
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .actionBar .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_home .menu .process_home .actionBar .form input {
+  padding: 5px;
+  margin-right: 10px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+.admin_home .menu .process_home .actionBar .form input[type="text"] {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.admin_home .menu .process_home .actionBar .form button {
+  padding: 5px 15px;
+  background: #ffffff;
+  border: 1px solid #00cf4d;
+  color: #00cf4d;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_home .menu .process_home .actionBar .form button:hover {
+  background: #00cf4d;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.admin_home .menu .process_home table .tbody {
+  display: block;
+  height: 410px;
+  overflow-y: auto;
+}
+
+.admin_home .menu .process_home table .tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_home .menu .process_home table .tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_home .menu .process_home table .tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_home .menu .process_home table .tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_home .menu .process_home table .tbody .stroke {
+  padding: 5px 0;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_id {
+  text-align: center;
+  width: 70px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_order {
+  text-align: start;
+  width: 360px;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_order .stroke_link {
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_order .stroke_link i {
+  margin-right: 5px;
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home table .tbody .stroke .date {
+  width: 200px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_chat .chat {
+  color: #00cf4d;
+  margin-right: 10px;
+}
+
+.admin_home .menu .process_home table .tbody .stroke_chat .chatInfo i {
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home table thead {
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home table thead,
+.admin_home .menu .process_home table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+th {
+  background: #00cf4d;
+  border-radius: 4px;
+}
+
+.admin_home .menu .process_home .order {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150vh;
+  display: none;
+  position: fixed;
+  background: #00000081;
+}
+
+.admin_home .menu .process_home .order-block {
+  position: absolute;
+  height: 550px;
+  width: 500px;
+  border-radius: 15px;
+  border: 1px solid #100f41;
+  top: 10%;
+  left: 31%;
+  background: url('../../img/userEditHeader.jpg');
+  padding: 15px;
+}
+
+.admin_home .menu .process_home .order-block .container {
+  padding-bottom: 0px;
+}
+
+.admin_home .menu .process_home .order-block .order-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_home .menu .process_home .order-block .order-header .order-category a {
+  padding: 5px 10px;
+  background: #ffffff;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_home .menu .process_home .order-block .order-header .order-category a:hover {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-header .order-category .category-active {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-header .close {
+  font-size: 25px;
+  color: brown;
+}
+
+.admin_home .menu .process_home .order-block .order-header .close:hover i {
+  color: red;
+}
+
+.admin_home .menu .process_home .order-block .title {
+  padding: 20px 0;
+}
+
+.admin_home .menu .process_home .order-block .title h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-description {
+  display: block;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-text {
+  padding: 0 0 50px 0;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-text p {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-text .description-status span {
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-text .description-category a {
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .left,
+.admin_home .menu .process_home .order-block .order-description .description-sides .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .avatar .avatar-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 85px;
+  width: 91px;
+  margin-bottom: 10px;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .avatar .avatar-img img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .name {
+  padding: 0 10px 0 20px;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .name p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .name a {
+  color: #00cf4d;
+  text-decoration: underline;
+  font-size: 12px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_home .menu .process_home .order-block .order-description .description-sides .name a:hover {
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-finance {
+  display: none;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .table thead {
+  padding: 0px;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .table thead th {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody {
+  height: auto;
+  overflow: auto;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: center;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_date {
+  width: 120px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_account {
+  width: 130px;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_account a {
+  text-decoration: underline;
+  color: #000000;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_account a:hover {
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_commission {
+  width: 74px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_status {
+  width: 53px;
+  color: #00cf4d;
+}
+
+.admin_home .menu .process_home .order-block .order-finance form .tbody td.finance_amount {
+  width: 54px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-finance hr {
+  color: #00cf4d;
+  background: #00cf4d;
+  margin: 10px 0;
+  height: 3px;
+  border: none;
+}
+
+.admin_home .menu .process_home .order-block .order-finance p {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_operation select {
+  margin-left: 10px;
+  height: 25px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_user input {
+  margin-left: 10px;
+  height: 25px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  width: 245px;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_amountPay input {
+  margin-left: 10px;
+  height: 25px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_amountPay input::-webkit-outer-spin-button,
+.admin_home .menu .process_home .order-block .order-finance .finance_amountPay input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_payCategory a {
+  margin-left: 10px;
+  font-size: 30px;
+  color: #100f41;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_payCategory a img {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 6%;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .finance_payCategory a img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.admin_home .menu .process_home .order-block .order-finance textarea {
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding: 5px;
+  width: 427px;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .paybtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.admin_home .menu .process_home .order-block .order-finance .paybtn button {
+  padding: 7px 15px;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.admin_home .menu .process_home .order-block .order-history {
+  display: none;
+}
+
+.admin_home .menu .process_home .order-block .order-history .table thead {
+  padding: 0px;
+}
+
+.admin_home .menu .process_home .order-block .order-history .table thead th {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.admin_home .menu .process_home .order-block .order-history .tbody {
+  height: 360px;
+  overflow-y: auto; 
+}
+
+.admin_home .menu .process_home .order-block .order-history .tbody td {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-history .tbody td.history_date {
+  width: 122px;
+  color: #ffffff;
+}
+
+.admin_home .menu .process_home .order-block .order-history .tbody td.history_account {
+  width: 130px;
+}
+
+/* ------------ Ход работы ------------- */
+
+/* ------------ Платежные системы ------------- */
+.paysys_home{
+  display: none;
+}
+.paysys_home h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00cf4d;
+    margin-bottom: 30px;
+}
+
+.paysys_home .payment_block {
+    max-width: 812px;
+}
+
+.paysys_home .payment_card_title {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 20px;
+}
+
+.paysys_home .my_cards_content {
+    display: none;
+}
+
+.paysys_home .payment_card_item {
+    background-color: #f8f8fa;
+    padding: 20px;
+    border-radius: 10px;
+    height: 210px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.paysys_home .payment_card_list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.paysys_home .payment_card_list label {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+.paysys_home input[type="radio"] {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    opacity: 0;
+}
+
+.paysys_home .check {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #253556;
+    z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.paysys_home label span {
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.paysys_home .check::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.paysys_home input[type="radio"]:checked+.check {
+    border: 1px solid #00cf4d;
+}
+
+.paysys_home input[type="radio"]:checked+.check+span {
+    color: #00cf4d;
+}
+
+.paysys_home input[type="radio"]:checked {
+    color: #00cf4d;
+}
+
+.paysys_home input[type="radio"]:checked+.check::before {
+    background-color: #00cf4d;
+}
+
+.paysys_home .payment_card_info,
+.paysys_home .send_advance_payment {
+    height: 210px;
+    background-color: #f8f8fa;
+    border-radius: 10px;
+    padding: 25px 30px;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.paysys_home .card_list_img {
+    margin-bottom: 10px;
+}
+
+.paysys_home .card_info_inputs {
+    max-width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.paysys_home .card_info_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.paysys_home .card_info_input label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #00cf4d;
+    padding-left: 20px;
+}
+
+.paysys_home .card_info_input input,
+.paysys_home .send_advance_input input {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #253556;
+}
+
+.paysys_home .card_info_input input:focus,
+.paysys_home .send_advance_input input:focus {
+    outline: none;
+}
+
+.paysys_home .card_info_input input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #253556;
+}
+
+.paysys_home .card_info_input input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #253556;
+}
+
+.paysys_home .card_info_input input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #253556;
+}
+
+.paysys_home .card_info_input input::-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #253556;
+}
+
+.paysys_home .card_info_input input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #253556;
+}
+
+.paysys_home #card_number {
+    width: 205px;
+}
+
+.paysys_home #card_name {
+    width: 310px;
+}
+
+.paysys_home #card_cvv,
+.paysys_home #card_date {
+    width: 95px;
+    text-align: left !important;
+}
+
+.paysys_home #webMoney,
+.paysys_home #qiwi,
+.paysys_home #yandex {
+    width: 310px;
+    margin-top: 20px;
+}
+
+.paysys_home .card_info_list {
+    width: 445px;
+    height: 155px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.paysys_home .card_info_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.paysys_home .get_button {
+    width: 155px;
+    height: 40px;
+    background-color: #00cf4d;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.paysys_home .get_button:hover {
+    -webkit-box-shadow: 2px 3px 26px -3px #00cf4d;
+    box-shadow: 2px 3px 26px -3px #00cf4d;
+    color: #fff;
+}
+
+.paysys_home .get_button:focus {
+    outline: none;
+}
+
+.paysys_home .my_card_title p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.paysys_home .my_card_title {
+    margin: 20px 0;
+}
+
+.paysys_home .my_card {
+    background-color: #f8f8fa;
+    padding: 30px 20px 10px;
+    border-radius: 10px;
+    height: 200px;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.paysys_home .my_card a {
+    color: red;
+    font-size: 22px;
+    display: none;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.paysys_home .my_card a:hover {
+    color: #100f41;
+}
+
+.paysys_home .my_card:hover {
+    border: 1px solid #00cf4d;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.paysys_home .my_card:hover a {
+    display: block;
+}
+
+.paysys_home .plus {
+    height: 50px;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.paysys_home .plus a {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #00cf4d;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 40px;
+    color: #00cf4d;
+    padding: 10px 20px;
+}
+
+.paysys_home .plus a:hover {
+    color: #100f41;
+    border: 1px solid #100f41;
+}
+
+.paysys_home .addBlock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #0000006c;
+}
+
+.paysys_home .addBlock .addSystem {
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    border-radius: 15px;
+    border: 1px solid #100f41;
+    top: 10%;
+    left: 31%;
+    background: url('../../img/userEditHeader.jpg');
+    padding: 15px;
+}
+
+.paysys_home .addBlock .addSystem .title {
+    padding: 10px 0;
+}
+
+.paysys_home .addBlock .addSystem .title h3 {
+    font-size: 20px;/*
+    text-align: center;*/
+    color: #ffffff;
+}
+
+.paysys_home .addBlock .addSystem form p {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.paysys_home .addBlock .addSystem form p input {
+    width: 50%;
+    font-family: 'Montserrat';
+}
+
+.paysys_home .addBlock .addSystem form p select {
+    font-family: 'Montserrat';
+}
+
+.paysys_home .addBlock .addSystem form .buttons {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.paysys_home .addBlock .addSystem form .buttons button {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 7px 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.paysys_home textarea::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.paysys_home textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.paysys_home textarea::-webkit-scrollbar-thumb {
+    background: #00cf4d;
+    border-radius: 10px;
+}
+
+/* ------------ Платежные системы ------------- */
+
+/* ------------ Движение средств ------------- */
+.funds_home{
+  display: none;
+}
+
+.funds_home .box-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00cf4d;
+}
+
+.funds_home .tabsBar {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.funds_home .tabsBar span {
+    cursor: pointer;
+}
+
+.funds_home .tabsBar .tab {
+    padding: 5px 45px 5px 5px;
+    margin-right: 6px;
+    background: #ffffff;
+    border-top: 1px solid #00cf4d;
+    border-left: 1px solid #00cf4d;
+    border-right: 1px solid #00cf4d;
+    border-bottom: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.funds_home .tabsBar .tab:hover {
+    background: #00cf4d;
+}
+
+.funds_home .tabsBar .tab:hover a {
+    color: #ffffff;
+}
+
+.funds_home .tabsBar .tab a {
+    color: #00cf4d;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.funds_home .tabsBar .tab-active {
+    background: #00cf4d;
+}
+
+.funds_home .tabsBar .tab-active a {
+    color: #ffffff;
+}
+
+.funds_home .actionBar .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.funds_home .actionBar .form input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 300px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+.funds_home .actionBar .form input[type="text"] {
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+.funds_home .actionBar .form button {
+    padding: 5px 15px;
+    background: #ffffff;
+    border: 1px solid #00cf4d;
+    color: #00cf4d;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.funds_home .actionBar .form button:hover {
+    background: #00cf4d;
+    color: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+th{
+    background: #00cf4d;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 0;
+}
+
+.funds_home table .tbody {
+    display: block;
+    height: 510px;
+    overflow-y: auto;
+}
+
+.funds_home table .tbody::-webkit-scrollbar {
+    width: 10px;
+}
+
+.funds_home table .tbody::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.funds_home table .tbody::-webkit-scrollbar-thumb {
+    background: #00cf4d;
+}
+
+.funds_home table .tbody::-webkit-scrollbar-thumb:hover {
+    background: #100f41;
+}
+
+.funds_home table .tbody .stroke {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.funds_home table .tbody .stroke_id {
+    text-align: center;
+    width: 50px;
+    color: #ffffff;
+}
+
+.funds_home table .tbody .stroke_order {
+    text-align: start;
+    width: 310px;
+    color: #ffffff;
+}
+
+.funds_home table .tbody .stroke_order .stroke_link {
+    color: #ffffff;
+}
+
+.funds_home table .tbody .stroke_order .stroke_link i {
+    margin-right: 5px;
+    color: #00cf4d;
+}
+
+.funds_home table .tbody .stroke .date {
+    text-align: center;
+    width: 147px;
+    color: #ffffff;
+}
+
+.funds_home table .tbody .stroke_user {
+    text-align: center;
+    width: 125px;
+}
+
+.funds_home table .tbody .stroke_user a {
+    text-decoration: underline;
+    color: #00cf4d;
+}
+
+.funds_home table .tbody .stroke_amount {
+    width: 76px;
+    color: #ffffff;
+}
+
+.funds_home table .tbody .stroke_comission {
+    width: 80px;
+    color: #ffffff;
+}
+
+.funds_home table thead {
+    padding: 10px 0;
+}
+
+.funds_home table thead,
+.funds_home table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: auto;
+}
+
+/* ------------ Движение средств ------------- */

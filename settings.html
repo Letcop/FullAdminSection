@@ -1,0 +1,4049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/settings/main.css">
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Настройки сайта</title>
+</head>
+
+<body class="admin_settings">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo_header">
+                <a href="#/">
+                    <img src="icons/nav_logo.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Поиск">
+                <div class="search_btn">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="chat">
+                <i class="fas fa-comment">
+                    <span>99</span>
+                </i>
+                <div class="chat_text">
+                    <ul>
+                        <li>
+                            <a href="chats.html">
+                                <strong>Чаты администраторов</strong>
+                            </a>
+                            <br> Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с каждым
+                            пользователям от имени “Поддержки” (администрации)
+                        </li>
+                        <br>
+                        <li>
+                            <a href="chatsUsers.html">
+                                <strong>Чаты пользователей</strong>
+                            </a>
+                            <br> Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и контролировать
+                            правильность и корректность работы и общения между пользователями
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quitBlock">
+                <a href="#/">Выйти</a>
+            </div>
+            <div class="avatar">
+                <img src="img/user4.png" alt="">
+            </div>
+        </div>
+        <div class="block">
+            <div class="menu_item">
+                <div class="all_category">
+                    Все категории
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="menu_list">Главная страница
+                            <div>29</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии
+                            <div>379</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/" class="menu_list">Безопасный платеж
+                            <i class="fas fa-level-down-alt todown"></i>
+                        </a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="securePayments.html">Ход работы
+                                    <div>379</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="securePayments.html">Движение средств
+                                    <div>39</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="securePayments.html">Платежные системы
+                                    <div>79</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="workshop.html" class="menu_list">Творческая мастерская
+                            <div>37</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="referal.html" class="menu_list">Реферальная программа
+                            <div>3</div>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="auctionsServices.html" class="menu_list">Услуги и аукцион
+                            <div>30</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html" class="menu_list">Пользователи
+                            <div>78</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/" class="menu_list">Блог и новости
+                            <div>43</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forum.html" class="menu_list">Форум
+                            <div>23</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages.html" class="menu_list">Страницы</a>
+                    </li>
+                    <li>
+                        <a href="notifications.html" class="menu_list">Уведомления</a>
+                    </li>
+                    <li>
+                        <a href="bonus.html" class="menu_list">Бонусы</a>
+                    </li>
+                    <li>
+                        <a href="#/" class="menu_list">Работа с почтой
+                            <i class="fas fa-level-down-alt todown"></i>
+                        </a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="mail.html">Список рассылок</a>
+                            </li>
+                            <li>
+                                <a href="mail.html">Шаблоны писем</a>
+                            </li>
+                            <li>
+                                <a href="mail.html">База почт</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#/" class="menu_list">Специализации
+                            <i class="fas fa-level-down-alt todown"></i>
+                        </a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="specializations.html">Категории</a>
+                            </li>
+                            <li>
+                                <a href="specializations.html">Дополнительные навыки</a>
+                            </li>
+                            <li>
+                                <a href="specializations.html">Настройки</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#/" class="menu_list">SEO-оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="seo.html">Общие настройки</a></li>
+                            <li><a href="seo.html">Заказы</a></li>
+                            <li><a href="seo.html">Магазин</a></li>
+                            <li><a href="seo.html">Пользователи</a></li>
+                            <li><a href="seo.html">Ответы</a></li>
+                            <li><a href="seo.html">Блог</a></li>
+                            <li><a href="seo.html">Статьи</a></li>
+                            <li><a href="seo.html">Новости</a></li>
+                            <li><a href="seo.html">Помощь</a></li>
+                            <li><a href="seo.html">Посадочные страницы</a></li>
+                            <li><a href="seo.html">Редиректы</a></li>
+                            <li><a href="seo.html">Настройки</a></li>
+                            <li><a href="seo.html">Аддон для главной страницы</a></li>
+                            <li><a href="seo.html">Open Graph</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#/" class="menu_list menuActive">Настройка сайта
+                            <i class="fas fa-level-down-alt todown"></i>
+                        </a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a class="activeToggles mainActive" href="#yak1">Общие настройки</a>
+                            </li>
+                            <li>
+                                <a class="activeToggles" href="#yak2">Системные настройки</a>
+                            </li>
+                            <li>
+                                <a class="activeToggles" href="#yak3">Счетчики и код</a>
+                            </li>
+                            <li>
+                                <a class="activeToggles" href="#yak4">Валюты</a>
+                            </li>
+                            <li>
+                                <a class="activeToggles" href="#yak5">Регионы</a>
+                            </li>
+                            <li>
+                                <a class="activeToggles" href="#yak6">Состояние системы</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <main class="main">
+
+                <section id="yak1" class="general_settings" data-open="secOne">
+
+                    <div class="block_general_settings">
+                        <div class="GS_header">
+                            <div class="GS_header_title">
+                                <div class="header_title_icon">
+                                    <img src="icons/menu.svg">
+                                </div>
+                                <div class="header_title_text">Настройки сайта / Общие настройки
+                                </div>
+                            </div>
+                        </div>
+                        <div class="GS_body">
+                            <div class="navbar_tabs_buttons">
+                                <button type="button" class="navbar_tab_button F_A_B active" data-open-GS="1">Общие настройки
+                                </button>
+                                <button type="button" class="navbar_tab_button" data-open-GS="2">Выключение сайта
+                                </button>
+                                <button type="button" class="navbar_tab_button" data-open-GS="3">Спам-фильтр</button>
+                                <button type="button" class="navbar_tab_button" data-open-GS="4">Изображения</button>
+                                <button type="button" class="navbar_tab_button" data-open-GS="5">Соц. сети</button>
+                            </div>
+                        </div>
+                        <div class="root_GS">
+                            <div class="content_GS F_A_C" data-open-GS="1">
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Название сайта:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Название сайта:</div>
+                                        <div class="underTitle">(панель администратора)</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Копирайт:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <textarea type="text" id="ck_gs_one"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_GS display-none" data-open-GS="2">
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Режим:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group-inline">
+                                            <div class="form-group">
+                                                <input type="radio" id="rd_gs_2_one" name="switch-site">
+                                                <label for="rd_gs_2_one">включен</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="radio" id="rd_gs_2_two" name="switch-site">
+                                                <label for="rd_gs_2_two">выключен</label>
+                                            </div>
+                                            <span>-для проведения технических работ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Причина выключения:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <textarea id="ck_gs_two"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_GS display-none" data-open-GS="3">
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Минус-слова:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <textarea id="ck_gs_three"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Антимат: </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_3_one">
+                                            <label for="ch_gs_3_one">цензурирование матерных слов</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Временные ящики:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_3_two">
+                                            <label for="ch_gs_3_two">запрет на использование временных email адресов (dropmail.me, trbvm.com)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_GS display-none" data-open-GS="4">
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Водяной знак:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <input type="file">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Расположение:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="select-group">
+                                            <select>
+                                                <option value="left">слева</option>
+                                                <option value="center">по-сентру</option>
+                                                <option value="right">справа</option>
+                                            </select>
+                                            <select>
+                                                <option value="top">сверху</option>
+                                                <option value="center">по-сентру</option>
+                                                <option value="bottom">внизу</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Накладывать:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_4_one">
+                                            <label for="ch_gs_4_one"> Заказы (заказы, заявки)</label>
+                                        </div>
+                                        <div class="br"></div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_4_two">
+                                            <label for="ch_gs_4_two"> Портфолио (работы)</label>
+                                        </div>
+                                        <div class="br"></div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_4_three">
+                                            <label for="ch_gs_4_three"> Магазин (товары)</label>
+                                        </div>
+                                        <div class="br"></div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_4_four">
+                                            <label for="ch_gs_4_four"> Блог (посты)</label>
+                                        </div>
+                                        <div class="br"></div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_4_five">
+                                            <label for="ch_gs_4_five"> Статьи (статьи)</label>
+                                        </div>
+                                        <div class="br"></div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ch_gs_4_six">
+                                            <label for="ch_gs_4_six"> Помощь (вопросы)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_GS display-none" data-open-GS="5">
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Google+:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" value="http://google.com">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">LinkedIn:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" value="http://linkedin.com">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Facebook:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" value="http://facebook.com">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Twitter:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" value="http://twitter.com">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Вконтакте:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" value="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Одноклассники:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" value="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Instagram:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Youtube:</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="GS_footer">
+                            <button type="button" class="btn">Сохранить</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="yak2" class="system_settings display-none" data-open="secTwo">
+
+                    <div class="block_system_settings">
+                        <div class="SS_header">
+                            <div class="SS_header_title">
+                                <div class="header_title_icon">
+                                    <img src="icons/menu.svg">
+                                </div>
+                                <div class="header_title_text">Настройки сайта / Системные настройки
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SS_body">
+                            <div class="tab_menu_btns_group">
+                                <button type="button" class="btn active" data-open-SS="1">Заказы</button>
+                                <button type="button" class="btn" data-open-SS="2">Магазин</button>
+                                <button type="button" class="btn" data-open-SS="3">Безопасная сделка</button>
+                                <button type="button" class="btn" data-open-SS="4">Счета</button>
+                                <button type="button" class="btn" data-open-SS="5">Пользователи</button>
+                                <button type="button" class="btn" data-open-SS="6">Портфолио</button>
+                                <button type="button" class="btn" data-open-SS="7">Ответы</button>
+                                <button type="button" class="btn" data-open-SS="8">Отзывы</button>
+                                <button type="button" class="btn" data-open-SS="9">Блог</button>
+                                <button type="button" class="btn" data-open-SS="10">Статьи</button>
+                                <button type="button" class="btn" data-open-SS="11">Новости</button>
+                                <button type="button" class="btn" data-open-SS="12">Сообщения</button>
+                                <button type="button" class="btn" data-open-SS="13">Контакы</button>
+                                <button type="button" class="btn" data-open-SS="14">Специализации</button>
+                                <button type="button" class="btn" data-open-SS="15">Гео</button>
+                                <button type="button" class="btn" data-open-SS="16">SEO</button>
+                                <button type="button" class="btn" data-open-SS="17">Общие</button>
+                            </div>
+                        </div>
+                        <div class="root_SS">
+                            <div class="info_interrogation display-none">
+                                <!-- Js code -->
+                            </div>
+                            <div class="content_SS" data-open-SS="1">
+                                <div class="col-12">
+                                    <div class="col-4">
+                                        <div class="title">Премодерация заказов:</div>
+                                        <div class="underTitle">Публикация заказов</div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="select">
+                                            <select onchange="changeSelect(this)">
+                                                <option value="on">включена</option>
+                                                <option value="off">выключена</option>
+                                            </select>
+                                        </div>
+                                        <div class="infoComponent" data-text-off="публикация заказов выполняется сразу, проверка модератором необязательна (постмодерация)"
+                                        data-text-on="публикация заказов выполняется после проверки модератора">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-4">
+                                    <div class="title">Доступные типы услуг:</div>
+                                    <div class="underTitle">Публикация заказов</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="ch_ss_1_one">
+                                        <label for="ch_ss_1_one">Разовый заказ</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="ch_ss_1_two">
+                                        <label for="ch_ss_1_two">Постоянная работа</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="ch_ss_1_three">
+                                        <label for="ch_ss_1_three">Конкурс</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-4">
+                                    <div class="title">Тип заказов "товары" из магазина:</div>
+                                    <div class="underTitle">Публикация заказов</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="select">
+                                        <select onchange="changeSelect(this)">
+                                            <option value="on">включена</option>
+                                            <option value="off">выключена</option>
+                                        </select>
+                                    </div>
+                                    <div class="infoComponent" data-text-off="при публикации заказа доступен только тип \'услуги\'" data-text-on="доступна публикация заказов типа 'товар`"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-4">
+                                    <div class="title">Поиск заказов по одной специализации:</div>
+                                    <div class="underTitle">Поиск заказов</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="select">
+                                        <select onchange="changeSelect(this)">
+                                            <option value="on">включена</option>
+                                            <option value="off">выключена</option>
+                                        </select>
+                                    </div>
+                                    <div class="infoComponent" data-text-off="доступен поиск сразу в нескольких специализациях" data-text-on="поиск выполняется только в рамках одной специализации единовременно">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-4">
+                                    <div class="title">Поиск закрытых заказов:</div>
+                                    <div class="underTitle">Поиск заказов</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="select">
+                                        <select onchange="changeSelect(this)">
+                                            <option value="on">включена</option>
+                                            <option value="off">выключена</option>
+                                        </select>
+                                    </div>
+                                    <div class="infoComponent" data-text-off="в списке отображаются только открытые заказы" data-text-on="отображать в списках снятые с публикации (закрытые) заказы">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-4">
+                                    <div class="title">Склейка тегов заказов в списке:</div>
+                                    <div class="underTitle">Поиск заказов</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="form-group-inline">
+                                        <input type="number">
+                                        <div class="interrogation" data-title="Склеивать теги в 'еще' когда их кол-во превышает допустимый лимит<br /><strong>0</strong> - отображать все указанные в заказе">
+                                    ?</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">Результаты поиска заказов:</div>
+                                <div class="underTitle">Поиск заказов</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-group-inline">
+                                    <input type="number">
+                                    <div class="infoInput">на страницу</div>
+                                    <div class="interrogation" data-title="Кол-во заказов на страницу в результатах поиска">?</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">Заказы в кабинете пользователя:</div>
+                                <div class="underTitle">Поиск заказов</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-group-inline">
+                                    <input type="number">
+                                    <div class="infoInput">на страницу</div>
+                                    <div class="interrogation" data-title="Кол-во заказов на страницу в кабинете заказчика / исполнителя">?</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">RSS-лента заказов:</div>
+                                <div class="underTitle">Поиск заказов</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="select">
+                                    <select onchange="changeSelect(this)">
+                                        <option value="on">включена</option>
+                                        <option value="off">выключена</option>
+                                    </select>
+                                </div>
+                                <div class="infoComponent"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">Предложение заказа:</div>
+                                <div class="underTitle">Работа с заказами</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="select">
+                                    <select onchange="changeSelect(this)">
+                                        <option value="available">доступно</option>
+                                        <option value="notAvailable">недоступно</option>
+                                    </select>
+                                </div>
+                                <div class="infoComponent" data-text-available="заказчик может предложить 'приватный' заказ исполнителю (нескольким исполнителям), исполнитель может согласиться либо отказаться от сотрудничества">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">Отдельные динамические свойства:</div>
+                                <div class="underTitle">Публикация заказов</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="select">
+                                    <select onchange="changeSelect(this)">
+                                        <option value="on">включены</option>
+                                        <option value="off">выключены</option>
+                                    </select>
+                                </div>
+                                <div class="infoComponent" data-text-off="дин. свойства, указываемые в специализации, общие для заказов и исполнителей" data-text-on="возможность указать отдельный набор дин. свойств используемых в заказах в настройках каждой специализации">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">Привязка заказов к карте:</div>
+                                <div class="underTitle">Публикация заказов</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="select">
+                                    <select onchange="changeSelect(this)">
+                                        <option value="on">включены</option>
+                                        <option value="off">выключены</option>
+                                    </select>
+                                </div>
+                                <div class="infoComponent" data-text-on="возможность указать точный адрес + точку на карте при публикации заказа, карта на странице просмотра заказа, поиск заказов на карте">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-4">
+                                <div class="title">Кол-во фотографий в заказе:</div>
+                                <div class="underTitle">Публикация заказов</div>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-group-inline">
+                                    <input type="number">
+                                    <div class="interrogation" data-title="Максимально допустимое кол-во фотографий прикрепляемых к заказу.<br /><strong>0</strong> - возможность прикрепления фотографий выключена (недоступна)">
+                                ?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Кол-во файлов в заказе:</div>
+                            <div class="underTitle">Публикация заказов</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group-inline">
+                                <input type="number">
+                                <div class="interrogation" data-title="Максимально допустимое кол-во файлов прикрепляемых к заказу.<br /><strong>0</strong> - возможность прикрепления файлов выключена (недоступна)">
+                            ?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Кол-во символов в заголовке заказа:</div>
+                        <div class="underTitle">Публикация заказов</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-group-inline">
+                            <input type="number">
+                            <div class="infoInput">символов</div>
+                            <div class="interrogation" data-title="Максимально допустимое кол-во символов в заголовке заказа">?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Удаление заказов:</div>
+                        <div class="underTitle">Публикация заказов</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="select">
+                            <select onchange="changeSelect(this)">
+                                <option value="available">доступна</option>
+                                <option value="notAvailable">недоступно</option>
+                            </select>
+                        </div>
+                        <div class="infoComponent" data-text-notAvailable="удаление заказа недоступно его владельцу (заказчику), только закрытие"
+                        data-text-available="удаление заказа доступно его владельцу (заказчику)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во примеров работ в заявке:</div>
+                    <div class="underTitle">Публикация заявок</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="interrogation" data-title="Максимально допустимое кол-во примеров работ прикрепляемых к заявке.<br /><strong>0</strong> - возможность прикрепления выключена (недоступна)">
+                    ?</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Соответствие специализации исполнителя заказу:</div>
+                <div class="underTitle">Публикация заявок</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включена</option>
+                        <option value="off">выключена</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-off="проверка на соответствие не выполняется" data-text-on="выполняется проверка соответствия специализации исполнителя при добавлении заявки к заказу">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Cрок приема заявок:</div>
+                <div class="underTitle">Публикация заявок</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включена</option>
+                        <option value="off">выключена</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-off="заказы не имеют срока приема заявок, закрытие заказа выполняется на усмотрение заказчика"
+                data-text-on="возможность указывать срок приема заявок для заказа, по истечению которого заказ переходит в статус 'закрыт'">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Привязка отзывов к заказам:</div>
+            <div class="underTitle">Работа с заказами</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="исполнитель может оставить только один отзыв заказчику и наоборот" data-text-on="возможность публикации отзыва по результатам работы над каждым заказам">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="2">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Раздел "Магазин":</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="раздел недоступен для пользователей сайта" data-text-on="раздел включен и доступен всем пользователям сайта
+            "></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Премодерация товаров:</div>
+            <div class="underTitle">Публикация товаров</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="публикация товаров выполняется сразу, проверка модератором необязательна (постмодерация)"
+            data-text-on="публикация товаров выполняется после проверки модератора">
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Кол-во фотографий в товаре:</div>
+        <div class="underTitle">Публикация товаров</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="interrogation" data-title='Максимально допустимое кол-во фотографий прикрепляемых к товару.<br /><strong>0</strong> - возможность прикрепления фотографий выключена (недоступна)'>
+        ?</div>
+    </div>
+</div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Склейка тегов товаров в списке:</div>
+        <div class="underTitle">Поиск товаров</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="interrogation" data-title='Склеивать теги в "еще" когда их кол-во превышает допустимый лимит<br /><strong>0</strong> - отображать все указанные в настройках товара'>
+        ?</div>
+    </div>
+</div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Результаты поиска товаров:</div>
+        <div class="underTitle">Поиск товаров</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">на страницу</div>
+            <div class="interrogation" data-title="Кол-во товаров на страницу в результатах поиска в разделе 'Магазин'">?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Кол-во товаров в профиле:</div>
+        <div class="underTitle">Профиль пользователя</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">на страницу</div>
+            <div class="interrogation" data-title="Кол-во товаров на страницу в профиле пользователя">?</div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="content_SS display-none" data-open-SS="3">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Безопасная сделка:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="use" onchange="changeSelect(this)">
+                    <option value="use">использовать</option>
+                    <option value="notUse" selected>не использовать</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-use="после утверждения исполнителя заказчиком, работа с заказом прекращается" data-text-notUse="возможность создания и контроля хода работ по заказу, после утверждения исполнителя заказчиком">
+            </div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Только через безопасную сделку:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="on">включена</option>
+                            <option value="off">выключена</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-on="проводить все заказы только через безопасную сделку">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Финансовые данные: </div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="obligatory">обязательные</option>
+                            <option value="notObligatory">необязательные</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-obligatory="Заказчик не сможет зарезервировать средства, а исполнитель запросить вывод до тех пор, пока их финансовые данные не будут заполнены и подтверждены."
+                    data-text-notObligatory="Перед резервированием средств заказчиком и вывода исполнителем подтверждение финансовых данных необязательно.">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Ходы работ в кабинете пользователя:</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">на страницу</div>
+            <div class="interrogation" data-title="Кол-во ходов работ на страницу в кабинете заказчика / исполнителя">?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Сообщения в чате хода работ:</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="interrogation" data-title="Кол-во сообщений в чате отображаемых до появления кнопки 'еще'">
+            ?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Кол-во файлов документов:</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="interrogation" data-title="Максимально допустимое кол-во загружаемых на проверку файлов для подтверждения финансовых данных.">
+            ?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Удаление файлов документов:</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">дней</div>
+            <div class="interrogation" data-title='Срок в днях, спустя который выполняется автоматическое удаление файлов документов (после их загрузки на проверку).<br /><strong>0</strong> - файлы не удаляются автоматически'>?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Страница с описанием:</div>
+    </div>
+    <div class="col-8">
+        <div class="input">
+            <input type="text" value="/">
+        </div>
+        <div class="infoComponentInput">Укажите URL со страницей описания правил безопасной сделки.
+        </div>
+    </div>
+</div>
+</div>
+<div class="content_SS display-none" data-open-SS="4">
+    <div class="navbar_tabs_buttons">
+        <button class="navbar_tab_button F_A_B" data-open-SS-4="1">Общие</button>
+        <button class="navbar_tab_button" data-open-SS-4="2">Wallet One (W1)</button>
+        <button class="navbar_tab_button" data-open-SS-4="3">Робокасса</button>
+        <button class="navbar_tab_button" data-open-SS-4="4">PayPal</button>
+        <button class="navbar_tab_button" data-open-SS-4="5">Liqpay</button>
+        <button class="navbar_tab_button" data-open-SS-4="6">Яндекс.Деньги</button>
+        <button class="navbar_tab_button" data-open-SS-4="7">Webmoney</button>
+    </div>
+    <div class="root_SS_4">
+        <div class="content_SS_4 F_A_C display-none" data-open-SS-4="1"></div>
+        <div class="content_SS_4 display-none" data-open-SS-4="2"></div>
+        <div class="content_SS_4 display-none" data-open-SS-4="3"></div>
+        <div class="content_SS_4 display-none" data-open-SS-4="4"></div>
+        <div class="content_SS_4 display-none" data-open-SS-4="5"></div>
+        <div class="content_SS_4 display-none" data-open-SS-4="6"></div>
+        <div class="content_SS_4 display-none" data-open-SS-4="7"></div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="5">
+    <div class="navbar_tabs_buttons">
+        <button class="navbar_tab_button F_A_B" data-open-SS-5="1">Общие</button>
+        <button class="navbar_tab_button" data-open-SS-5="2">Социальные сети</button>
+        <button class="navbar_tab_button" data-open-SS-5="3">SMS провайдеры</button>
+    </div>
+    <div class="root_SS_5">
+        <div class="content_SS_5 F_A_C display-none" data-open-SS-5="1">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Роль "заказчики":</div>
+                    <div class="underTitle">Регистрация</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select data-open-content="on" onchange="changeSelect(this)">
+                            <option value="on">включена</option>
+                            <option value="off">выключена</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-off="пользователи все равны и имеют одинаковые возможности, как публиковать заказы так и отвечать на них"
+                    data-text-on="пользователи делятся на две роли - заказчики и исполнители, заказчикам доступна публикация заказов, исполнители размещают предложения и формируют портфолио">
+                </div>
+            </div>
+            <div class="open_content display-none">
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Связывание аккаунтов:</div>
+                        <div class="underTitle">Регистрация</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="select">
+                            <select onchange="changeSelect(this)">
+                                <option value="available">доступно</option>
+                                <option value="notAvailable">недоступно</option>
+                            </select>
+                        </div>
+                        <div class="infoComponent" data-text-available="разрешать пользователю связывание аккаунтов исполнителя и заказчика">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Верификация пользователей:</div>
+                <div class="underTitle">Профиль пользователя</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select data-open-content="on" onchange="changeSelect(this)">
+                        <option value="on">включена</option>
+                        <option value="off">выключена</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-on="пользователи могут подтвердить свой профиль путем отправки документов удостоверяющих личность, проверка выполняется модератором">
+                </div>
+            </div>
+            <div class="open_content display-none">
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Кол-во файлов документов:</div>
+                        <div class="underTitle">Профиль пользователя</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-group-inline">
+                            <input type="number">
+                            <div class="interrogation" data-title="Максимально допустимое кол-во загружаемых на проверку файлов.">
+                            ?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Удаление файлов документов:</div>
+                        <div class="underTitle">Профиль пользователя</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-group-inline">
+                            <input type="number">
+                            <div class="infoInput">дней</div>
+                            <div class="interrogation" data-title='Срок в днях, спустя который выполняется автоматическое удаление файлов документов (после их загрузки на проверку).<br /><strong>0</strong> - файлы не удаляются автоматически'>?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Роли пользователей:</div>
+                <div class="underTitle">Регистрация</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включены</option>
+                        <option value="off">выключены</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-on="при регистрации пользователь указывает является ли он частным лицом либо представителем компании">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Пол пользователя:</div>
+                <div class="underTitle">Профиль пользователя</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включено</option>
+                        <option value="off">выключено</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-on="пользователь может указать свой пол в настройках профиля (мужской, женский)" data-text-off="возможность указать пол недоступна">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Дата рождения:</div>
+                <div class="underTitle">Профиль пользователя</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включено</option>
+                        <option value="off">выключено</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-on="пользователь может указать свою дату рождения в настройках профиля" data-text-off="возможность указать дату рождения недоступна">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Карта + точка на карте:</div>
+                <div class="underTitle">Профиль пользователя</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включено</option>
+                        <option value="off">выключено</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-on="пользователь может указать свое местоположение, а также точку на карте, доступен поиск пользователей на карте">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Кол-во контактов в профиле:</div>
+                <div class="underTitle">Профиль пользователя</div>
+            </div>
+            <div class="col-8">
+                <div class="form-group-inline">
+                    <input type="number">
+                    <div class="interrogation" data-title='Максимально допустимое кол-во контактов указываемое в профиле.<br /><strong>0</strong> - без ограничений'>
+                ?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Подтверждение номера телефона:</div>
+            <div class="underTitle">Регистрация</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="запрашивать номер телефона пользователя при регистрации/подаче объявления, с подтверждением через SMS">
+            </div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">SMS провайдер:</div>
+                    <div class="underTitle">Регистрация</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select>
+                            <option value="smsRU">sms.ru</option>
+                            <option value="atomparkCOM">atompark.com</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во повторных отправок SMS:</div>
+                    <div class="underTitle">Регистрация</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="interrogation" data-title="1134">?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Таймаут повторной отправки SMS:</div>
+                    <div class="underTitle">Регистрация</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="infoInput">минут</div>
+                        <div class="interrogation" data-title="Кол-во минут ожидания при достижении максимально допустимых повторных отправок">?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Код:</div>
+                    <div class="underTitle">Регистрация</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select>
+                            <option value="alpCipher">буквенно-цифровой</option>
+                            <option value="cipher">цифровой</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Номер телефона в профиле:</div>
+                    <div class="underTitle">Профиль пользователя</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="show">отображать</option>
+                            <option value="notShow">скрыть</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-show="отображать номер телефона указанный при регистрации в контактах профиля (первым)"
+                    data-text-notShow="номер телефона указанный при регистрации не отображается в профиле пользователя">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Удаление учетной записи:</div>
+        <div class="underTitle">Профиль пользователя</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="delAll">полное удаление</option>
+                <option value="block">блокировка</option>
+                <option value="notAvailable">недоступно</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-delAll="Пользователю доступна функция полного удаления своей учетной записи в настройках профиля."
+        data-text-block="Пользователю доступна функция удаления своей учетной записи в настройках профиля. При этом аккаунт пользователя будет помечен как заблокированный.">
+    </div>
+</div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Капча:</div>
+        <div class="underTitle">Регистрация</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="on">включено</option>
+                <option value="off">выключено</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-on="задействовать капчу в форме регистрации">
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Подтверждение пароля:</div>
+        <div class="underTitle">Регистрация</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="on">включено</option>
+                <option value="off">выключено</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-on="задействовать поле 'подтверждение пароля' в форме регистрации">
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Пользовательское соглашение:</div>
+        <div class="underTitle">Регистрация</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="on">включено</option>
+                <option value="off">выключено</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-on="пользователь должен отметить 'соглашение' в форме регистрации, а также в других формах выполняющих регистрацию пользователя: добавление заказа">
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Активация при регистрации через социальную сеть:
+        </div>
+        <div class="underTitle">Регистрация</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="required">требуется</option>
+                <option value="notRequired">не требуется</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-required="при регистрации через соц. сеть подтверждение email-адреса также обязательно"
+        data-text-notRequired="при регистрации через соц. сеть подтверждение email-адреса не требуется, профиль будет активирован автоматически">
+    </div>
+</div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Срок действия ссылки активации профиля:</div>
+        <div class="underTitle">Регистрация</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">дней</div>
+            <div class="interrogation" data-title="Срок действия ссылки активации с момента отправки уведомления на почту.">?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Уведомление об удалении неактивированного аккаунта:
+        </div>
+        <div class="underTitle">Регистрация</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">дней</div>
+            <div class="interrogation" data-title='Кол-во дней за которое выполняется отправка уведомления о скором удалении неактивированного аккаунта.<br /><strong>0</strong> - не отправлять уведомление'>?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Результаты поиска исполнителей:</div>
+        <div class="underTitle">Поиск исполнителей</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="infoInput">на страницу</div>
+            <div class="interrogation" data-title='Кол-во исполнителей на страницу в результатах поиска'>?</div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Склейка навыков в списке:</div>
+        <div class="underTitle">Поиск исполнителей</div>
+    </div>
+    <div class="col-8">
+        <div class="form-group-inline">
+            <input type="number">
+            <div class="interrogation" data-title='Склеивать навыки в "еще" когда их кол-во превышает допустимый лимит.<br /><strong>0</strong> - отображать все указанные в профиле исполнителя'>?</div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="content_SS_5 display-none" data-open-SS-5="2">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Вконтакте:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text" value="4662820">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password" value="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url" value="https://letcop.uz/user/loginsocial/vkontakte">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Facebook:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text" value="1479861488893189">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password" value="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url" value="https://letcop.uz/user/loginsocial/facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Одноклассники:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">key:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Мой мир:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Google:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text" value="5941357499-empl2vm13pa142e9b66t2usn5dpf3oug.apps.googleusercontent.com">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password" value="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url" value="https://letcop.uz/user/loginsocial/google">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Яндекс:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Instagram:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">OpenID:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Yahoo:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">AOL:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Twitter:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">key:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Live:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">LinkedIn:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">key:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Foursquare:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off" selected>выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">id:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">secret:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">callback:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS_5 display-none" data-open-SS-5="3">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title bold">Настройки провайдера sms.ru:</div>
+        </div>
+        <div class="col-8"></div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Уникальный ключ (api_id):</div>
+        </div>
+        <div class="col-8">
+            <div class="input">
+                <input type="text" placeholder="Например:4ac0c9c0-25xx-77f4-ed29-1519e8761957">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Имя отправителя:</div>
+        </div>
+        <div class="col-8">
+            <div class="input">
+                <input type="text">
+            </div>
+            <div class="infoComponentInput">
+                <a href="#/">http://sms.ru/?panel=mass&subpanel=senders</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Тестовая отправка:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select>
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title bold">Настройки провайдера atompark.com:</div>
+        </div>
+        <div class="col-8"></div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Логин:</div>
+        </div>
+        <div class="col-8">
+            <div class="input">
+                <input type="text" placeholder="Логин пользователя в системе SMS Sender">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Пароль:</div>
+        </div>
+        <div class="col-8">
+            <div class="input">
+                <input type="text" placeholder="Парол пользователя в системе SMS Sender">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Имя отправителя:</div>
+        </div>
+        <div class="col-8">
+            <div class="input">
+                <input type="text" value="SMS">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="content_SS display-none" data-open-SS="6">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Премодерация работ:</div>
+            <div class="underTitle">Публикация работ</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="работа видна сразу после публикации (постмодерация работ)" data-text-on="работа публикуется на сайте только после проверки ее модератором">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Превью работ:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="pro">Только для PRO</option>
+                    <option value="all">доступна всем</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-all="загрузка и отображение preview работ доступно всем" data-text-pro="загрузка и отображение preview работ доступно только для пользователей активировавших аккаунт PRO">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во фотографий в работе:</div>
+            <div class="underTitle">Публикация работ</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="interrogation" data-title="969">
+                ?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Блок поделиться:</div>
+            <div class="underTitle">Просмотр работы</div>
+        </div>
+        <div class="col-8">
+            <div class="textarea">
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="7">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Раздел "Ответы":</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="раздел недоступен для пользователей сайта" data-text-on="раздел включен и доступен всем пользователям сайта"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Премодерация вопросов:</div>
+            <div class="underTitle">Публикация вопросов</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="вопрос виден сразу после публикации (постмодерация вопросов)" data-text-on="вопрос публикуется на сайте только после проверки его модератором">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Блок "Лидеры раздела":</div>
+            <div class="underTitle">Список вопросов</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="блок скрыт от пользователей" data-text-on="блок отображается слева от списка">
+            </div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во пользователей:</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="interrogation" data-title="1044">
+                        ?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во вопросов в списке:</div>
+            <div class="underTitle">Список вопросов</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title="Кол-во вопросов отображаемое на странице списка в разделе 'Ответы'.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во вопросов в профиле:</div>
+            <div class="underTitle">Профиль пользователя</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title="Кол-во вопросов отображаемое на странице списка профиля в разделе 'Ответы'.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во вопросов в профиле:</div>
+            <div class="underTitle">Профиль пользователя</div>
+        </div>
+        <div class="col-8">
+            <div class="textarea">
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="8">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Премодерация отзывов:</div>
+            <div class="underTitle">Публикация отзывов</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="отзыв виден сразу после публикации (постмодерация отзывов)" data-text-on="отзыв публикуется на сайте только после проверки его модератором">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Задержка публикации отзывов:</div>
+            <div class="underTitle">Публикация отзывов</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">дней</div>
+                <div class="interrogation" data-title='Задержка возможности публикации отзыва (в днях) после регистрации.<br /><strong>0</strong> - публикация отзывов доступна сразу после регистрации'>?</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="9">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Раздел "Блог":</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="раздел недоступен для пользователей сайта" data-text-on="раздел включен и доступен всем пользователям сайта">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Премодерация постов:</div>
+            <div class="underTitle">Публикация постов</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="пост виден сразу после публикации (постмодерация постов)" data-text-on="пост публикуется на сайте только после проверки его модератором">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Расширенный редактор:</div>
+            <div class="underTitle">Публикация постов</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="простой редактор текста поста (wysiwyg)" data-text-on="расширенная форма редактора текста поста">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Теги:</div>
+            <div class="underTitle">Публикация постов</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select>
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во фотографий в посте:</div>
+            <div class="underTitle">Публикация постов</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="interrogation" data-title="Максимально допустимое кол-во фотографий прикрепляемых к посту.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во постов в списке:</div>
+            <div class="underTitle">Список постов</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title="Кол-во постов отображаемое на странице списка в разделе 'Блог'.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во постов в профиле:</div>
+            <div class="underTitle">Профиль пользователя</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title="Кол-во постов отображаемое на странице списка профиля в разделе 'Блог'.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Блок поделиться:</div>
+            <div class="underTitle">Просмотр поста</div>
+        </div>
+        <div class="col-8">
+            <div class="textarea">
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="10">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Раздел "Статьи":</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="раздел недоступен для пользователей сайта" data-text-on="раздел включен и доступен всем пользователям сайта"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Премодерация статей:</div>
+            <div class="underTitle">Публикация статей</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="статья видна сразу после публикации (постмодерация статей)" data-text-on="статья публикуется на сайте только после проверки ее модератором">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Расширенный редактор:</div>
+            <div class="underTitle">Публикация статей</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="простой редактор текста статьи (wysiwyg)" data-text-on="расширенная форма редактора текста статьи"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во фотографий в статье:</div>
+            <div class="underTitle">Публикация статей</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="interrogation" data-title="Максимально допустимое кол-во фотографий прикрепляемых к статье.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во статей в списке:</div>
+            <div class="underTitle">Список статей</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title='Кол-во статей отображаемое на странице списка в разделе "Статьи".'>?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во тегов в облаке тегов:</div>
+            <div class="underTitle">Список статей</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="interrogation" data-title="Максимальное кол-во тегов в блоке слева в разделе 'Статьи'.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Блок поделиться:</div>
+            <div class="underTitle">Просмотр статьи</div>
+        </div>
+        <div class="col-8">
+            <div class="textarea">
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="11">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Редактор описания:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select>
+                    <option value="plain">простой редактор</option>
+                    <option value="extended">Расширенный редактор</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Комментарии:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="комментирование новостей отключено" data-text-on="пользователям сайта доступно комментирование новостей в разделе 'Новости'">
+            </div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Премодерация комментариев:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="on">включена</option>
+                            <option value="off">выключена</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-off="комментарий виден сразу после публикации (постмодерация комментариев)" data-text-on="комментарий публикуется на сайте только после проверки его модератором">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Склейка тегов новостей в списке:</div>
+            <div class="underTitle">Поиск новостей</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="interrogation" data-title='Склеивать теги в "еще" когда их кол-во превышает допустимый лимит<br /><strong>0</strong> - отображать все указанные в новости'>?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во новостей в списке:</div>
+            <div class="underTitle">Список новостей</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title="Кол-во статей отображаемое на странице списка новостей.">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Блок поделиться:</div>
+            <div class="underTitle">Просмотр новости</div>
+        </div>
+        <div class="col-8">
+            <div class="textarea">
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="12">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Вложения:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="возможность прикрепления файлов отключена" data-text-on="пользователи могут прикреплять файлы к сообщениям"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Кол-во контактов в списке:</div>
+            <div class="underTitle">Список контактов</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">на страницу</div>
+                <div class="interrogation" data-title="Кол-во контактов отображаемое в кабинете пользователя в разделе 'Сообщения'.">?</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="13">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Вложения:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="возможность прикрепления файлов отключена" data-text-on="пользователи могут прикреплять файлы к сообщениям"></div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="14">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Категории специализаций:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="категории позволяют выполнить группировку специализаций по направлению">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Услуги специализаций:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="задействовать услуги специализаций + раздел 'Прайс'"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во услуг выводимое в списке исполнителей:</div>
+                    <div class="underTitle">Поиск исполнителей</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="interrogation" data-title='Кол-во в блоке предоставляемых услуг в списке исполнителей. Кешируемый блок, результат будет виден только после <strong>пересохранения</strong> услуг пользователем.'>?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во услуг в общем прайсе:</div>
+                    <div class="underTitle">Общий прайс</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="infoInput">на страницу</div>
+                        <div class="interrogation" data-title='Кол-во исполнителей отображаемое на странице услуги представляемой пользователями.'>?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во исполнителей предоставляющих услугу:</div>
+                    <div class="underTitle">Прайс</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="infoInput">на страницу</div>
+                        <div class="interrogation" data-title='Кол-во исполнителей отображаемое на странице услуги представляемой пользователями.'>?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Поле поиска специализации:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select data-open-content="on" onchange="changeSelect(this)">
+                    <option value="on">включена</option>
+                    <option value="off">выключена</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="использовать поле поиска специализации совпадающих по названию">
+            </div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Кол-во совпадающих специализаций:</div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group-inline">
+                        <input type="number">
+                        <div class="interrogation" data-title="Максимальное кол-во результатов совпадения.">?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_SS display-none" data-open-SS="15">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Страна по-умолчанию:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select>
+                    <option value="uzb">Узбекистан</option>
+                    <option value="rus">Россия</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Несколько стран:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="задействовать несколько стран в проекте"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Общий фильтр по региону:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)" data-open-content="on">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="задействовать общий фильтр по региону в шапке сайта"></div>
+        </div>
+        <div class="open_content display-none">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Формирование URL:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="notShow">не отображается</option>
+                            <option value="unDir">поддиректория</option>
+                            <option value="unDom">поддомен</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-notShow="регион указанный в фильтре не влияет на URL" data-text-unDir="регион указанный в фильтре отображается в виде freelance2.tmrng.com/region/"
+                    data-text-unDom="регион указанный в фильтре отображается в виде region.freelance2.tmrng.com">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-4">
+                <div class="title">Автоопределение региона:</div>
+            </div>
+            <div class="col-8">
+                <div class="select">
+                    <select onchange="changeSelect(this)">
+                        <option value="on">включено</option>
+                        <option value="off">выключено</option>
+                    </select>
+                </div>
+                <div class="infoComponent" data-text-on="выполнять автоопределение региона пользователя по IP">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Тип карт:</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select>
+                <option value="uzb">Карты Google</option>
+                <option value="rus">Карты Yandex</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">API ключ карт Yandex:</div>
+    </div>
+    <div class="col-8">
+        <div class="input">
+            <input type="text">
+        </div>
+        <div class="infoComponentInput">Получить API-ключ можно
+            <a href="#/">здесь</a>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">API ключ карт Google:</div>
+    </div>
+    <div class="col-8">
+        <div class="input">
+            <input type="text">
+        </div>
+        <div class="infoComponentInput">Получить API-ключ можно
+            <a href="#/">здесь</a>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Координаты карты по умолчанию:</div>
+    </div>
+    <div class="col-8">
+        <div class="input">
+            <input type="text" value="55.7481,37.6206">
+        </div>
+    </div>
+</div>
+</div>
+<div class="content_SS display-none" data-open-SS="16">
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Ограничение длины заголовка:</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">символов</div>
+                <div class="interrogation" data-title="Meta title">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Ограничение длины ключевых слов:</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">символов</div>
+                <div class="interrogation" data-title="Meta keywords">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Ограничение длины описания:</div>
+        </div>
+        <div class="col-8">
+            <div class="form-group-inline">
+                <input type="number">
+                <div class="infoInput">символов</div>
+                <div class="interrogation" data-title="Meta description">?</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Посадочные страницы:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="функция посадочных страниц отключена">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Редиректы:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-off="функция редиректов отключена"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-4">
+            <div class="title">Индексация пустых списков:</div>
+        </div>
+        <div class="col-8">
+            <div class="select">
+                <select onchange="changeSelect(this)">
+                    <option value="on">включено</option>
+                    <option value="off">выключено</option>
+                </select>
+            </div>
+            <div class="infoComponent" data-text-on="Для всех страниц списков, независимо от наличия результатов, устанавливается тег index"
+            data-text-off="Для всех пустых страниц списков будет установлен тег noindex">
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Индексация страниц постраничной навигации:</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="on">включено</option>
+                <option value="off">выключено</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-on="Все страниц списка помечаются тегом index" data-text-off="Для всех страниц списка начиная со второй будет установлен тег noindex">
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Канонические страницы постраничной навигации:</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="on">включено</option>
+                <option value="off">выключено</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-on="Для всех страниц начиная со второй канонической будет указана страница списка с номером страницы"
+        data-text-off="Для всех страниц начиная со второй канонической будет указана первая страница списка">
+    </div>
+</div>
+</div>
+<div class="col-12">
+    <div class="col-4">
+        <div class="title">Мультиязычность Sitemap.xml:</div>
+    </div>
+    <div class="col-8">
+        <div class="select">
+            <select onchange="changeSelect(this)">
+                <option value="off">выключено</option>
+                <option value="withTrans">страницы с переводом</option>
+                <option value="all">все</option>
+            </select>
+        </div>
+        <div class="infoComponent" data-text-withTrans="Для страниц с возможностью перевода" data-text-all="Для всех страниц"></div>
+    </div>
+</div>
+</div>
+<div class="content_SS display-none" data-open-SS="17">
+    <div class="navbar_tabs_buttons">
+        <button class="navbar_tab_button F_A_B" data-open-SS-17="1">Общие</button>
+        <button class="navbar_tab_button" data-open-SS-17="2">Почта</button>
+        <button class="navbar_tab_button" data-open-SS-17="3">Системные</button>
+    </div>
+    <div class="root_SS_17">
+        <div class="content_SS_17 F_A_C display-none" data-open-SS-17="1">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Валюта сайта по-умолчанию:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select>
+                            <option value="sum">Сум</option>
+                            <option value="rubl">Рубли</option>
+                            <option value="usd">Доллары</option>
+                            <option value="evro">Евро</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Автоопределение языка:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="on">включено</option>
+                            <option value="off">выключено</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-on="Выполнять автоопределение локализации при первом заходе пользователя на сайт">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Минимизация js/css:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select data-open-content="on" onchange="changeSelect(this)">
+                            <option value="on">включено</option>
+                            <option value="off">выключено</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent"></div>
+                </div>
+                <div class="open_content display-none">
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Объединять файлы css:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="select">
+                                <select onchange="changeSelect(this)">
+                                    <option value="on">включено</option>
+                                    <option value="off">выключено</option>
+                                </select>
+                            </div>
+                            <div class="infoComponent" data-text-on="все файлы стилей будут подключаться одним файлом, для ускорения загрузки страницы">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Баннеры:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="on">включено</option>
+                            <option value="off">выключено</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-off="скрыть все баннерные позиции на сайте"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content_SS_17 display-none" data-open-SS-17="2">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Имя отправителя:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                    <div class="infoComponentInput">Имя отправителя указываемое при отправке уведомлений, как правило это название
+                    сайта</div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Email для уведомлений:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                    <div class="infoComponentInput">Email для отправки автоматических уведомлений сайта, не требующих ответа
+                    пользователей</div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Email администратора:</div>
+                </div>
+                <div class="col-8">
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                    <div class="infoComponentInput">Email для связи с администратором сайта (сообщений на форму обратной связи)</div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Метод отправки писем:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select data-open-content="smtp" onchange="changeSelect(this)">
+                            <option value="php">Стандартный (php mail)</option>
+                            <option value="smtp">SMTP</option>
+                            <option value="sendmail" disabled>Sendmail</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-smtp="Например через один из следующих сервисов: Google, Yandex, Mail.ru">
+                    </div>
+                </div>
+                <div class="open_content display-none">
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Host:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="input">
+                                <input type="text" value="localhost">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Port:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group-inline">
+                                <input type="number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">User:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="input">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Password:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="input">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Secure:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="select">
+                                <select>
+                                    <option value="no">No</option>
+                                    <option value="ssl">SSL</option>
+                                    <option value="tls">TLS</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Проверка подключения:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="button">
+                                <button type="button">сохранить и проверить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_SS_17 display-none" data-open-SS-17="3">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Временная зона:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select>
+                            <option value="utc">UTC</option>
+                            <option value="asia/tashkent">Asia/Tashkent</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">HTTPS-режим:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select data-open-content="on" onchange="changeSelect(this)">
+                            <option value="on">включено</option>
+                            <option value="off">выключено</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent"></div>
+                </div>
+                <div class="open_content display-none">
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Редирект c HTTP:</div>
+                        </div>
+                        <div class="col-8">
+                            <div class="select">
+                                <select>
+                                    <option value="on">выключено</option>
+                                    <option value="off">выключено</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Проверка доставляемости почты:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="on">включено</option>
+                            <option value="off">выключено</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-on="При тестировании состояния системы проверять доставляемость почты">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Статистика работы системы:</div>
+                </div>
+                <div class="col-8">
+                    <div class="select">
+                        <select onchange="changeSelect(this)">
+                            <option value="on">включено</option>
+                            <option value="off">выключено</option>
+                        </select>
+                    </div>
+                    <div class="infoComponent" data-text-on="Разрешать сбор и последующий анализ статистики работы системы">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="SS_footer">
+    <button type="button" class="btn">Сохранить</button>
+</div>
+</div>
+
+</section>
+
+<section id="yak3" class="counters_and_code display-none" data-open="secThree">
+
+    <div class="add_block_counters_and_code display-none">
+        <div class="CAC_header">
+            <div class="CAC_header_title">
+                <div class="header_title_icon">
+                    <img src="icons/menu.svg">
+                </div>
+                <div class="header_title_text">Добавление счетчика</div>
+            </div>
+        </div>
+        <div class="CAC_body">
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title crimson">Название*:</div>
+                </div>
+                <div class="col-8">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Код для вставки*:</div>
+                </div>
+                <div class="col-8">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Положение на странице:</div>
+                </div>
+                <div class="col-8">
+                    <select>
+                        <option value="onhead">в блоке head</option>
+                        <option value="onafterbody">после открывающего body</option>
+                        <option value="onbeforebody">перед закрывающим body</option>
+                        <option value="onfooter">в подвале сайта</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4">
+                    <div class="title">Включен:</div>
+                </div>
+                <div class="col-8">
+                    <input type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="CAC_footer">
+            <button type="button" class="btn save">Сохранить</button>
+            <button type="button" class="btn cancel">Отменить</button>
+        </div>
+    </div>
+
+    <div class="block_counters_and_code">
+        <div class="CAC_header">
+            <div class="CAC_header_title">
+                <div class="header_title_icon">
+                    <img src="icons/menu.svg">
+                </div>
+                <div class="header_title_text">Счетчики и код</div>
+            </div>
+            <div class="CAC_header_add_btn">
+                <div class="btn">
+                    <img src="icons/plus.svg">Добавить</div>
+                </div>
+            </div>
+            <div class="CAC_body">
+                <div class="CAC_items_header">
+                    <div class="id">ID</div>
+                    <div class="name">Название</div>
+                    <div class="dateCreate">Дата создания</div>
+                    <div class="actions">Действие</div>
+                </div>
+                <div class="root_CAC">
+                    <div class="CAC_item">
+                        <div class="id">1</div>
+                        <div class="name">Yandex</div>
+                        <div class="dateCreate">03 августа 2012</div>
+                        <div class="actions">
+                            <div class="actionBtn action_edit">
+                                <img src="icons/edit.svg">
+                            </div>
+                            <div class="actionBtn action_power">
+                                <img src="icons/power.svg">
+                            </div>
+                            <div class="actionBtn action_delete">
+                                <img src="icons/del.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CAC_item">
+                        <div class="id">2</div>
+                        <div class="name">LiveInternet</div>
+                        <div class="dateCreate">20 августа 2020</div>
+                        <div class="actions">
+                            <div class="actionBtn action_edit">
+                                <img src="icons/edit.svg">
+                            </div>
+                            <div class="actionBtn action_power">
+                                <img src="icons/power.svg">
+                            </div>
+                            <div class="actionBtn action_delete">
+                                <img src="icons/del.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CAC_item">
+                        <div class="id">3</div>
+                        <div class="name">Google</div>
+                        <div class="dateCreate">11 августа 2021</div>
+                        <div class="actions">
+                            <div class="actionBtn action_edit">
+                                <img src="icons/edit.svg">
+                            </div>
+                            <div class="actionBtn action_power">
+                                <img src="icons/power.svg">
+                            </div>
+                            <div class="actionBtn action_delete">
+                                <img src="icons/del.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit_block_counters_and_code display-none">
+            <div class="CAC_header">
+                <div class="CAC_header_title">
+                    <div class="header_title_icon">
+                        <img src="icons/menu.svg">
+                    </div>
+                    <div class="header_title_text">Редактирование счетчика</div>
+                </div>
+            </div>
+            <div class="CAC_body">
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title crimson">Название*:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" value="Yandex">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Код для вставки*:</div>
+                    </div>
+                    <div class="col-8">
+                        <textarea><a href=#><img src="/img/counter-ya.gif" /></a></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Положение на странице:</div>
+                    </div>
+                    <div class="col-8">
+                        <select>
+                            <option value="onhead">в блоке head</option>
+                            <option value="onafterbody">после открывающего body</option>
+                            <option value="onbeforebody">перед закрывающим body</option>
+                            <option value="onfooter">в подвале сайта</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Включен:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="checkbox" checked>
+                    </div>
+                </div>
+            </div>
+            <div class="CAC_footer">
+                <button type="button" class="btn save">Сохранить</button>
+                <button type="button" class="btn delete">Удалить</button>
+                <button type="button" class="btn cancel">Отменить</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="yak4" class="currencies_list display-none" data-open="secFour">
+
+        <div class="add_block_currencies_list display-none">
+            <div class="CL_header">
+                <div class="CL_header_title">
+                    <div class="header_title_icon">
+                        <img src="icons/menu.svg">
+                    </div>
+                    <div class="header_title_text">Валюты / Добавить валюту</div>
+                </div>
+            </div>
+            <div class="CL_body">
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title crimson">Название:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Название, краткое:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Название, с подбором:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Код валюты:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="miniInput">
+                        <span>
+                            <a href="#/">список</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Курс:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="miniInput">
+                        <span>Сум. = 1 (название валюты)</span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="title">Включена:</div>
+                    </div>
+                    <div class="col-8">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="CL_footer">
+                <button type="button" class="btn save">Сохранить</button>
+                <button type="button" class="btn cancel">Отменить</button>
+            </div>
+        </div>
+
+        <div class="block_currencies_list display-nonee">
+            <div class="CL_header">
+                <div class="CL_header_title">
+                    <div class="header_title_icon">
+                        <img src="icons/menu.svg">
+                    </div>
+                    <div class="header_title_text">Валюты / Список</div>
+                </div>
+                <div class="CL_header_add_btn">
+                    <div class="btn">
+                        <img src="icons/plus.svg">Добавить</div>
+                    </div>
+                </div>
+                <div class="CL_body">
+                    <div class="CL_items_header">
+                        <div class="id">ID</div>
+                        <div class="name">Название</div>
+                        <div class="actions">Действие</div>
+                    </div>
+                    <div class="root_CL">
+                        <div class="CL_item">
+                            <div class="id">1</div>
+                            <div class="name">Сум</div>
+                            <div class="actions">
+                                <div class="actionBtn action_edit">
+                                    <img src="icons/edit.svg">
+                                </div>
+                                <div class="actionBtn action_power">
+                                    <img src="icons/power.svg">
+                                </div>
+                                <div class="actionBtn action_delete">
+                                    <img src="icons/del.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CL_item">
+                            <div class="id">2</div>
+                            <div class="name">Доллары</div>
+                            <div class="actions">
+                                <div class="actionBtn action_edit">
+                                    <img src="icons/edit.svg">
+                                </div>
+                                <div class="actionBtn action_power">
+                                    <img src="icons/power.svg">
+                                </div>
+                                <div class="actionBtn action_delete">
+                                    <img src="icons/del.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CL_item">
+                            <div class="id">3</div>
+                            <div class="name">Рубли</div>
+                            <div class="actions">
+                                <div class="actionBtn action_edit">
+                                    <img src="icons/edit.svg">
+                                </div>
+                                <div class="actionBtn action_power">
+                                    <img src="icons/power.svg">
+                                </div>
+                                <div class="actionBtn action_delete">
+                                    <img src="icons/del.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit_block_currencies_list display-none">
+                <div class="CL_header">
+                    <div class="CL_header_title">
+                        <div class="header_title_icon">
+                            <img src="icons/menu.svg">
+                        </div>
+                        <div class="header_title_text">Валюты / Редактирование валюты</div>
+                    </div>
+                </div>
+                <div class="CL_body">
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Название:</div>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" value="Доллары">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Название, краткое:</div>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" value="$">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Название, с подбором:</div>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" value="доллар;доллара;долларов">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Код валюты:</div>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="miniInput" value="usd">
+                            <span>
+                                <a href="#/">список</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Курс:</div>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="miniInput" value="10.455,04">
+                            <span>Сум. = 1 (название валюты)</span>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-4">
+                            <div class="title">Включена:</div>
+                        </div>
+                        <div class="col-8">
+                            <input type="checkbox" checked>
+                        </div>
+                    </div>
+                </div>
+                <div class="CL_footer">
+                    <button type="button" class="btn save">Сохранить</button>
+                    <button type="button" class="btn delete">Удалить</button>
+                    <button type="button" class="btn cancel">Отменить</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="yak5" class="regions_countries display-none" data-open="secFive">
+
+            <div class="block_regions_countries">
+                <div class="RG_header">
+                    <div class="RG_header_title">
+                        <div class="header_title_icon">
+                            <img src="icons/menu.svg">
+                        </div>
+                        <div class="header_title_text">Регионы / Страны</div>
+                    </div>
+                </div>
+                <div class="RG_body">
+                    <div class="navbar_tabs_buttons">
+                        <button class="navbar_tab_button F_A_B" data-open-RG="1">Страны</button>
+                        <button class="navbar_tab_button" data-open-RG="2">Области</button>
+                    </div>
+                </div>
+                <div class="root_RG">
+                    <div class="content_RG F_A_C display-none" data-open-RG="1">
+                        <div class="add_block_regions_countries_1 display-none">
+                            <div class="modal_window_add_country">
+                                <div class="header">
+                                    <span>ДОБАВИТЬ СТРАНУ</span>
+                                    <button type="button" class="btn_exit"> &#10006;</button>
+                                </div>
+                                <div class="body">
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Название:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Склонение (где):</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">URL-keyword:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Код страны:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" class="mini">
+                                            <span>
+                                                <a href="#/">список</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Телефонный код:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" class="mini">
+                                            <span>
+                                                <a href="#/">список</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4"></div>
+                                        <div class="col-8">
+                                            <input type="checkbox">
+                                            <span>Фильтр региона: пропускать шаг выбора области</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button type="button" class="btn_add">Добавить</button>
+                                    <button type="button" class="btn_cancel">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit_block_regions_countries_1 display-none">
+                            <div class="modal_window_add_country">
+                                <div class="header">
+                                    <span>РЕДАКТИРОВАНИЕ СТРАНЫ</span>
+                                    <button type="button" class="btn_exit"> &#10006;</button>
+                                </div>
+                                <div class="body">
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Название:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" value="Украина">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Склонение (где):</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" value="в Украине">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">URL-keyword:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" value="ukraina">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Код страны:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" class="mini" value="ua">
+                                            <span>
+                                                <a href="#/">список</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4">
+                                            <div class="title">Телефонный код:</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" class="mini" value="380">
+                                            <span>
+                                                <a href="#/">список</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-4"></div>
+                                        <div class="col-8">
+                                            <input type="checkbox" checked>
+                                            <span>Фильтр региона: пропускать шаг выбора области</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button type="button" class="btn_add">Добавить</button>
+                                    <button type="button" class="btn_cancel">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add_btn_country">
+                            <div class="btn">
+                                <img src="icons/plus.svg">Добавить</div>
+                            </div>
+                            <div class="RG_items_header">
+                                <div class="id">ID</div>
+                                <div class="name">Название</div>
+                                <div class="keyword">Keyword</div>
+                                <div class="actions">Действие</div>
+                            </div>
+                            <div class="RG_items">
+                                <!-- Js code -->
+                            </div>
+                        </div>
+                        <div class="content_RG display-none" data-open-RG="2">
+                            <div class="add_block_regions_countries_2 display-none">
+                                <div class="modal_window_add_country">
+                                    <div class="header">
+                                        <span>ДОБАВИТЬ ОБЛАСТЬ</span>
+                                        <button type="button" class="btn_exit"> &#10006;</button>
+                                    </div>
+                                    <div class="body">
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">Название:</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">Склонение (где):</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">URL-keyword:</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button type="button" class="btn_add">Добавить</button>
+                                        <button type="button" class="btn_cancel">Отменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit_block_regions_countries_2 display-none">
+                                <div class="modal_window_add_country">
+                                    <div class="header">
+                                        <span>РЕДАКТИРОВАНИЕ ОБЛАСТИ</span>
+                                        <button type="button" class="btn_exit"> &#10006;</button>
+                                    </div>
+                                    <div class="body">
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">Название:</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text" value="Винницкая область">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">Склонение (где):</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text" value="в Винницкой области">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">URL-keyword:</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text" value="vin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="col-4">
+                                                <div class="title">Код страны:</div>
+                                            </div>
+                                            <div class="col-8">
+                                                <select class="mini" id="RG_country_2_edit">
+                                                    <!-- js code -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button type="button" class="btn_add">Добавить</button>
+                                        <button type="button" class="btn_cancel">Отменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter_block">
+                                <div class="filter_country_and_add_btn">
+                                    <div class="filter_country">
+                                        <span>Страна:</span>
+                                        <select id="RG_country_2">
+                                            <!-- Js code -->
+                                        </select>
+                                    </div>
+                                    <div class="add_btn_region">
+                                        <div class="btn">
+                                            <img src="icons/plus.svg">Добавить</div>
+                                        </div>
+                                    </div>
+                                    <div class="filter_choosen">
+                                        <span class="btn_all">все</span> /
+                                        <span class="btn_main">только основные</span>
+                                    </div>
+                                </div>
+                                <div class="RG_items_header">
+                                    <div class="id">ID</div>
+                                    <div class="name">Название</div>
+                                    <div class="keyword"></div>
+                                    <div class="actions">Действие</div>
+                                </div>
+                                <div class="RG_items">
+                                    <!-- Js code -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="yak6" class="system_state display-none" data-open="secSix">
+
+                    <div class="block_system_state">
+                        <div class="SS_header">
+                            <div class="SS_header_title">
+                                <div class="header_title_icon">
+                                    <img src="icons/menu.svg">
+                                </div>
+                                <div class="header_title_text">Состояние системы</div>
+                            </div>
+                        </div>
+                        <div class="SS_body">
+                            <div class="system_info">
+                                <div class="date_time">
+                                    <span>29.01.2021</span>
+                                    <span>11:57:40</span>
+                                </div>
+                                <div class="text_rec">Рекомендуем включить
+                                    <a href="#/">HTTPS-режим</a> работы сайта
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SS_footer">
+                            <button type="button" class="btn_check_again">Проверить повторно</button>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/settings/main.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+        // Replace the <textarea id="editor1"> with a CKEditor 4
+        // instance, using default configuration.
+        CKEDITOR.replace('ck_gs_one');
+        CKEDITOR.replace('ck_gs_two');
+        CKEDITOR.replace('ck_gs_three');
+        CKEDITOR.replace('ck_gs_four');//
+    </script>
+</body>
+
+</html>

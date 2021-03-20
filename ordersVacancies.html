@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="letcop">
+  <meta name="keywords" content="фриланс-биржа, онлайн биржа">
+  <meta name="description" content="Наша платформа - мост, соединяющий работодателей и исполнителей из разных уголков Мира. Цель компании создать максимально комфортные условия и услуги для Заказчиков и Исполнителей!">
+  <title>Заказы и Вакансии</title>
+  <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/orderVacancies/main.css">
+  <link rel="stylesheet" href="css/orderVacancies/style.css">
+</head>
+<body class="admin_ordersAndVacancies">
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo_header">
+        <a href="#/"><img src="icons/nav_logo.png" alt=""></a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Поиск">
+        <div class="search_btn">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="chat">
+        <i class="fas fa-comment">
+          <span>99</span>
+        </i>
+        <div class="chat_text">
+          <ul>
+            <li><a href="chats.html"><strong>Чаты администраторов</strong></a> <br>
+              Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с
+              каждым
+              пользователям от имени “Поддержки” (администрации)
+            </li> <br>
+            <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a> <br>
+              Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и
+              контролировать
+              правильность и корректность работы и общения между пользователями
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="quitBlock">
+        <a href="#/">Выйти</a>
+      </div>
+      <div class="avatar">
+        <img src="img/user4.png" alt="">
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu_item">
+        <div class="all_category">
+          Все категории
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+          <li><a href="index.html" class="menu_list">Главная страница<div>29</div></a></li>
+          <li><a href="ordersVacancies.html" class="menu_list mainActive">Заказы и Вакансии<div>379</div></a></li>
+          <li><a href="#/" class="menu_list">Безопасный платеж <i
+            class="fas fa-level-down-alt todown"></i></a>
+            <ul class="sub_menu">
+              <li><a class="activeToggles" href="securePayments.html">Ход работы<div>379</div></a></li>
+              <li><a class="activeToggles" href="securePayments.html">Движение средств<div>39</div></a></li>
+              <li><a class="activeToggles" href="securePayments.html">Платежные системы<div>79</div></a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="workshop.html" class="menu_list">Творческая мастерская<div>37</div></a></li>
+          <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li> -->
+          <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+          <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+          <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+          <li><a href="forum.html" class="menu_list">Форум<div>23</div></a></li>
+          <li><a href="pages.html" class="menu_list">Страницы</a></li>
+          <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+          <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                        <li><a href="#/" class="menu_list">Работа с почтой<i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="mail.html">Список рассылок</a></li>
+                                <li><a href="mail.html">Шаблоны писем</a></li>
+                                <li><a href="mail.html">База почт</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">SEO- оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="seo.html">Общие настройки</a></li>
+                                <li><a href="seo.html">Заказы</a></li>
+                                <li><a href="seo.html">Магазин</a></li>
+                                <li><a href="seo.html">Пользователи</a></li>
+                                <li><a href="seo.html">Ответы</a></li>
+                                <li><a href="seo.html">Блог</a></li>
+                                <li><a href="seo.html">Статьи</a></li>
+                                <li><a href="seo.html">Новости</a></li>
+                                <li><a href="seo.html">Помощь</a></li>
+                                <li><a href="seo.html">Посадочные страницы</a></li>
+                                <li><a href="seo.html">Редиректы</a></li>
+                                <li><a href="seo.html">Настройки</a></li>
+                                <li><a href="seo.html">Аддон для главной страницы</a></li>
+                                <li><a href="seo.html">Open Graph</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+        </ul>
+      </div>
+
+      <div class="orders_body">
+        <div class="orders_vacancies">
+          <div class="head">
+            <div class="orders_btn active_head">Заказы <div class="count_orders"><span>5</span></div></div>
+            <div class="vacancies_btn">Вакансии <div class="vacancies_orders"><span>7</span></div></div>
+          </div>
+        </div>
+
+
+        <!--Старт Заказы  -->
+        <section class="orders_page">
+          <div class="title_btns">
+            <div class="active_btn">Активные</div>
+            <div class="moderation_btn active_orders_btn">Модерация</div>
+            <div class="blocked_btn">Заблокированные</div>
+          </div>
+          <div class="sub_titles">
+            <div class="regions">
+              <div class="my_region">
+                <input  type="text" placeholder="Регион" value="Регион" disabled>
+                <i class="fas fa-sort-up"></i>
+              </div>
+              <ul>
+                <li>Юнусобод</li>
+                <li>Сергели</li>
+                <li>Чилонзор</li>
+                <li>Бектемир</li>
+              </ul>
+            </div>
+
+                      <!-- <div class="key_text">
+                        <span>Ключевые слова</span>
+                      </div>
+ 
+                      <div class="login">
+                        <span>ID/Логин/E-mail</span>
+                      </div> -->
+
+                      
+                      <div class="search_orders">
+                       <input type="text" placeholder="ID/Логин/E-mail">
+                       <div class="search_btn">
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="active_orders">
+
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="id_item">ID</th>
+                          <th class="order_item">Заказ</th>
+                          <th class="date_item">Дата</th>
+                          <th class="actions_item">Действия</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr class="moderation_list">
+                          <td class="id_list">15</td>
+                          <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                          <td class="date_list"><span>9 ноября 21:00</span></td>
+                          <td class="actions_list">
+                            <i class="fas fa-plus-square add_active"></i>
+                            <i class="fas fa-pen-square edit"></i> 
+                            <i class="fas fa-window-close"></i></td>
+                          </tr>
+                          <tr class="moderation_list">
+                            <td class="id_list">15</td>
+                            <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                            <td class="date_list"><span>9 ноября 21:00</span></td>
+                            <td class="actions_list">
+                              <i class="fas fa-plus-square add_active"></i>
+                              <i class="fas fa-pen-square edit"></i> 
+                              <i class="fas fa-window-close"></i></td>
+                            </tr>
+                            <tr class="moderation_list">
+                              <td class="id_list">15</td>
+                              <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                              <td class="date_list"><span>9 ноября 21:00</span></td>
+                              <td class="actions_list">
+                                <i class="fas fa-plus-square add_active"></i>
+                                <i class="fas fa-pen-square edit"></i> 
+                                <i class="fas fa-window-close"></i></td>
+                              </tr>
+                              <tr class="moderation_list">
+                                <td class="id_list">15</td>
+                                <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                <td class="date_list"><span>9 ноября 21:00</span></td>
+                                <td class="actions_list">
+                                  <i class="fas fa-plus-square add_active"></i>
+                                  <i class="fas fa-pen-square edit"></i> 
+                                  <i class="fas fa-window-close"></i></td>
+                                </tr>
+                                <tr class="moderation_list">
+                                  <td class="id_list">15</td>
+                                  <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                  <td class="date_list"><span>9 ноября 21:00</span></td>
+                                  <td class="actions_list">
+                                    <i class="fas fa-plus-square add_active"></i>
+                                    <i class="fas fa-pen-square edit"></i> 
+                                    <i class="fas fa-window-close"></i></td>
+                                  </tr>
+                                  <tr class="moderation_list">
+                                    <td class="id_list">15</td>
+                                    <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                    <td class="date_list"><span>9 ноября 21:00</span></td>
+                                    <td class="actions_list">
+                                      <i class="fas fa-plus-square add_active"></i>
+                                      <i class="fas fa-pen-square edit"></i> 
+                                      <i class="fas fa-window-close"></i></td>
+                                    </tr>
+                                    <tr class="moderation_list">
+                                      <td class="id_list">15</td>
+                                      <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                      <td class="date_list"><span>9 ноября 21:00</span></td>
+                                      <td class="actions_list">
+                                        <i class="fas fa-plus-square add_active"></i>
+                                        <i class="fas fa-pen-square edit"></i> 
+                                        <i class="fas fa-window-close"></i></td>
+                                      </tr>
+                                      <tr class="moderation_list">
+                                        <td class="id_list">15</td>
+                                        <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                        <td class="date_list"><span>9 ноября 21:00</span></td>
+                                        <td class="actions_list">
+                                          <i class="fas fa-plus-square add_active"></i>
+                                          <i class="fas fa-pen-square edit"></i> 
+                                          <i class="fas fa-window-close"></i></td>
+                                        </tr>
+                                        <tr class="moderation_list">
+                                          <td class="id_list">15</td>
+                                          <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                          <td class="date_list"><span>9 ноября 21:00</span></td>
+                                          <td class="actions_list">
+                                            <i class="fas fa-plus-square add_active"></i>
+                                            <i class="fas fa-pen-square edit"></i> 
+                                            <i class="fas fa-window-close"></i></td>
+                                          </tr> 
+                                          <tr class="moderation_list">
+                                            <td class="id_list">15</td>
+                                            <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                            <td class="date_list"><span>9 ноября 21:00</span></td>
+                                            <td class="actions_list">
+                                              <i class="fas fa-plus-square add_active"></i>
+                                              <i class="fas fa-pen-square edit"></i> 
+                                              <i class="fas fa-window-close"></i></td>
+                                            </tr>
+                                            <tr class="moderation_list">
+                                              <td class="id_list">15</td>
+                                              <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                              <td class="date_list"><span>9 ноября 21:00</span></td>
+                                              <td class="actions_list">
+                                                <i class="fas fa-plus-square add_active"></i>
+                                                <i class="fas fa-pen-square edit"></i> 
+                                                <i class="fas fa-window-close"></i></td>
+                                              </tr>
+                                              <tr class="moderation_list">
+                                                <td class="id_list">15</td>
+                                                <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                <td class="actions_list">
+                                                  <i class="fas fa-plus-square add_active"></i>
+                                                  <i class="fas fa-pen-square edit"></i> 
+                                                  <i class="fas fa-window-close"></i></td>
+                                                </tr>
+                                                <tr class="moderation_list">
+                                                  <td class="id_list">15</td>
+                                                  <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                  <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                  <td class="actions_list">
+                                                    <i class="fas fa-plus-square add_active"></i>
+                                                    <i class="fas fa-pen-square edit"></i> 
+                                                    <i class="fas fa-window-close"></i></td>
+                                                  </tr>
+                                                  <tr class="moderation_list">
+                                                    <td class="id_list">15</td>
+                                                    <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                    <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                    <td class="actions_list">
+                                                      <i class="fas fa-plus-square add_active"></i>
+                                                      <i class="fas fa-pen-square edit"></i> 
+                                                      <i class="fas fa-window-close"></i></td>
+                                                    </tr>
+                                                    <tr class="moderation_list">
+                                                      <td class="id_list">15</td>
+                                                      <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                      <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                      <td class="actions_list">
+                                                        <i class="fas fa-plus-square add_active"></i>
+                                                        <i class="fas fa-pen-square edit"></i> 
+                                                        <i class="fas fa-window-close"></i></td>
+                                                      </tr>
+                                                      <tr class="moderation_list">
+                                                        <td class="id_list">15</td>
+                                                        <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                        <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                        <td class="actions_list">
+                                                          <i class="fas fa-plus-square add_active"></i>
+                                                          <i class="fas fa-pen-square edit"></i> 
+                                                          <i class="fas fa-window-close"></i></td>
+                                                        </tr>
+                                                        <tr class="moderation_list">
+                                                          <td class="id_list">15</td>
+                                                          <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                          <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                          <td class="actions_list">
+                                                            <i class="fas fa-plus-square add_active"></i>
+                                                            <i class="fas fa-pen-square edit"></i> 
+                                                            <i class="fas fa-window-close"></i></td>
+                                                          </tr>
+                                                          <tr class="moderation_list">
+                                                            <td class="id_list">15</td>
+                                                            <td class="order_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a> Создать сайт на Word Press + купите велосипед</td>
+                                                            <td class="date_list"><span>9 ноября 21:00</span></td>
+                                                            <td class="actions_list">
+                                                              <i class="fas fa-plus-square add_active"></i>
+                                                              <i class="fas fa-pen-square edit"></i> 
+                                                              <i class="fas fa-window-close"></i></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                      <!-- End active orders -->
+                                                    </section>
+
+
+                                                    <!-- Старт Вакансы -->
+                                                    <section class="vacancy_page"  style="display: none;">
+                                                      <div class="title_btns_vacancy">
+                                                        <div class="active_btn_vacancy">Активные</div>
+                                                        <div class="moderation_btn_vacancy active_vacancy_btn">Модерация</div>
+                                                        <div class="blocked_btn_vacancy">Заблокированные</div>
+                                                      </div>
+                                                      <div class="sub_titles">
+                                                        <div class="regions_vacacy">
+                                                          <div class="my_region">
+                                                            <input  type="text" placeholder="Регион" value="Регион" disabled>
+                                                            <i class="fas fa-sort-up"></i>
+                                                          </div>
+                                                          <ul>
+                                                            <li>Юнусобод</li>
+                                                            <li>Сергели</li>
+                                                            <li>Чилонзор</li>
+                                                            <li>Бектемир</li>
+                                                          </ul>
+                                                        </div>
+
+
+                                                        <div class="search_orders">
+                                                         <input type="text" placeholder="ID/Логин/E-mail">
+                                                         <div class="search_btn">
+                                                          <i class="fas fa-search"></i>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+
+                                                    <div class="active_vacancy">
+
+                                                      <table>
+                                                        <thead>
+                                                          <tr>
+                                                            <th class="id_item">ID</th>
+                                                            <th class="vacancy_item">Вакансии</th>
+                                                            <th class="date_item">Дата</th>
+                                                            <th class="actions_item">Действия</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                          <tr class="moderation_list_vacancy">
+                                                            <td class="id_list">22</td>
+                                                            <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                            <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                            <td class="actions_list">
+                                                              <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                              <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                              <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                            </tr>
+                                                            <tr class="moderation_list_vacancy">
+                                                              <td class="id_list">22</td>
+                                                              <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                              <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                              <td class="actions_list">
+                                                                <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                              </tr>
+                                                              <tr class="moderation_list_vacancy">
+                                                                <td class="id_list">22</td>
+                                                                <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                <td class="actions_list">
+                                                                  <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                  <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                  <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                </tr>
+                                                                <tr class="moderation_list_vacancy">
+                                                                  <td class="id_list">22</td>
+                                                                  <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                  <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                  <td class="actions_list">
+                                                                    <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                    <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                    <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                  </tr>
+                                                                  <tr class="moderation_list_vacancy">
+                                                                    <td class="id_list">22</td>
+                                                                    <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                    <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                    <td class="actions_list">
+                                                                      <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                      <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                      <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                    </tr>
+                                                                    <tr class="moderation_list_vacancy">
+                                                                      <td class="id_list">22</td>
+                                                                      <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                      <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                      <td class="actions_list">
+                                                                        <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                        <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                        <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                      </tr>
+                                                                      <tr class="moderation_list_vacancy">
+                                                                        <td class="id_list">22</td>
+                                                                        <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                        <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                        <td class="actions_list">
+                                                                          <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                          <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                          <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                        </tr>
+                                                                        <tr class="moderation_list_vacancy">
+                                                                          <td class="id_list">22</td>
+                                                                          <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                          <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                          <td class="actions_list">
+                                                                            <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                            <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                            <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                          </tr>
+                                                                          <tr class="moderation_list_vacancy">
+                                                                            <td class="id_list">22</td>
+                                                                            <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                            <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                            <td class="actions_list">
+                                                                              <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                              <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                              <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                            </tr>
+                                                                            <tr class="moderation_list_vacancy">
+                                                                              <td class="id_list">22</td>
+                                                                              <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                              <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                              <td class="actions_list">
+                                                                                <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                              </tr>
+                                                                              <tr class="moderation_list_vacancy">
+                                                                                <td class="id_list">22</td>
+                                                                                <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                <td class="actions_list">
+                                                                                  <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                  <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                  <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                </tr>
+                                                                                <tr class="moderation_list_vacancy">
+                                                                                  <td class="id_list">22</td>
+                                                                                  <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                  <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                  <td class="actions_list">
+                                                                                    <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                    <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                    <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                  </tr>
+                                                                                  <tr class="moderation_list_vacancy">
+                                                                                    <td class="id_list">22</td>
+                                                                                    <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                    <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                    <td class="actions_list">
+                                                                                      <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                      <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                      <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                    </tr>
+                                                                                    <tr class="moderation_list_vacancy">
+                                                                                      <td class="id_list">22</td>
+                                                                                      <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                      <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                      <td class="actions_list">
+                                                                                        <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                        <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                        <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                      </tr>
+                                                                                      <tr class="moderation_list_vacancy">
+                                                                                        <td class="id_list">22</td>
+                                                                                        <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                        <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                        <td class="actions_list">
+                                                                                          <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                          <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                          <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                        </tr>
+                                                                                        <tr class="moderation_list_vacancy">
+                                                                                          <td class="id_list">22</td>
+                                                                                          <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                          <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                          <td class="actions_list">
+                                                                                            <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                            <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                            <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                          </tr>
+                                                                                          <tr class="moderation_list_vacancy">
+                                                                                            <td class="id_list">22</td>
+                                                                                            <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                            <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                            <td class="actions_list">
+                                                                                              <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                              <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                              <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                            </tr>
+                                                                                            <tr class="moderation_list_vacancy">
+                                                                                              <td class="id_list">22</td>
+                                                                                              <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                              <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                              <td class="actions_list">
+                                                                                                <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                                <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                                <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                              </tr>
+                                                                                              <tr class="moderation_list_vacancy">
+                                                                                                <td class="id_list">22</td>
+                                                                                                <td class="vacancy_list"><a href="#/"><i class="fas fa-external-link-alt"></i></a>Закажите сайт + получите бонусы</td>
+                                                                                                <td class="date_list"><span>22 февраль 15:00</span></td>
+                                                                                                <td class="actions_list">
+                                                                                                  <i class="fas fa-plus-square add_active_vacancy"></i>
+                                                                                                  <i class="fas fa-pen-square edit_vacancy"></i> 
+                                                                                                  <i class="fas fa-window-close blocked_vacancy"></i></td>
+                                                                                                </tr>
+                                                                                              </tbody>
+                                                                                            </table>
+                                                                                          </div>
+                                                                                          <!-- End active orders -->
+                                                                                        </section>
+
+                                                                                      </div>
+
+
+                                                                                    </div>
+                                                                                  </div>
+
+
+                                                                                  <!-- Модал увидемления -->
+
+                                                                                  <div class="modal_page_active" id='activeModal'>
+                                                                                    <div class="modal_item">
+                                                                                      <!-- <i class="fas fa-times-circle close_active"></i> -->
+                                                                                      <span>Aктивирован</span>
+                                                                                      <i class="fas fa-check-circle"></i>
+                                                                                    </div>
+                                                                                  </div>
+
+                                                                                  <!-- Модал сохранить -->
+                                                                                  <div class="modal_save">
+                                                                                    <div class="modal_item">
+                                                                                      <span>Изменении были сохранены</span>
+                                                                                      <i class="fas fa-check-circle"></i>
+                                                                                    </div>
+                                                                                  </div>
+
+                                                                                  <!-- Модал Заблокированые -->
+
+                                                                                  <div class="modal_page_blocked" id = 'blockedModal'>
+                                                                                    <div class="modal_item">
+                                                                                      <span>Заблокирован</span>
+                                                                                      <i class="fas fa-check-circle blocked"></i>
+                                                                                    </div>
+                                                                                  </div>
+
+                                                                                  <!-- Модал блокировки -->
+
+
+                                                                                  <form class="bloced_page">
+                                                                                    <div class="blocked_text">
+                                                                                      <h3>Причина блокировки</h3>
+                                                                                      <textarea name="" placeholder="Напишите причину блокировки"></textarea>
+
+                                                                                      <div class="blocking_mode">
+                                                                                        <div class="one">Ваш аккаунт был заблокирован из-за нарушение правил сайта</div>
+                                                                                        <div class="two">Ваш аккаунт был заблокирован из-за неуважение другого пользователя</div>
+                                                                                        <div class="three">Ваш аккаунт был заблокирован из-за матных слов</div>
+                                                                                      </div>
+                                                                                      <div class="btn">
+                                                                                        <button type="button" class="close_bloced_page">Отмена</button>
+                                                                                        <button type="button" class="blocking_order">Блокировка</button>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </form>
+
+                                                                                  <!-- модал редактирование -->
+
+                                                                                  <div class="modal_page_editing" id="editModal">
+                                                                                    <form class="modal_item">
+                                                                                      <div class="modal_header">
+                                                                                        <h2>редактирование</h2>
+                                                                                        <i class="fas fa-times-circle close_editing"></i>
+                                                                                      </div>
+                                                                                      <div class="modal_body">
+                                                                                        <div class="title">
+                                                                                          <input type="text" name="" value="Создать сайт на ВП  и велик один">
+                                                                                        </div>
+                                                                                        <!-- выбрать профессию -->
+
+                                                                                        <div class="choose_list">
+                                                                                          <div class="left_choose">
+                                                                                            <div class="profession">
+                                                                                              <input type="text" name="" placeholder="выбрать профессию" disabled>
+                                                                                              <i class="fas fa-sort-up"></i>
+                                                                                            </div>
+                                                                                            <ul class="choose_lists">
+                                                                                              <li>Web-дизайн</li>
+                                                                                              <li>Web-программирование</li>
+                                                                                              <li>Android-программирование</li>
+                                                                                            </ul>
+                                                                                          </div>
+
+                                                                                          <div class="right_choose">
+                                                                                            <div class="direction">
+                                                                                              <input type="text" name="" placeholder="выбрать направление" disabled>
+                                                                                              <i class="fas fa-sort-up"></i>
+                                                                                            </div>
+                                                                                            <ul class="direction_list">
+                                                                                              <li>Макет для Web</li>
+                                                                                              <li>Web-сайт</li>
+                                                                                              <li>Web-игра</li>
+                                                                                            </ul>
+                                                                                          </div>
+                                                                                        </div>
+
+                                                                                        <div class="descriptions">
+                                                                                          <textarea name="descriptions" placeholder="Добавить описания">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое послушавшись буквоград своего! Океана рыбного буквоград, вдали свою несколько языкового щеке необходимыми сбить заманивший свой, вопроса единственное? Города снова предложения путь рыбными которое курсивных?</textarea>
+                                                                                        </div>
+
+                                                                                        <!-- Добавить файл -->
+                                                                                        <div class="add_file">
+                                                                                          <span>Прекрепите файл</span>
+                                                                                          <input type="file" name="" id="addFile">
+                                                                                          <i class="fas "></i>
+                                                                                          <span class="added_file"></span>
+                                                                                        </div>
+
+                                                                                        <!-- Добавить ключевые навыки -->
+
+                                                                                        <div class="key_skills">
+                                                                                          <input type="text" name="" placeholder="Ключевые навыки">
+                                                                                          <div class="key_skills_list">
+                                                                                            <h5>Рекомендуемые навыки</h5>
+                                                                                            <i class="fas fa-times-circle"></i>
+                                                                                            <ul>
+                                                                                              <li>HTML5</li>
+                                                                                              <li>CSS3</li>
+                                                                                              <li>JavaScript</li>
+                                                                                              <li>jQuery</li>
+                                                                                              <li>React.js</li>
+                                                                                              <li>Vue.js</li>
+                                                                                              <li>Angular.js</li>
+                                                                                              <li>PHP</li>
+                                                                                              <li>Wordpress</li>
+                                                                                              <li>Python</li>
+                                                                                              <li>Django</li>
+                                                                                              <li>Node.js</li>
+                                                                                              <li>Java</li>
+                                                                                              <li>Photoshop</li>
+                                                                                              <li>Figma</li>
+                                                                                            </ul>
+                                                                                          </div>
+
+
+                                                                                          <div class="added_keys"></div>
+                                                                                          <i class="fas fa-plus-circle addKeys"></i>
+
+                                                                                        </div>
+
+                                                                                        <div class="budget">
+                                                                                          <span>Бюджет: </span> <input type="number" value="200">
+                                                                                        </div>
+
+                                                                                        <div class="user">
+                                                                                          <span>Пользователь: </span> <big>Hamillioner</big>
+                                                                                        </div>
+
+                                                                                        <div class="responses">
+                                                                                          <span>Прием откликов: </span> <input type="number" value="14"> <strong>дней до </strong><strong> 9 ноября</strong>
+                                                                                        </div>
+
+                                                                                        <div class="status">
+                                                                                          <span>Статус: </span> <i id="noStatus">Не выбран</i> <i id="activeText">Активный</i> <i id="blockingText">Заблокировано</i> <strong id="dataStatus">9 ноября 21:00</strong>
+                                                                                        </div>
+
+                                                                                        <div class="middle_btns">
+                                                                                          <button type="button" class="actived_order">Активировать</button>
+                                                                                          <button type="button" class="blocked_order">Заблокировать</button>
+                                                                                        </div>
+
+                                                                                        <div class="buttons">
+                                                                                          <button type="submit" class="save_btn">Сохранить изменения</button>
+                                                                                          <button class="remove_btn">Удалить</button>
+                                                                                        </div>
+                                                                                      </div>
+
+
+                                                                                    </form>
+
+                                                                                    <div class="user_page">
+                                                                                      <div class="title">
+                                                                                        <h3>Информация о пользователе</h3>    
+                                                                                        <!-- <i class="fas fa-times-circle close_user_page"></i> -->
+                                                                                      </div>
+                                                                                      <div class="body">
+                                                                                        <div class="head">
+                                                                                          <div class="avatar">
+                                                                                            <img src="img/user4.png" alt="">
+                                                                                          </div>
+                                                                                          <div class="info">
+                                                                                            <strong>Тимур Касымов</strong>
+                                                                                            <a href="#/">Hamillioner</a>
+                                                                                            <span>Тип аккаунта: <span class="type">Исполнитель</span></span>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                        <div class="basic_info">
+                                                                                          <strong>Паспорт: </strong><span class="pass">Не верифицирован</span><br>
+                                                                                          <strong>Телефон: </strong><span>+998903200723</span><br>
+                                                                                          <strong>E-mail: </strong><span>hamillioners@gmail.com</span><br>
+                                                                                          <strong>Регистрация: </strong><span>12.20.2020</span><br>
+                                                                                          <strong>Активность: </strong><span>9 ноября 21:00</span><br>
+                                                                                          <strong>Страна: </strong><span>Узбекистан</span>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+
+                                                                                  <!-- модал редактирование для вакансии -->
+
+                                                                                  <div class="modal_page_editing" id="editModalVacancy">
+                                                                                    <form class="modal_item">
+                                                                                      <div class="modal_header">
+                                                                                        <h2>редактирование</h2>
+                                                                                        <i class="fas fa-times-circle close_editing_vacancy"></i>
+                                                                                      </div>
+                                                                                      <div class="modal_body">
+                                                                                        <div class="title">
+                                                                                          <input type="text" name="" placeholder="Назовите свою вакансию" value="Мы создаем быстрый и качественный сайт и гарантируем свою работу">
+                                                                                        </div>
+                                                                                        <!-- выбрать профессию -->
+
+                                                                                        <div class="choose_list">
+                                                                                          <div class="left_choose_vacancy">
+                                                                                            <div class="profession_vacancy">
+                                                                                              <input type="text" name="" placeholder="Выберите вашу категорию" disabled>
+                                                                                              <i class="fas fa-sort-up"></i>
+                                                                                            </div>
+                                                                                            <ul class="choose_lists">
+                                                                                              <li>Web-разработка и Сайты</li>
+                                                                                              <li>Тексты и переводы</li>
+                                                                                              <li>Программирование ПО и систем</li>
+                                                                                              <li>Управление персоналом</li>
+                                                                                              <li>Администрирование сайтов</li>
+                                                                                              <li>Графика и Фотография</li>
+                                                                                              <li>Аудио, Видео и Мультимедия</li>
+                                                                                              <li>Учеба и репетиторство</li>
+                                                                                              <li>Полиграфия и Айдентика</li>
+                                                                                              <li>Архитектура и Инжиниринг</li>
+                                                                                              <li>Продвижение сайтов (SEO)</li>
+                                                                                            </ul>
+                                                                                          </div>
+
+                  <!-- <div class="right_choose_vacancy">
+                    <div class="direction">
+                      <input type="text" name="" placeholder="выбрать направление" disabled>
+                      <i class="fas fa-sort-up"></i>
+                    </div>
+                        <ul class="direction_list">
+                          <li>Макет для Web</li>
+                          <li>WEb-сайт</li>
+                          <li>Web-игра</li>
+                         </ul>
+                       </div> -->
+                     </div>
+
+                     <div class="descriptions">
+                      <textarea name="descriptions" placeholder="Добавить описания">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое послушавшись буквоград своего! Океана рыбного буквоград, вдали свою несколько языкового щеке необходимыми сбить заманивший свой, вопроса единственное? Города снова предложения путь рыбными которое курсивных?</textarea>
+                    </div>
+
+                    <!-- Добавить файл -->
+                    <div class="add_file">
+                      <span>Прекрепите файл</span>
+                      <input type="file" name="" id="addFileVacancy">
+                      <i class="fas "></i>
+                      <span class="added_file_vacancy"></span>
+                    </div>
+
+                    <!-- Добавить ключевые навыки -->
+
+                    <div class="key_skills_vacancy">
+                      <input type="text" name="" placeholder="Ключевые навыки">
+                      <div class="key_skills_list_vacancy">
+                        <h5>Рекомендуемые навыки</h5>
+                        <i class="fas fa-times-circle"></i>
+                        <ul>
+                          <li>UX/UI-дизайн</li>
+                          <li>Моушн-дизайн/видеодизайн</li>
+                          <li>Маркетинг</li>
+                          <li>jQuery</li>
+                          <li>Рекрутинг в IT</li>
+                          <li>Юзабилити</li>
+                          <li>SMM-маркетинг</li>
+                          <li>SEO оптимизация</li>
+                          <li>продвижение сайтов</li>
+                          <li>PHP-программист</li>
+                          <li>Frontend-программист</li>
+                          <li>Backend-программист</li>
+                          <li>Бухгалтерия</li>
+                          <li>Переводы</li>
+                          <li>1С-программист</li>
+                          <li>Системный администратор	</li>
+                          <li>Fullstack-программист</li>
+                          <li>Вебмастер</li>
+                          <li>Рерайтер</li>
+                          <li>Модератор сайта</li>
+                          <li>Технический дизайнер</li>
+                          <li>3D-дизайнер</li>
+                          <li>Визуализатор</li>
+                          <li>Менеджер по продажам</li>
+                          <li>Электронная коммерция</li>
+                          <li>Веб-дизайн</li>
+                        </ul>
+                      </div>
+
+
+                      <div class="added_keys_vacancy"></div>
+                      <i class="fas fa-plus-circle addKeysVacancy"></i>
+
+                    </div>
+
+                    <div class="budget">
+                      <span>Заработная плата: </span> <input type="number" value="200">
+                    </div>
+
+                    <div class="work_time">
+                      <h6>Режим работы:</h6>
+
+                      <div class="input__block_main">
+                        <div class="input__block">
+                          <div class="banner__radio block_banner_radio">
+                            <input id="fullDay" class="type__valedetion" id="text_number" name="worktype" type="radio" value="fullDay" checked>
+                            <div class="banner__radio_icon">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <label for="fullDay">
+                             <i class="fas fa-sun"></i> Полный день
+                           </label>
+                         </div>
+                         <div class="banner__radio block_banner_radio">
+                          <input id="weekends" class="type__valedetion" name="worktype" type="radio" value="weekends">
+                          <div class="banner__radio_icon">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <label for="weekends">
+                            <i class="fas fa-stopwatch"></i> На выходных
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="input__block">
+                        <div class="banner__radio block_banner_radio">
+                          <input id="night" class="type__valedetion" name="worktype" type="radio" value="night">
+                          <div class="banner__radio_icon">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <label for="night">
+                            <i class="fas fa-moon"></i> Вечерами
+                          </label>
+                        </div>
+                        <div class="banner__radio block_banner_radio">
+                          <input id="notFull" class="type__valedetion" name="worktype" type="radio" value="notFull">
+                          <div class="banner__radio_icon">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <label for="notFull">
+                            <i class="fas fa-hourglass-end"></i>
+                            Не полный день 
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="userVacancy">
+                    <span>Пользователь: </span> <big>Hamillioner</big>
+                  </div>
+
+                  <div class="responses">
+                    <span>Прием откликов: </span> <input type="number" value="14"> <strong>дней до </strong><strong> 9 ноября</strong>
+                  </div>
+
+                  <div class="status">
+                    <span>Статус: </span> <i id="noStatusVacancy">Не выбран</i> <i id="activeTextVacancy">Активный</i> <i id="blockingTextVacancy">Заблокировано</i> <strong id="dataStatusVacancy">9 ноября 21:00</strong>
+                  </div>
+
+                  <div class="middle_btns">
+                    <button type="button" class="actived_edit_vacancy">Активировать</button>
+                    <button type="button" class="blocked_edit_vacancy">Заблокировать</button>
+                  </div>
+
+                  <div class="buttons">
+                    <button type="submit" class="save_vacancy_btn">Сохранить изменения</button>
+                    <button class="remove_vacancy_btn">Удалить</button>
+                  </div>
+                </div>
+
+
+              </form>
+
+              <div class="user_page user_page_vacancy">
+                <div class="title">
+                  <h3>Информация о пользователе</h3>    
+                </div>
+                <div class="body">
+                  <div class="head">
+                    <div class="avatar">
+                      <img src="img/user4.png" alt="">
+                    </div>
+                    <div class="info">
+                      <strong>Тимур Касымов</strong>
+                      <a href="#/">Hamillioner</a>
+                      <span>Тип аккаунта: <span class="type">Исполнитель</span></span>
+                    </div>
+                  </div>
+                  <div class="basic_info">
+                    <strong>Паспорт: </strong><span class="pass">Не верифицирован</span><br>
+                    <strong>Телефон: </strong><span>+998903200723</span><br>
+                    <strong>E-mail: </strong><span>hamillioners@gmail.com</span><br>
+                    <strong>Регистрация: </strong><span>12.20.2020</span><br>
+                    <strong>Активность: </strong><span>9 ноября 21:00</span><br>
+                    <strong>Страна: </strong><span>Узбекистан</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- редактировать  user info-->
+            <div class="userEditWrapper">
+              <div class="userEditBlock">
+                <div class="userEditTabs">
+                  <a class="userEditTab account user-active" href="#/">Аккаунт</a>
+                  <a class="userEditTab verification" href="#/">Верификация</a>
+                  <a class="userEditTab comments" href="#/">Отзывы</a>
+                  <a class="userEditTab funds" href="#/">Движение средств</a>
+                  <a class="xCloseUserEdit" href="#/"><i class="fas fa-times-circle"></i></a>
+                </div>
+                <form class="userEditAccountBlock">
+                  <div class="formBlocks">
+                    <div class="formLeft">
+                      <div class="mainInfo">
+                        <div class="avatarPhoto">
+                          <input type="file" id="productImageUpload1" accept=".png, .jpg, .jpeg"
+                          name="productImage1" multiple />
+                          <label for="productImageUpload1">
+                          </label>
+                          <img src="img/user4.png" alt="">
+                          <p>Изменить</p>
+                        </div>
+                        <div class="mainInfoTexts">
+                          <div class="mainInfoText">
+                            <p class="nameSurname">Тимур Касымов <a href="#/"><i class="fas fa-comment-alt"></i></a>
+                            </p>
+                            <a class="outLog" href="#/">Разлогинить</a>
+                          </div>
+                          <a class="loginLink" href="#/">Hamillioner</a>
+                          <p class="typeAccount">Тип аккаунта:
+                            <select id="role">
+                              <option value="1">Исполнитель</option>
+                              <option value="2">Заказчик</option>
+                            </select>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="inputs">
+                        <div class="inputBlock">
+                          <span>Имя </span><input type="text" value="Тимур">
+                        </div>
+                        <div class="inputBlock">
+                          <span>Фамилия </span><input type="text" value="Касымов">
+                        </div>
+                        <div class="inputBlock">
+                          <span>Логин </span><input type="text" value="hamillioner">
+                        </div>
+                        <div class="inputBlock">
+                          <span>E-mail </span><input type="text" value="hamillioner@gmail.com">
+                        </div>
+                        <div class="inputBlock">
+                          <span>Телефон </span><input type="text" value="+998995959595">
+                        </div>
+                      </div>
+                      <div class="passwordEdit">
+                        <div class="pass">
+                          <label for="userPassword"
+                          class="userEditPassword">Пароль</label>
+                        </div>
+                        <div class="inpPassword">
+                          <input type="password" id="userPassword"
+                          placeholder="Не менее 8 символов" minlength="8" value="12345678">
+                          <a id="editPassword" class="editPasswordBtn"
+                          onclick="changeToPass()">Изменить
+                        </a>
+                        <i class="fas fa-check" id="done"
+                        onclick="changedPass()"></i>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <p>Рейтинг</p>
+                      <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value=5>
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4" name="rating" value=4>
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating" value=3>
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating" value=2>
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating" value=1>
+                        <label for="star-1" title="Оценка «1»"></label>
+                      </div>
+                      <div class="rating-result">
+                        <span class="wun active"></span>
+                        <span class="two active"></span>
+                        <span class="three active"></span>
+                        <span class="four"></span>
+                        <span class="five"></span>
+                      </div>
+                      <a class="editRatingBtn" href="#/">Изменить</a>
+                      <a class="doneRating" href="#/"><i class="fas fa-check"></i></a>
+                    </div>
+                    <p class="registrationBlock">Регистрация <span>28 ноября 2020, 09:08
+                      -
+                    последняя, 127.0.0.1</span></p>
+                    <p class="authorizationBlock">Авторизация <span>27 ноября 2020,
+                      15:44 -
+                    предпоследняя</span></p>
+                    <div class="countrySelection">
+                      <div class="country__form_block">
+                        <div class="country__form_iteam">
+                          <div class="contry__form_btn">
+                            <span>Страна</span>
+                            <i class="fa fa-chevron-down"></i>
+                          </div>
+                          <div class="country__form_list">
+                          </div>
+                        </div>
+                        <div id="typ__span" class="err__span opacNull">Выберите
+                        страну</div>
+                      </div>
+                      <div class="city__form_block">
+                        <div class="city__form_iteam">
+                          <div class="city__form_btn">
+                            <span>Город</span>
+                            <i class="fa fa-chevron-down"></i>
+                          </div>
+                          <div class="city__form_list">
+                          </div>
+                        </div>
+                        <div id="typ__span-city" class="err__span-city opacNull-city">Выберите город
+                        </div>
+                      </div>
+                    </div>
+                    <div class="similar_performers edit_similar_performers">
+                      <div class="topExtraSkillsBlock">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p>Дополнительные навыки</p>
+                        </div>
+                        <div class="add_skill">
+                          <span id="returnErrorText"></span>
+                          <input type="text" list="addThisText" id="addSkill"
+                          placeholder="Добавить навык" maxlength="25">
+                          <datalist id="addThisText">
+                            <option value="UX/UI-дизайн">
+                              <option value="Моушн-дизайн/видеодизайн">
+                                <option value="Маркетинг">
+                                  <option value="Верстка">
+                                    <option value="Рекрутинг в IT">
+                                      <option value="Юзабилити">
+                                        <option value="SMM-маркетинг">
+                                          <option value="SEO оптимизация">
+                                            <option value="Продвижение сайтов">
+                                              <option value="PHP-программист">
+                                                <option value="Frontend-программист">
+                                                  <option value="Backend-программист">
+                                                    <option value="Бухгалтерия">
+                                                      <option value="Переводы">
+                                                        <option value="1С-программист">
+                                                          <option value="Системный администратор">
+                                                            <option value="Fullstack-программист">
+                                                              <option value="Вебмастер">
+                                                                <option value="Рерайтер">
+                                                                  <option value="Модератор сайта">
+                                                                    <option value="Технический дизайнер">
+                                                                      <option value="3D-дизайнер">
+                                                                        <option value="">
+                                                                          <option value="Менеджер по продажам">
+                                                                            <option value="Электронная коммерция">
+                                                                              <option value="Веб-дизайн">
+                                                                              </datalist>
+                                                                              <i class="fas fa-plus-circle add_skill_btn"></i>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="performers_info" id="performersInfo">
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Веб-дизайн</div>
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Визуализатор</div>
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Дизайнер</div>
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Frontend-программист</div>
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Backend-программист</div>
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Верстка</div>
+                                                                            <div class="skill_box"><i class="fas fa-times-circle"></i>
+                                                                            Модератор сайта</div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="formRight">
+                                                                        <p class="descriptionTitle">Описание</p>
+                                                                        <textarea>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Власти несколько решила послушавшись там они пор букв взобравшись сих</textarea>
+                                                                        <div class="trustBlock">Доверенный
+                                                                          <label for="trustCheck">
+                                                                            <input id="trustCheck" class="radio" type="checkbox" checked>
+                                                                            <div class="checkbox"><i class="fas fa-check checked"></i>
+                                                                            </div>
+                                                                          </label>
+                                                                          <p>действия пользователя не будут попадать на проверку
+                                                                          модератору</p>
+                                                                        </div>
+                                                                        <div class="checkboxes">
+                                                                          <p>E-mail уведомления</p>
+                                                                          <div class="mailChecks">
+                                                                            <div class="check">
+                                                                              <label>
+                                                                                <input class="radio" type="checkbox" checked>
+                                                                                <div class="checkbox"><i class="fas fa-check checked"></i>
+                                                                                </div>
+                                                                              </label>
+                                                                              <p>Получать рассылку о новостях Фриланс биржа 2.4</p>
+                                                                            </div>
+                                                                            <div class="check">
+                                                                              <label>
+                                                                                <input class="radio" type="checkbox" checked>
+                                                                                <div class="checkbox"><i class="fas fa-check checked"></i>
+                                                                                </div>
+                                                                              </label>
+                                                                              <p>Получать уведомления о новых сообщениях</p>
+                                                                            </div>
+
+                                                                            <div class="check">
+                                                                              <label>
+                                                                                <input class="radio" type="checkbox" checked>
+                                                                                <div class="checkbox"><i class="fas fa-check checked"></i>
+                                                                                </div>
+                                                                              </label>
+                                                                              <p>Получать уведомления о новых заказах</p>
+                                                                            </div>
+                                                                            <div class="check">
+                                                                              <label>
+                                                                                <input class="radio" type="checkbox" checked>
+                                                                                <div class="checkbox"><i class="fas fa-check checked"></i>
+                                                                                </div>
+                                                                              </label>
+                                                                              <p>Уведомления сервиса</p>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="blockedWhyWrapper">
+                                                                        <div class="blockedWhy">
+                                                                          <div class="templatesBlock">
+                                                                            <div class="templateOne">Ваш аккаунт был заблокирован из-за
+                                                                            нарушение правил сайта</div>
+                                                                            <div class="templateTwo">Ваш аккаунт был заблокирован из-за
+                                                                            неуважение другого пользователя</div>
+                                                                            <div class="templateThree">Ваш аккаунт был заблокирован
+                                                                            из-за матных слов</div>
+                                                                          </div>
+                                                                          <textarea placeholder="Введите причину блокировки"></textarea>
+                                                                          <div class="buttons">
+                                                                            <button class="blockingBtn">Заблокировать</button>
+                                                                            <button class="cancelBlockingBtn">Отмена</button>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="deleteWhyWrapper">
+                                                                        <div class="deleteWhy">
+                                                                          <div class="templatesBlock">
+                                                                            <div class="templateOne">Ваш аккаунт был удален из-за
+                                                                            нарушение правил сайта несмотря на предупреждение</div>
+                                                                            <div class="templateTwo">Ваш аккаунт был удален из-за
+                                                                              неуважение других пользователей несмотря на
+                                                                            предупреждение</div>
+                                                                            <div class="templateThree">Ваш аккаунт был удален из-за
+                                                                            матных слов несмотря на предупреждение</div>
+                                                                          </div>
+                                                                          <textarea placeholder="Введите причину удаление"></textarea>
+                                                                          <div class="buttons">
+                                                                            <button class="blockingBtn">Удалить аккаунт</button>
+                                                                            <button class="cancelBlockingBtn">Отмена</button>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="buttons">
+                                                                      <button class="blockBtn">Заблокировать</button>
+                                                                      <div class="middleButtons">
+                                                                        <button class="saveEndExitBtn">Сохранить и назад</button>
+                                                                        <button class="cancelBtn">Отменить</button>
+                                                                      </div>
+                                                                      <button class="deleteBtn">Удалить</button>
+                                                                    </div>
+                                                                  </form>
+                                                                  <form class="userEditVerifyBlock">
+                                                                    <p class="verifyTel">Номер телефона: <span>+9989032000723</span><i class="fas fa-check"></i>
+                                                                    </p>
+                                                                    <p class="verifyEmail">E-mail: <span>hamillioners@gmail.com</span><i
+                                                                      class="fas fa-check"></i></p>
+                                                                      <p class="verifyPassport">Личные данные: <span><a
+                                                                        href="img/nav_logo.png">06f91f0a.png</a></span></p>
+                                                                        <div class="buttons">
+                                                                          <button class="acceptBtn">Принять</button>
+                                                                          <button class="rejectBtn">Отклонить</button>
+                                                                        </div>
+                                                                      </form>
+                                                                      <div class="userEditCommentsBlock">
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий П��тров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="commentBlock">
+                                                                          <div class="avatarBlock">
+                                                                            <div class="imageBlock">
+                                                                              <img src="img/user4.png" alt="">
+                                                                            </div>
+                                                                            <div class="nameLogin">
+                                                                              <p>Василий Петров</p>
+                                                                              <a href="#/">Myvasya2323</a>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="commentText">
+                                                                            <p>Заказ выполнил хорошо, я доволен, Тимур молодец!</p>
+                                                                          </div>
+                                                                          <div class="commentInfo">
+                                                                            <p>16 ноября 2021</p>
+                                                                            <p class="orderText">Заказ 231</p>
+                                                                            <a href="#/" class="deleteComment">Удалить</a>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="userEditFundsBlock" style="display: none;">
+                                                                        <div class="fundTabsBar">
+                                                                          <span class="fundTab fund-active all"><a href="#/">Все</a></span>
+                                                                          <span class="fundTab Ready"><a href="#/">Выплаты (<span
+                                                                            class="quantityReady">2</span>)</a></span>
+                                                                            <span class="fundTab Arbitrage"><a href="#/">Резервированные (<span
+                                                                              class="quantityArbitrage">5</span>)</a></span>
+                                                                            </div>
+                                                                            <form>
+                                                                              <div>
+                                                                                <input type="text" placeholder="ID / Ключевое слово">
+                                                                              </div>
+                                                                              <button class="searchBtn">Поиск</button>
+                                                                            </form>
+                                                                            <table class="table">
+                                                                              <thead>
+                                                                                <tr class="table_header">
+                                                                                  <th width="50">ID</th>
+                                                                                  <th width="460">Ходы
+                                                                                    работ
+                                                                                  </th>
+                                                                                  <th width="200">Дата</th>
+                                                                                  <th width="160">Сумма</th>
+                                                                                  <th width="160">Комиссия</th>
+                                                                                </tr>
+                                                                              </thead>
+                                                                              <tbody class="tbody">
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke ready">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                                <tr class="fundStroke arbitrage">
+                                                                                  <td class="stroke_id">23</td>
+                                                                                  <td class="stroke_order">
+                                                                                    <p class="stroke_link"><a href="#/"><i
+                                                                                      class="fas fa-external-link-alt"></i></a>Создать
+                                                                                      логотип
+                                                                                      на PS для охранной службы
+                                                                                      <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                                                    </p>
+                                                                                  </td>
+                                                                                  <td class="date">29 ноября 10:00</td>
+                                                                                  <td class="stroke_amount">400$</td>
+                                                                                  <td class="stroke_comission">20$</td>
+                                                                                </tr>
+                                                                              </tbody>
+                                                                            </table>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <script src="js/jquery.js"></script>
+                                                    <script src="js/orderVacancies/ordersAndVacancies.js"></script>
+                                                                    <script src="js/orderVacancies/main.js"></script>
+                                                                  </body>
+                                                                  </html>

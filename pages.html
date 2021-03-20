@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страницы</title>
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/pages/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body class="admin_pages">
+    <!-- modal__confirmation -->
+    <div class="cover"></div>
+    <div class="modal delete_page_confirmation">
+        <div class="modal-header">
+            <div class="modal__header__title">
+                Окно подтверждения
+            </div>
+            <i class="fas fa-times-circle closeIcon closeConfirmationPopup"></i>
+        </div>
+        <div class="modal-body">
+            Потверждаете ли вы удаление страницы?
+        </div>
+        <div class="modal-btn-panel">
+            <div class="btn confirmBtn">
+                Да
+            </div>
+            <div class=" btn red--btn rejectBtn">
+                Нет
+            </div>
+
+        </div>
+    </div>
+    <!-- modal__confirmation -->
+
+
+
+    <section class="header_admin">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo_header">
+                    <a href="#/"><img src="icons/nav_logo.png" alt=""></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Поиск">
+                    <div class="search_btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comment">
+                        <span>99</span>
+                    </i>
+                    <div class="chat_text">
+                        <ul>
+                            <li><a href="chats.html"><strong>Чаты администраторов</strong></a> <br>
+                                Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с
+                                каждым
+                                пользователям от имени “Поддержки” (администрации)
+                            </li> <br>
+                            <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a> <br>
+                                Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и
+                                контролировать
+                                правильность и корректность работы и общения между пользователями
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="quitBlock">
+                    <a href="#/">Выйти</a>
+                </div>
+                <div class="avatar">
+                    <img src="img/user4.png" alt="">
+                </div>
+            </div>
+
+            <div class="menu">
+                
+                <div class="menu_item">
+                    <div class="all_category">
+                        Все категории
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html" class="menu_list">Главная страница<div>29</div></a></li>
+                        <li><a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии<div>379</div></a></li>
+                        <li><a href="#/" class="menu_list">Безопасный платеж <i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="securePayments.html">Ход работы<div>379</div></a></li>
+                                <li><a href="securePayments.html">Движение средств<div>39</div></a></li>
+                                <li><a href="securePayments.html">Платежные системы<div>79</div></a></li>
+                            </ul>
+                        </li>
+                       <!--  <li><a href="workshop.html" class="menu_list">Творческая мастерская<div>37</div></a></li>
+                        <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li> -->
+                        <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+                        <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+                        <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+                        <li><a href="forum.html" class="menu_list">Форум<div>23</div></a></li>
+                        <li><a href="pages.html" id="pagesList" class="menu_list mainActive">Страницы</a></li>
+                        <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+                        <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                        <li><a href="#/" class="menu_list">Работа с почтой<i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="mail.html">Список рассылок</a></li>
+                                <li><a href="mail.html">Шаблоны писем</a></li>
+                                <li><a href="mail.html">База почт</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">SEO-оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="seo.html">Общие настройки</a></li>
+                                <li><a href="seo.html">Заказы</a></li>
+                                <li><a href="seo.html">Магазин</a></li>
+                                <li><a href="seo.html">Пользователи</a></li>
+                                <li><a href="seo.html">Ответы</a></li>
+                                <li><a href="seo.html">Блог</a></li>
+                                <li><a href="seo.html">Статьи</a></li>
+                                <li><a href="seo.html">Новости</a></li>
+                                <li><a href="seo.html">Помощь</a></li>
+                                <li><a href="seo.html">Посадочные страницы</a></li>
+                                <li><a href="seo.html">Редиректы</a></li>
+                                <li><a href="seo.html">Настройки</a></li>
+                                <li><a href="seo.html">Аддон для главной страницы</a></li>
+                                <li><a href="seo.html">Open Graph</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admin_pages_content">
+                    <div class="pages_list display__block">
+                        <div class="contents_header pages_list__header">
+                            <div class="burger_icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="contents_header__container">
+                                <div class="breadcrumb">
+                                    <span class="section">Страницы</span><span class="slash">/</span>
+                                    <span class="sub_section">Список страниц</span>
+                                </div>
+                                <div class="add_new_page">
+                                    <a href="#/">+ добавить страницу</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pages_list__container">
+                            <div class="row titles">
+                                <div class="name zag">Заголовок</div>
+                                <div class="file_name imya">Имя файла</div>
+                                <div class="actions first_action">Действие</div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Главная не авторизованная</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Главная авторизованная</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Заказы во всех состояниях</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Вакансии во всех состояниях</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Все исполнители</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Регистрация</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Авторизация</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Форум </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Блог+Новости </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Профили во всех состояниях </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Чат+Активность </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Окна оплаты</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Раздел финансы и история переводов</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Хедер+панель+уведомления</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Вкладки </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Мои заявки </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Платные услуги </div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Настройки</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Реферальная программа</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Творческая мастерская</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">С чего начать</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Правила сервиса</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">404 страница</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">О Компании</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+                            <div class="row">
+                                <div class="name">Контакты</div>
+                                <div class="file_name"><a href="#/">socialnetworks.html</a></div>
+                                <div class="actions"><i class="fas fa-edit editPage"></i><i class="fas fa-times-circle deletePage"></i></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="changing_template add_new_page_frame">
+                        <div class="contents_header">
+                            <div class="burger_icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="contents_header__container">
+                                <div class="breadcrumb">
+                                    <span class="section">Страницы</span><span class="slash">/</span>
+                                    <span class="sub_section">Создание страницы</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="changing_template__container">
+                            <div class="container__tabs">
+                                <div class="tab active_tab">Основные</div>
+                                <div class="tab">SEO</div>
+                            </div>
+                            <div class="main_container display__block">
+                                <div class="main_container__row">
+                                    <div class="property">Имя файла:</div>
+                                    <input type="text" class="file_name__input">
+                                    <span class="extension">.html</span>
+                                    <span class="alowed_symbols"> допустимые символы: a-z, 0-9, -</span>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Заголовок:</div>
+                                    <input type="text" class="file_title__input">
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Содержание:</div>
+                                    <div class="creating_content">
+                                        <textarea name="" id="editor1" cols="30" rows="10" class="content_input"></textarea>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">
+                                        Скрыть от индексации:
+                                    </div>
+                                    <div class="hide_from_index__container">
+                                        <input id="hide_from_index" type="checkbox" class="hide_from_index__input">
+                                        <label for="hide_from_index" class="hide_from_index__text">скрыть от поисковиков
+                                            настройкой "noindex"</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="bottom_btns_pane">
+                                    <div class="btn save">save</div>
+                                    <div class="btn back gray--color">К списку страниц</div>
+                                </div>
+
+                            </div>
+                            <div class="seo_container">
+                                <div class="main_container__row">
+                                    <div class="property">Страница:</div>
+                                    <span class="page_name">Статические страницы</span>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Заголовок:</div>
+                                    <div class="column">
+                                        <input type="text" class="page_title">
+                                        <div class="template_example">{title} | {site.title}</div>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Ключевые слова:</div>
+                                    <div class="column">
+                                        <textarea name="page_keywords" id="" cols="30" rows="10" class="keywords"></textarea>
+                                        <div class="template_example">{meta-base}</div>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Описание:</div>
+                                    <div class="column">
+                                        <textarea name="page_discription" id="" cols="30" rows="8" class="page_discription"></textarea>
+                                        <div class="template_example">{meta-base}</div>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Макросы:</div>
+                                    <div class="makros_container">
+                                        <div class="makros_block">
+                                            <div class="makros">title</div>
+                                            <div class="makros">title.title</div>
+                                        </div>
+                                        <div class="templateOn_box">
+                                            <input id="activate_templates" type="checkbox" class="templates_on">
+                                            <label for="activate_templates" class="templates_on__text">использовать
+                                                общий шаблон
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_btns_pane">
+                                    <div class="btn save">save</div>
+                                    <div class="btn back gray--color">К списку страниц</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="changing_template edit_page_frame">
+                        <div class="contents_header">
+                            <div class="burger_icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="contents_header__container">
+                                <div class="breadcrumb">
+                                    <span class="section">Страницы</span><span class="slash">/</span>
+                                    <span class="sub_section">Редактирование cтраницы
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="changing_template__container">
+                            <div class="container__tabs">
+                                <div class="tab active_tab">Основные</div>
+                                <div class="tab">SEO</div>
+                            </div>
+                            <div class="main_container display__block">
+                                <div class="main_container__row">
+                                    <div class="property">Имя файла:</div>
+                                    <input type="text" class="file_name__input">
+                                    <span class="extension">.html</span>
+                                    <span class="alowed_symbols"> допустимые символы: a-z, 0-9, -</span>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Заголовок:</div>
+                                    <input type="text" class="file_title__input">
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Содержание:</div>
+                                    <div class="creating_content">
+                                        <textarea name="" id="editor2" cols="30" rows="10" class="content_input"></textarea>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">
+                                        Скрыть от индексации:
+                                    </div>
+                                    <div class="hide_from_index__container">
+                                        <input id="hide_from_index_edit" type="checkbox" class="hide_from_index__input">
+                                        <label for="hide_from_index_edit" class="hide_from_index__text">скрыть от поисковиков
+                                            настройкой "noindex"</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="bottom_btns_pane">
+                                    <div class="btn save">save</div>
+                                    <div class="btn back gray--color">К списку страниц</div>
+                                </div>
+
+                            </div>
+                            <div class="seo_container">
+                                <div class="main_container__row">
+                                    <div class="property">Страница:</div>
+                                    <span class="page_name">Статические страницы</span>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Заголовок:</div>
+                                    <div class="column">
+                                        <input type="text" class="page_title">
+                                        <div class="template_example">{title} | {site.title}</div>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Ключевые слова:</div>
+                                    <div class="column">
+                                        <textarea name="page_keywords" id="" cols="30" rows="10" class="keywords"></textarea>
+                                        <div class="template_example">{meta-base}</div>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Описание:</div>
+                                    <div class="column">
+                                        <textarea name="page_discription" id="" cols="30" rows="8" class="page_discription"></textarea>
+                                        <div class="template_example">{meta-base}</div>
+                                    </div>
+                                </div>
+                                <div class="main_container__row">
+                                    <div class="property">Макросы:</div>
+                                    <div class="makros_container">
+                                        <div class="makros_block">
+                                            <div class="makros">title</div>
+                                            <div class="makros">title.title</div>
+                                        </div>
+                                        <div class="templateOn_box">
+                                            <input id="activate_templates_edit" type="checkbox" class="templates_on">
+                                            <label for="activate_templates_edit" class="templates_on__text">использовать
+                                                общий шаблон
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom_btns_pane">
+                                    <div class="btn save">save</div>
+                                    <div class="btn back gray--color">К списку страниц</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="js/pages/pages.js"></script>
+</body>
+
+</html>

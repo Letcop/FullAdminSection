@@ -1,0 +1,1885 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Изменение цвета выделения на старнице */
+::-moz-selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+::selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: #00cf4d;
+}
+
+button:hover,
+.start_new:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #00cf4d;
+  box-shadow: 0px 0px 13px 2px #00cf4d;
+  color: #ffffff !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.title_text {
+  font-size: 25px;
+  font-weight: 700;
+  color: #253556;
+  padding-bottom: 10px;
+}
+
+textarea::-webkit-scrollbar,
+.moderation_orders::-webkit-scrollbar,
+.active_orders::-webkit-scrollbar,
+.active_vacancy::-webkit-scrollbar,
+.modal_item::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track,
+.moderation_orders::-webkit-scrollbar-track,
+.active_vacancy::-webkit-scrollbar-track,
+.active_orders::-webkit-scrollbar-track,
+.modal_item::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb,
+.moderation_orders::-webkit-scrollbar-thumb,
+.active_vacancy::-webkit-scrollbar-thumb,
+.active_orders::-webkit-scrollbar-thumb,
+.modal_item::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+.mainActive{
+  background: #00cf4d !important;
+  color: #ffffff !important;
+}
+.admin_ordersAndVacancies {
+  font-family: 'Montserrat', sans-serif;
+  background: url('../../img/1.jpg');
+  backdrop-filter: blur(2px);
+  height: 150vh;
+}
+
+.admin_ordersAndVacancies .container {
+  max-width: 1140px;
+  margin: 10px auto;
+}
+
+.admin_ordersAndVacancies .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_ordersAndVacancies .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -130px;
+}
+
+.admin_ordersAndVacancies .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_ordersAndVacancies .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+.admin_ordersAndVacancies .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+  -ms-transform: 5s;
+  transform: 5s;
+}
+
+.admin_ordersAndVacancies .navbar .quitBlock a {
+  color: #ffffff;
+  -webkit-transform: 0.5s;
+  -ms-transform: 0.5s;
+  transform: 0.5s;
+}
+
+.admin_ordersAndVacancies .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+
+.admin_ordersAndVacancies .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_ordersAndVacancies .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_ordersAndVacancies .navbar .chat .chat_text li a {
+  color: #000000;
+}
+
+.admin_ordersAndVacancies .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_ordersAndVacancies .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_ordersAndVacancies .menu .sub_menu {
+  display: none;
+}
+
+.admin_ordersAndVacancies .menu .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_ordersAndVacancies .menu .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_ordersAndVacancies .menu .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_ordersAndVacancies .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_ordersAndVacancies .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_ordersAndVacancies .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.menu{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.admin_ordersAndVacancies .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .menu_item .menu_list .todown {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_ordersAndVacancies .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+.admin_ordersAndVacancies .orders_body {
+  margin-left: 55px;
+  width: 71%;
+}
+
+.admin_ordersAndVacancies .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .head .orders_btn,
+.admin_ordersAndVacancies .head .vacancies_btn {
+  width: 170px;
+  height: 35px;
+  border-radius: 20px;
+  border: 2px solid #00cf4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.admin_ordersAndVacancies .head .vacancies_btn {
+  margin-left: 20px;
+}
+
+.admin_ordersAndVacancies .head .count_orders,
+.admin_ordersAndVacancies .head .vacancies_orders {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #00cf4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #01002b;
+}
+
+.admin_ordersAndVacancies .head .active_head {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .head .active_head span {
+  color: #253556;
+}
+
+.admin_ordersAndVacancies .orders_page,
+.admin_ordersAndVacancies .vacancy_page {
+  width: 100%;
+  height: 545px;
+  border: 2px solid #c1c4ca;
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 20px;
+  background: url('../../img/userEditHeader.jpg');
+}
+
+.admin_ordersAndVacancies .orders_page .title_btns,
+.admin_ordersAndVacancies .orders_page .title_btns_vacancy,
+.admin_ordersAndVacancies .vacancy_page .title_btns,
+.admin_ordersAndVacancies .vacancy_page .title_btns_vacancy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .orders_page .title_btns div,
+.admin_ordersAndVacancies .orders_page .title_btns_vacancy div,
+.admin_ordersAndVacancies .vacancy_page .title_btns div,
+.admin_ordersAndVacancies .vacancy_page .title_btns_vacancy div {
+  width: 160px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #00cf4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .title_btns .moderation_btn,
+.admin_ordersAndVacancies .orders_page .title_btns .moderation_btn_vacancy,
+.admin_ordersAndVacancies .orders_page .title_btns_vacancy .moderation_btn,
+.admin_ordersAndVacancies .orders_page .title_btns_vacancy .moderation_btn_vacancy,
+.admin_ordersAndVacancies .vacancy_page .title_btns .moderation_btn,
+.admin_ordersAndVacancies .vacancy_page .title_btns .moderation_btn_vacancy,
+.admin_ordersAndVacancies .vacancy_page .title_btns_vacancy .moderation_btn,
+.admin_ordersAndVacancies .vacancy_page .title_btns_vacancy .moderation_btn_vacancy {
+  margin: 0 15px;
+}
+
+.admin_ordersAndVacancies .orders_page .title_btns .active_orders_btn,
+.admin_ordersAndVacancies .orders_page .title_btns .active_vacancy_btn,
+.admin_ordersAndVacancies .orders_page .title_btns_vacancy .active_orders_btn,
+.admin_ordersAndVacancies .orders_page .title_btns_vacancy .active_vacancy_btn,
+.admin_ordersAndVacancies .vacancy_page .title_btns .active_orders_btn,
+.admin_ordersAndVacancies .vacancy_page .title_btns .active_vacancy_btn,
+.admin_ordersAndVacancies .vacancy_page .title_btns_vacancy .active_orders_btn,
+.admin_ordersAndVacancies .vacancy_page .title_btns_vacancy .active_vacancy_btn {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles,
+.admin_ordersAndVacancies .vacancy_page .sub_titles {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region i,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region i,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region i,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region i {
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region input,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region input,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region input,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region input {
+  width: 180px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #c1c4ca;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 50;
+  color: #ffffff;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 0;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region input::-webkit-input-placeholder,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region input::-webkit-input-placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region input::-webkit-input-placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region input::-webkit-input-placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region input:-ms-input-placeholder,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region input:-ms-input-placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region input:-ms-input-placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region input:-ms-input-placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region input::-ms-input-placeholder,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region input::-ms-input-placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region input::-ms-input-placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region input::-ms-input-placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions .my_region input::placeholder,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy .my_region input::placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions .my_region input::placeholder,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy .my_region input::placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions ul,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy ul,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions ul,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy ul {
+  width: 180px;
+  height: auto;
+  border: 2px solid #c1c4ca;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  z-index: 5;
+  background-color: #ffffff;
+  display: none;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions ul li,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy ul li,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions ul li,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy ul li {
+  width: 100%;
+  height: 25px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions ul li:last-child,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy ul li:last-child,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions ul li:last-child,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy ul li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .regions ul li:hover,
+.admin_ordersAndVacancies .orders_page .sub_titles .regions_vacacy ul li:hover,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions ul li:hover,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .regions_vacacy ul li:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .key_text,
+.admin_ordersAndVacancies .orders_page .sub_titles .login,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .key_text,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .login {
+  width: 180px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #c1c4ca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .login,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .login {
+  margin: 0;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .search_orders,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .search_orders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .search_orders input,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .search_orders input {
+  width: 200px;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid #c1c4ca;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .search_orders input:focus,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .search_orders input:focus {
+  border: 2px solid #00cf4d;
+  border-right: none;
+}
+
+.admin_ordersAndVacancies .orders_page .sub_titles .search_orders .search_btn,
+.admin_ordersAndVacancies .vacancy_page .sub_titles .search_orders .search_btn {
+  width: 30px;
+  height: 30px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_ordersAndVacancies .orders_page .addScrollList,
+.admin_ordersAndVacancies .vacancy_page .addScrollList {
+  overflow-y: auto;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders,
+.admin_ordersAndVacancies .orders_page .active_vacancy,
+.admin_ordersAndVacancies .vacancy_page .active_orders,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy {
+  max-height: 400px;
+  color: #ffffff;
+  overflow-y: auto;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders th,
+.admin_ordersAndVacancies .orders_page .active_vacancy th,
+.admin_ordersAndVacancies .vacancy_page .active_orders th,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy th {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .id_item,
+.admin_ordersAndVacancies .orders_page .active_vacancy .id_item,
+.admin_ordersAndVacancies .vacancy_page .active_orders .id_item,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .id_item {
+  width: 80px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .date_item,
+.admin_ordersAndVacancies .orders_page .active_vacancy .date_item,
+.admin_ordersAndVacancies .vacancy_page .active_orders .date_item,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .date_item {
+  width: 160px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .actions_item,
+.admin_ordersAndVacancies .orders_page .active_vacancy .actions_item,
+.admin_ordersAndVacancies .vacancy_page .active_orders .actions_item,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .actions_item {
+  width: 160px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders td,
+.admin_ordersAndVacancies .orders_page .active_vacancy td,
+.admin_ordersAndVacancies .vacancy_page .active_orders td,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy td {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders td i,
+.admin_ordersAndVacancies .orders_page .active_vacancy td i,
+.admin_ordersAndVacancies .vacancy_page .active_orders td i,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy td i {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .order_item,
+.admin_ordersAndVacancies .orders_page .active_orders .vacancy_item,
+.admin_ordersAndVacancies .orders_page .active_vacancy .order_item,
+.admin_ordersAndVacancies .orders_page .active_vacancy .vacancy_item,
+.admin_ordersAndVacancies .vacancy_page .active_orders .order_item,
+.admin_ordersAndVacancies .vacancy_page .active_orders .vacancy_item,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .order_item,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .vacancy_item {
+  width: 420px;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .edit,
+.admin_ordersAndVacancies .orders_page .active_orders .fa-plus-square,
+.admin_ordersAndVacancies .orders_page .active_vacancy .edit,
+.admin_ordersAndVacancies .orders_page .active_vacancy .fa-plus-square,
+.admin_ordersAndVacancies .vacancy_page .active_orders .edit,
+.admin_ordersAndVacancies .vacancy_page .active_orders .fa-plus-square,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .edit,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .fa-plus-square {
+  color: #00cf4d;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .fa-window-close,
+.admin_ordersAndVacancies .orders_page .active_vacancy .fa-window-close,
+.admin_ordersAndVacancies .vacancy_page .active_orders .fa-window-close,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .fa-window-close {
+  color: #ff8fb4;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .fa-external-link-alt,
+.admin_ordersAndVacancies .orders_page .active_vacancy .fa-external-link-alt,
+.admin_ordersAndVacancies .vacancy_page .active_orders .fa-external-link-alt,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .fa-external-link-alt {
+  font-size: 18px;
+  color: #00cf4d;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .actions_list,
+.admin_ordersAndVacancies .orders_page .active_vacancy .actions_list,
+.admin_ordersAndVacancies .vacancy_page .active_orders .actions_list,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .actions_list {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.admin_ordersAndVacancies .orders_page .active_orders .actions_list .edit_vacancy,
+.admin_ordersAndVacancies .orders_page .active_vacancy .actions_list .edit_vacancy,
+.admin_ordersAndVacancies .vacancy_page .active_orders .actions_list .edit_vacancy,
+.admin_ordersAndVacancies .vacancy_page .active_vacancy .actions_list .edit_vacancy {
+  color: #00cf4d;
+}
+
+.admin_ordersAndVacancies .modal_page_active,
+.admin_ordersAndVacancies .modal_page_blocked,
+.admin_ordersAndVacancies .modal_save {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0006;
+  z-index: 111;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.admin_ordersAndVacancies .modal_page_active .modal_item,
+.admin_ordersAndVacancies .modal_page_blocked .modal_item,
+.admin_ordersAndVacancies .modal_save .modal_item {
+  width: 430px;
+  height: 150px;
+  background-color: #efefef;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .modal_page_active .modal_item span,
+.admin_ordersAndVacancies .modal_page_blocked .modal_item span,
+.admin_ordersAndVacancies .modal_save .modal_item span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.admin_ordersAndVacancies .modal_page_active .modal_item .fa-check-circle,
+.admin_ordersAndVacancies .modal_page_blocked .modal_item .fa-check-circle,
+.admin_ordersAndVacancies .modal_save .modal_item .fa-check-circle {
+  color: #00cf4d;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.admin_ordersAndVacancies .modal_page_active .modal_item .close_active,
+.admin_ordersAndVacancies .modal_page_blocked .modal_item .close_active,
+.admin_ordersAndVacancies .modal_save .modal_item .close_active {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 25px;
+  color: #ff8fb4;
+  border-radius: 50%;
+  background-color: #efefef;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.admin_ordersAndVacancies .modal_page_active .modal_item .blocked,
+.admin_ordersAndVacancies .modal_page_blocked .modal_item .blocked,
+.admin_ordersAndVacancies .modal_save .modal_item .blocked {
+  color: #ff8fb4;
+}
+
+.admin_ordersAndVacancies .bloced_page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0006;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 101;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text {
+  width: 650px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #efefef;
+  -webkit-box-shadow: 0px 0px 13px 2px #ff8fb4;
+  box-shadow: 0px 0px 13px 2px #ff8fb4;
+  padding: 25px;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text textarea {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ffffff;
+  font-size: 16px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  margin-top: 20px;
+  resize: none;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text textarea textarea:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text .blocking_mode div {
+  font-size: 14px;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #253556;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text .blocking_mode div:hover {
+  background-color: #c1c4ca;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text button {
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: #ff8fb4;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text button:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #ff8fb4;
+  box-shadow: 0px 0px 13px 2px #ff8fb4;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text .close_bloced_page {
+  background: transparent;
+  border: 2px solid #ff8fb4;
+  margin-right: 20px;
+}
+
+.admin_ordersAndVacancies .bloced_page .blocked_text .close_bloced_page:hover {
+  color: #253556 !important;
+}
+
+.admin_ordersAndVacancies .modal_page_editing {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0006;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #253556;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_item {
+  width: 700px;
+  max-height: 99%;
+  border-radius: 10px;
+  background: url('../../img/userEditHeader.jpg');
+}
+
+
+.admin_ordersAndVacancies #editModalVacancy .modal_item {  
+  overflow-y: auto;
+}
+.admin_ordersAndVacancies .modal_page_editing .modal_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_header h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_header .close_editing,
+.admin_ordersAndVacancies .modal_page_editing .modal_header .close_editing_vacancy {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 25px;
+  color: #ff8fb4;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body {
+  padding: 10px 30px;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .title input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #ffffff;
+  color: #253556;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .title input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .left_choose,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .left_choose_vacancy,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .right_choose,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .right_choose_vacancy {
+  position: relative;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  width: 310px;
+  height: 30px;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession i,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy i,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction i {
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession input,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy input,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction input {
+  width: 310px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 0;
+  text-transform: capitalize;
+  outline: none;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession input::-webkit-input-placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy input::-webkit-input-placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction input::-webkit-input-placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession input:-ms-input-placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy input:-ms-input-placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction input:-ms-input-placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession input::-ms-input-placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy input::-ms-input-placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction input::-ms-input-placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession input::placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .profession_vacancy input::placeholder,
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction input::placeholder {
+  color: #12114a;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list ul {
+  width: 310px;
+  height: auto;
+  border: 1px solid #ffffff;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  z-index: 5;
+  background-color: #ffffff;
+  display: none;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list ul li {
+  width: 100%;
+  height: 25px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list ul li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list ul li:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .direction_list {
+  right: 0;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .choose_list .opened_profession {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .descriptions textarea {
+  width: 100%;
+  outline: none;
+  height: 70px;
+  overflow-y: auto;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ffffff;
+  resize: none;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .descriptions textarea:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .add_file {
+  position: relative;
+  margin: 15px 10px;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .add_file span {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .add_file input {
+  width: 130px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .add_file i {
+  color: #00cf4d;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .modal_body .add_file .added_file {
+  font-size: 14px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.admin_ordersAndVacancies .key_skills,
+.admin_ordersAndVacancies .key_skills_vacancy {
+  position: relative;
+}
+
+.admin_ordersAndVacancies .key_skills input,
+.admin_ordersAndVacancies .key_skills_vacancy input {
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  outline: none;
+  padding: 0 10px;
+  border: none;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .key_skills input:focus,
+.admin_ordersAndVacancies .key_skills_vacancy input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .key_skills .fa-plus-circle,
+.admin_ordersAndVacancies .key_skills_vacancy .fa-plus-circle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 22px;
+  color: #00cf4d;
+  cursor: pointer;
+  display: none;
+}
+
+.admin_ordersAndVacancies .key_skills .key_skills_list,
+.admin_ordersAndVacancies .key_skills .key_skills_list_vacancy,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list_vacancy {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 15px 10px;
+  position: absolute;
+  display: none;
+  z-index: 1000px;
+}
+
+.admin_ordersAndVacancies .key_skills .key_skills_list .fa-times-circle,
+.admin_ordersAndVacancies .key_skills .key_skills_list_vacancy .fa-times-circle,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list .fa-times-circle,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list_vacancy .fa-times-circle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ff8fb4;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .key_skills .key_skills_list ul,
+.admin_ordersAndVacancies .key_skills .key_skills_list_vacancy ul,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list ul,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list_vacancy ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.admin_ordersAndVacancies .key_skills .key_skills_list ul li,
+.admin_ordersAndVacancies .key_skills .key_skills_list_vacancy ul li,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list ul li,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list_vacancy ul li {
+  background-color: #efefef;
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 13.5px;
+}
+
+.admin_ordersAndVacancies .key_skills .key_skills_list ul li:hover,
+.admin_ordersAndVacancies .key_skills .key_skills_list_vacancy ul li:hover,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list ul li:hover,
+.admin_ordersAndVacancies .key_skills_vacancy .key_skills_list_vacancy ul li:hover {
+  background-color: #f8f8fa;
+}
+
+.admin_ordersAndVacancies .key_skills .added_keys,
+.admin_ordersAndVacancies .key_skills .added_keys_vacancy,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys_vacancy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.admin_ordersAndVacancies .key_skills .added_keys div,
+.admin_ordersAndVacancies .key_skills .added_keys_vacancy div,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys div,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys_vacancy div {
+  background-color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.admin_ordersAndVacancies .key_skills .added_keys div i,
+.admin_ordersAndVacancies .key_skills .added_keys_vacancy div i,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys div i,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys_vacancy div i {
+  margin-left: 5px;
+  color: #ff8fb4;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .key_skills .added_keys div:hover,
+.admin_ordersAndVacancies .key_skills .added_keys_vacancy div:hover,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys div:hover,
+.admin_ordersAndVacancies .key_skills_vacancy .added_keys_vacancy div:hover {
+  background-color: #f8f8fa;
+}
+
+.admin_ordersAndVacancies .budget,
+.admin_ordersAndVacancies .responses,
+.admin_ordersAndVacancies .user,
+.admin_ordersAndVacancies .userVacancy,
+.admin_ordersAndVacancies .status {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .budget span,
+.admin_ordersAndVacancies .responses span,
+.admin_ordersAndVacancies .user span,
+.admin_ordersAndVacancies .userVacancy span,
+.admin_ordersAndVacancies .status span {
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.admin_ordersAndVacancies .budget #activeText,
+.admin_ordersAndVacancies .budget #activeTextVacancy,
+.admin_ordersAndVacancies .responses #activeText,
+.admin_ordersAndVacancies .responses #activeTextVacancy,
+.admin_ordersAndVacancies .user #activeText,
+.admin_ordersAndVacancies .user #activeTextVacancy,
+.admin_ordersAndVacancies .userVacancy #activeText,
+.admin_ordersAndVacancies .userVacancy #activeTextVacancy,
+.admin_ordersAndVacancies .status #activeText,
+.admin_ordersAndVacancies .status #activeTextVacancy {
+  padding-right: 10px;
+  color: #00cf4d;
+  display: none;
+}
+
+.admin_ordersAndVacancies .budget #blockingText,
+.admin_ordersAndVacancies .budget #blockingTextVacancy,
+.admin_ordersAndVacancies .responses #blockingText,
+.admin_ordersAndVacancies .responses #blockingTextVacancy,
+.admin_ordersAndVacancies .user #blockingText,
+.admin_ordersAndVacancies .user #blockingTextVacancy,
+.admin_ordersAndVacancies .userVacancy #blockingText,
+.admin_ordersAndVacancies .userVacancy #blockingTextVacancy,
+.admin_ordersAndVacancies .status #blockingText,
+.admin_ordersAndVacancies .status #blockingTextVacancy {
+  padding-right: 10px;
+  color: red;
+  display: none;
+}
+
+.admin_ordersAndVacancies .budget #dataStatus,
+.admin_ordersAndVacancies .budget #dataStatusVacancy,
+.admin_ordersAndVacancies .responses #dataStatus,
+.admin_ordersAndVacancies .responses #dataStatusVacancy,
+.admin_ordersAndVacancies .user #dataStatus,
+.admin_ordersAndVacancies .user #dataStatusVacancy,
+.admin_ordersAndVacancies .userVacancy #dataStatus,
+.admin_ordersAndVacancies .userVacancy #dataStatusVacancy,
+.admin_ordersAndVacancies .status #dataStatus,
+.admin_ordersAndVacancies .status #dataStatusVacancy {
+  font-weight: 600;
+  font-size: 14px;
+  display: none;
+}
+
+.admin_ordersAndVacancies .budget big,
+.admin_ordersAndVacancies .responses big,
+.admin_ordersAndVacancies .user big,
+.admin_ordersAndVacancies .userVacancy big,
+.admin_ordersAndVacancies .status big {
+  color: #00cf4d;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admin_ordersAndVacancies .budget input,
+.admin_ordersAndVacancies .responses input,
+.admin_ordersAndVacancies .user input,
+.admin_ordersAndVacancies .userVacancy input,
+.admin_ordersAndVacancies .status input {
+  outline: none;
+  border: none;
+  width: 70px;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  padding: 0 5px;
+  font-weight: 600;
+  color: #253556;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.admin_ordersAndVacancies .budget input:focus,
+.admin_ordersAndVacancies .responses input:focus,
+.admin_ordersAndVacancies .user input:focus,
+.admin_ordersAndVacancies .userVacancy input:focus,
+.admin_ordersAndVacancies .status input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .work_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.admin_ordersAndVacancies .work_time h6 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 30px;
+  color: #ffffff;
+}
+
+.admin_ordersAndVacancies .input__block_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.admin_ordersAndVacancies .input__block {
+  margin-left: 20px;
+}
+
+.admin_ordersAndVacancies .banner__radio_block {
+  margin-left: 15px;
+  height: 59px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.admin_ordersAndVacancies .main_bottom {
+  padding-top: 45px;
+}
+
+.admin_ordersAndVacancies .banner__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .block_banner_radio {
+  position: relative;
+}
+
+.admin_ordersAndVacancies .banner__radio:last-child {
+  margin-bottom: 0;
+}
+
+.admin_ordersAndVacancies .banner__radio label {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .banner__radio input {
+  width: 17px;
+  height: 17px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .banner__radio_icon {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #253556;
+  background-color: transparent;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.admin_ordersAndVacancies .banner__radio_icon i {
+  color: #efefef;
+  font-size: 12px;
+}
+
+.admin_ordersAndVacancies .banner__radio input:checked + .banner__radio_icon {
+  background-color: #00CF4D;
+  border-color: #00CF4D;
+}
+
+.admin_ordersAndVacancies .banner__radio input:checked ~ label {
+  color: #00CF4D;
+}
+
+.admin_ordersAndVacancies .middle_btns {
+  margin-top: 20px;
+}
+
+.admin_ordersAndVacancies .middle_btns button {
+  width: 170px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.admin_ordersAndVacancies .middle_btns .blocked_order,
+.admin_ordersAndVacancies .middle_btns .blocked_edit_vacancy {
+  background-color: #ff8fb4;
+  margin-left: 15px;
+}
+
+.admin_ordersAndVacancies .middle_btns .blocked_order:hover,
+.admin_ordersAndVacancies .middle_btns .blocked_edit_vacancy:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #ff8fb4;
+  box-shadow: 0px 0px 13px 2px #ff8fb4;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .buttons {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .buttons button {
+  width: 220px;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .buttons button:hover {
+  color: #253556 !important;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .buttons .save_btn,
+.admin_ordersAndVacancies .modal_page_editing .buttons .save_vacancy_btn {
+  background-color: #ffffff;
+  border: 2px solid #00cf4d;
+}
+
+.admin_ordersAndVacancies .modal_page_editing .buttons .remove_btn,
+.admin_ordersAndVacancies .modal_page_editing .buttons .remove_vacancy_btn {
+  margin-left: 25px;
+  background-color: #ffffff;
+  border: 2px solid #ff8fb4;
+}
+
+.admin_ordersAndVacancies .user_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  width: 430px;
+  height: 320px;
+  background-color: #f8f8fa;
+  border-radius: 10px;
+  z-index: 102;
+  -webkit-box-shadow: 0px 0px 18px 2px #c1c4ca;
+  box-shadow: 0px 0px 18px 2px #c1c4ca;
+  padding: 20px;
+  display: none;
+}
+
+.admin_ordersAndVacancies .user_page .title {
+  text-align: center;
+}
+
+.admin_ordersAndVacancies .user_page .title h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.admin_ordersAndVacancies .user_page .title i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #ff8fb4;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 17px;
+}
+
+.admin_ordersAndVacancies .user_page .body {
+  margin-top: 30px;
+}
+
+.admin_ordersAndVacancies .user_page .body .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_ordersAndVacancies .user_page .body .head .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  position: relative;
+}
+
+.admin_ordersAndVacancies .user_page .body .head .avatar img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  padding: 1px;
+  vertical-align: middle;
+}
+
+.admin_ordersAndVacancies .user_page .body .head .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.admin_ordersAndVacancies .user_page .body .head .info a {
+  color: #00cf4d;
+  padding: 5px 0;
+}
+
+.admin_ordersAndVacancies .user_page .body .head .info .type {
+  color: #00cf4d;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.admin_ordersAndVacancies .user_page .body .basic_info {
+  margin-top: 30px;
+}
+
+.admin_ordersAndVacancies .user_page .body .basic_info strong {
+  font-weight: 500;
+}
+
+.admin_ordersAndVacancies .user_page .body .basic_info span {
+  padding-left: 10px;
+  color: #100f41;
+  font-size: 15px;
+}
+
+.admin_ordersAndVacancies .user_page .body .basic_info .pass {
+  color: #00cf4d;
+}
+
+.admin_ordersAndVacancies .user_page_vacancy {
+  right: 360px;
+  top: 120px;
+}
+
+.admin_ordersAndVacancies .blocked:hover,
+.admin_ordersAndVacancies .remove_btn:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #ff8fb4;
+  box-shadow: 0px 0px 13px 2px #ff8fb4;
+}
+
+.admin_ordersAndVacancies .opened_region {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.admin_ordersAndVacancies .boxShadow {
+  -webkit-box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.75);
+}
+
+.admin_ordersAndVacancies .key_skills_class {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border: 1px solid #00cf4d;
+  border-top: none;
+}
+
+.admin_ordersAndVacancies .key_skills_input {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/*# sourceMappingURL=main.css.map */

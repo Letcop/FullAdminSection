@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <link rel="shortcut icon" href="icons/logo.svg">
+    <link rel="stylesheet" href="css/forum/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="ckeditor/ckeditor.js">
+    <script src="ckeditor/ckeditor.js"></script>
+</head>
+
+<body class="funds_home admin_home">
+
+
+    <div class="container">
+        
+        <div class="navbar">
+            <div class="logo_header">
+                <a href="#/"><img src="icons/nav_logo.png" alt=""></a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Поиск">
+                <div class="search_btn">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="chat">
+                <i class="fas fa-comment">
+                    <span>99</span>
+                </i>
+                <div class="chat_text">
+                    <ul>
+                        <li><a href="chats.html"><strong>Чаты администраторов</strong></a> <br>
+                            Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с
+                            каждым
+                            пользователям от имени “Поддержки” (администрации)
+                        </li> <br>
+                        <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a> <br>
+                            Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и
+                            контролировать
+                            правильность и корректность работы и общения между пользователями
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quitBlock">
+                <a href="#/">Выйти</a>
+            </div>
+            <div class="avatar">
+                <img src="img/user4.png" alt="">
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu_item">
+                <div class="all_category">
+                    Все категории
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="menu_list">Главная страница<div>29</div></a></li>
+                    <li><a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии<div>379</div></a></li>
+                    <li><a href="#/" class="menu_list">Безопасный платеж <i
+                                class="fas fa-level-down-alt todown"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="securePayments.html">Ход работы<div>379</div></a></li>
+                            <li><a href="securePayments.html">Движение средств<div>39</div></a></li>
+                            <li><a href="securePayments.html">Платежные системы<div>79</div></a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="workshop.html" class="menu_list">Творческая мастерская<div>37</div></a></li>
+                    <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li> -->
+                    <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+                    <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+                    <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+                    <li><a href="forum.html" class="menu_list mainActive">Форум<div>23</div></a></li>
+                    <li><a href="pages.html" class="menu_list">Страницы</a></li>
+                    <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+                    <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                        <li><a href="#/" class="menu_list">Работа с почтой<i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="mail.html">Список рассылок</a></li>
+                                <li><a href="mail.html">Шаблоны писем</a></li>
+                                <li><a href="mail.html">База почт</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">SEO-оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="seo.html">Общие настройки</a></li>
+                                <li><a href="seo.html">Заказы</a></li>
+                                <li><a href="seo.html">Магазин</a></li>
+                                <li><a href="seo.html">Пользователи</a></li>
+                                <li><a href="seo.html">Ответы</a></li>
+                                <li><a href="seo.html">Блог</a></li>
+                                <li><a href="seo.html">Статьи</a></li>
+                                <li><a href="seo.html">Новости</a></li>
+                                <li><a href="seo.html">Помощь</a></li>
+                                <li><a href="seo.html">Посадочные страницы</a></li>
+                                <li><a href="seo.html">Редиректы</a></li>
+                                <li><a href="seo.html">Настройки</a></li>
+                                <li><a href="seo.html">Аддон для главной страницы</a></li>
+                                <li><a href="seo.html">Open Graph</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <h2>
+                    Форум
+                </h2>
+
+                <div class="bars">
+                    <div class="bar1 bar active">
+                        <a class="a" href="#/">Активные</a>
+                    </div>
+                    <div class="bar2 bar">
+                        <a class="a" href="#/">Модерация</a>
+                    </div>
+                    <div class="bar3 bar">
+                        <a class="a" href="#/">Заблокированные </a>
+                    </div>
+                </div>
+        
+                <div class="inputs">
+                    <form action="">
+                        <input class="inzag" type="text" name="" id="" placeholder="ID/Заголовок">
+                        <select class="selectr" name="" id=""  placeholder="Все категории">
+                            <option value="1">
+                                Все категории
+                            </option>
+                            <option value="2">
+                                Программирование
+                            </option>
+                            <option value="">
+                                Дизайн
+                            </option>
+                            <option value="3">
+                                ....
+                            </option>
+                        </select>
+                        <input class="inputemail" type="email" name="" id="" placeholder="ID/Логин/E-mail пользователя">
+                        <button type="submit">Поиск</button>
+                    </form>
+                    <div class="create">
+              <p><i class="fas fa-plus create-icon"></i> Создать </p>  
+                    </div>
+                </div>
+                <div class="text text1 active">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="70">ID</th>
+                                <th width="400">Заголовок</th>
+                                <th width='150'>Категория</th>
+                                <th width="155   ">Дата</th>
+                                <th width="140"> Активность </th>
+                            </tr>
+        
+                        </thead>
+        
+                        <tbody class="tbody">
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td width="" class="iconss" width="140">
+                               
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr> 
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td class="iconss" width="140">
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr>
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td width="" class="iconss" width="140">
+                               
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr> 
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td class="iconss" width="140">
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr>
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td width="" class="iconss" width="140">
+                               
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr> 
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td class="iconss" width="140">
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr>
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td width="" class="iconss" width="140">
+                               
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr> 
+                            <tr class="remove ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td width="70"><span>23 декабря 2020 </span></td>
+                                <td class="iconss" width="140">
+                            
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr>
+                           
+                            <tr class="clas ">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, </span>  <br><span>как
+                                        сделать? </span> <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span></td>
+                                <td><span>23 декабря 2020 </span></td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                    <i class="far fa-edit edit"></i> <i
+                                            class="fas fa-times-circle liry"></i> </td>
+                            </tr>
+                            
+                           
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text2 text">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="70">ID</th>
+                                <th width="400">Заголовок</th>
+                                <th width='150'>Категория</th>
+                                <th width="155   ">Дата</th>
+                                <th width="140"> Активность </th>
+                            </tr>
+        
+                        </thead>
+        
+                        <tbody class="tbody">
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            <tr class="remove led modedel">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span>Персонализация в Facebook, <br> как
+                                        сделать?</span>  <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"><span>Социальные сети </span> </td>
+                                <td width="70"><span>23 декабря 2020 </span> </td>
+                                <td class="iconss" width="140">
+                                   <a href="#/" class="modebtn moderation"><i class="fas fa-plus-square "></i></a> 
+                                 <a href="#/" class="checkk"><i class="fas fa-check-square "></i></a>   
+                                  
+                                    <i class="far fa-edit modeedit "></i> <i
+                                            class="fas fa-times-circle  lire"></i> </td>
+                            </tr>
+                            
+        
+        
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text3 text">
+                    <table>
+                        <thead>
+        
+        
+                            <tr>
+                                <th width="70">ID</th>
+                                <th width="400">Заголовок</th>
+                                <th width='150'>Категория</th>
+                                <th width="155   ">Дата</th>
+                                <th width="140"> Активность </th>
+                            </tr>
+                        </thead>
+        
+                        <tbody class="tbody">
+                            
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                  <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                    <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                  <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                    <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                  <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                    <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                  <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                    <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                  <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                    <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                  <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+                            <tr class="led unled">
+                                <td width="70">26</td>
+                                <td class="sdel" width="350">
+                                    <p><a href="#/"> <i  class="fas fa-external-link-alt "></i> </a> <span> Персонализация в Facebook,</span> <br> как
+                                        сделать? <i class="fas fa-check"> </i> </p>
+                                </td>
+                                <td width="150"> <span>Социальные сети</span> </td>
+                                <td width="70"><span>23 декабря 2020</span> </td>
+                                <td class="iconss" width="140">
+                                    <a href="#/"><i class="fas fa-unlock unlock"></i></a> 
+                                    <i class="far fa-edit  spam"></i> <i
+                                            class="fas fa-times-circle lire"></i> </td>
+                            </tr>
+        
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="openwindow openw1">
+                    <div class="buts">
+                        <div class="main but active">
+                            <p>Основные</p>
+                        </div>
+                       
+                        <i class="fas fa-times-circle close_icon"></i>
+                    </div>
+                    <div class="main-part part active">
+                        <div class="socials">
+                            <p>Категория: </p>
+                            <select name="" id="">
+                                <option value="1">Категория</option>
+                                <option value="2">Программирование</option>
+                                <option value="3">Дизайн</option>
+                                <option value="4">Скрипт</option>
+                                <option value="5">...</option>
+            
+                            </select>
+                        </div>
+                        <div class="zagolovka">
+                            <p>Заголовок:</p>
+                            <input class="zag" type="text" name="" id="" placeholder="Заголовок">
+                        </div>
+            
+                        <div class="photo-block">
+                            <!-- <div class="long">
+                                <p> <i class="fab fa-accusoft"></i> <i class="fab fa-accessible-icon"></i> <i
+                                        class="fab fa-adn"></i> <i class="fab fa-adversal"></i> <i class="fas fa-hashtag"></i><i
+                                        class="fas fa-photo-video"></i><i class="fas fa-video"></i> </p>
+                            </div> -->
+                            <textarea name="" id="textarea2" cols="5" rows="5"></textarea>
+                        </div>
+            
+            
+                       
+            
+                        <button class="save-btn"> Сохранить </button>
+                    </div>
+                  
+                    
+                </div>
+        
+                <div class="openwindow openwindow2  ">
+                    <div class="buts2">
+                        <div class="main but2 active">
+                            <p>Основные</p>
+                        </div>
+                        <div class="comment but2 ">
+                            <p>Комментарии</p>
+                        </div>
+                        <i class="fas fa-times-circle close_icon2"></i>
+                    </div>
+                    <div class="main-part2 part2 active">
+                        <div class="socials">
+                            <p>Категория: </p>
+                            <select name="" id="" >
+                                <option value="1">Категория</option>
+                                <option value="2">Программирование</option>
+                                <option value="3" selected>Дизайн</option>
+                                <option value="4">Скрипт</option>
+                                <option value="5">...</option>
+            
+                            </select>
+                        </div>
+                        <div class="zagolovka">
+                            <p>Заголовок:</p>
+                            <input class="zag" type="text" name=""  id="" placeholder="Заголовок" >
+                        </div>
+            
+                        <div class="photo-block">
+                            
+                            <textarea name="" id="textarea1" cols="5" rows="5"></textarea>
+                            <!-- <div class="long">
+                                <p> <i class="fab fa-accusoft"></i> <i class="fab fa-accessible-icon"></i> <i
+                                        class="fab fa-adn"></i> <i class="fab fa-adversal"></i> <i class="fas fa-hashtag"></i><i
+                                        class="fas fa-photo-video"></i><i class="fas fa-video"></i> </p>
+                            </div> -->
+                        </div>
+            
+                        <div class="user">
+                            <p>Создатель темы:</p>
+                            <div class="username">
+                                <a href="#/"> Hamillioner</a>
+                            </div>
+            
+                        </div>
+            
+                        <div class="status status2">
+                            <p>Статуc : Активный </p>  
+                            <button class="deaktiv">
+                                Деактивировать
+                            </button>
+                            <button class="zablock">
+                                Заблокировать
+                            </button>
+                        </div>
+            <div class="buttons">
+                <button class="save-btn save-btn2"> Сохранить </button>
+                <button class="udalit">
+                    Удалить
+                </button>
+        
+                <button class="otmen">
+                    Отмена
+                </button>
+            </div>
+              
+            
+                      
+                    </div>
+                   
+                    <div class="comment-part part2">
+                        <div class="userinfo">
+                            <div class="circle">
+                               
+                                    <img src="img/user4.png" alt="">
+                               
+                            </div>
+                            <div class="texts">
+                                <a href="#/">Hamillioner</a>
+                         
+                                <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                                <div class="delete-btn">
+                                     <button class="save">Сохранить </button>
+                                    <button class="del"> Удалить</button>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="userinfo">
+                            <div class="circle">
+                               
+                                    <img src="img/user4.png" alt="">
+                               
+                            </div>
+                            <div class="texts">
+                                <a href="#/">Hamillioner</a>
+                         
+                                <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                                <div class="delete-btn">
+                                     <button class="save">Сохранить </button>
+                                    <button class="del"> Удалить</button>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="userinfo">
+                            <div class="circle">
+                               
+                                    <img src="img/user4.png" alt="">
+                               
+                            </div>
+                            <div class="texts">
+                                <a href="#/">Hamillioner</a>
+                         
+                                <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                                <div class="delete-btn">
+                                     <button class="save">Сохранить </button>
+                                    <button class="del"> Удалить</button>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="userinfo">
+                            <div class="circle">
+                               
+                                    <img src="img/user4.png" alt="">
+                               
+                            </div>
+                            <div class="texts">
+                                <a href="#/">Hamillioner</a>
+                         
+                                <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                                <div class="delete-btn">
+                                     <button class="save">Сохранить </button>
+                                    <button class="del"> Удалить</button>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="userinfo">
+                            <div class="circle">
+                               
+                                    <img src="img/user4.png" alt="">
+                               
+                            </div>
+                            <div class="texts">
+                                <a href="#/">Hamillioner</a>
+                         
+                                <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                                <div class="delete-btn">
+                                     <button class="save">Сохранить </button>
+                                    <button class="del"> Удалить</button>
+                                </div>
+                            </div>
+            
+                        </div>
+                        
+                    </div>
+            </div>
+            <div class="openwindow openwindow4  ">
+                <div class="buts2">
+                    <div class="main but2 active block">
+                        <p>Основные</p>
+                    </div>
+                  
+                    <i class="fas fa-times-circle close_icon2"></i>
+                </div>
+                <div class="main-part2  active">
+                    <div class="socials">
+                        <p>Категория: </p>
+                        <select name="" id="" >
+                            <option value="1">Категория</option>
+                            <option value="2">Программирование</option>
+                            <option value="3" selected>Дизайн</option>
+                            <option value="4">Скрипт</option>
+                            <option value="5">...</option>
+        
+                        </select>
+                    </div>
+                    <div class="zagolovka">
+                        <p>Заголовок:</p>
+                        <input class="zag" type="text" name=""  id="" placeholder="Заголовок" >
+                    </div>
+        
+                    <div class="photo-block">
+                        
+                        <textarea name="" id="textarea4" cols="5" rows="5"></textarea>
+                        <!-- <div class="long">
+                            <p> <i class="fab fa-accusoft"></i> <i class="fab fa-accessible-icon"></i> <i
+                                    class="fab fa-adn"></i> <i class="fab fa-adversal"></i> <i class="fas fa-hashtag"></i><i
+                                    class="fas fa-photo-video"></i><i class="fas fa-video"></i> </p>
+                        </div> -->
+                    </div>
+        
+                    <div class="user">
+                        <p>Создатель темы:</p>
+                        <div class="username">
+                            <a href="#/"> Hamillioner</a>
+                        </div>
+        
+                    </div>
+        
+                    <div class="status status2">
+                     
+                        <button class="deaktiv">
+                            Деактивировать
+                        </button>
+                        <button class="zablock">
+                            Заблокировать
+                        </button>
+                    </div>
+        <div class="buttons">
+            <button class="save-btn save-btn2"> Сохранить </button>
+            <button class="udalit">
+                Удалить
+            </button>
+    
+            <button class="otmen">
+                Отмена
+            </button>
+        </div>
+          
+        
+                  
+                </div>
+               
+                <div class="comment-part part2">
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+        </div>
+            <div class="openwindow  op3">
+                <div class="buts2">
+                    <div class="main  active block">
+                        <p>Основные</p>
+                    </div>
+                  
+                    <i class="fas fa-times-circle close_icon2"></i>
+                </div>
+                <div class="main-part2  active">
+                    <div class="socials">
+                        <p>Категория: </p>
+                        <select name="" id="" >
+                            <option value="1">Категория</option>
+                            <option value="2">Программирование</option>
+                            <option value="3" selected>Дизайн</option>
+                            <option value="4">Скрипт</option>
+                            <option value="5">...</option>
+        
+                        </select>
+                    </div>
+                    <div class="zagolovka">
+                        <p>Заголовок:</p>
+                        <input class="zag" type="text" name=""  id="" placeholder="Заголовок" >
+                    </div>
+        
+                    <div class="photo-block">
+                        
+                        <textarea name="" id="textarea3" cols="5" rows="5"></textarea>
+                        <!-- <div class="long">
+                            <p> <i class="fab fa-accusoft"></i> <i class="fab fa-accessible-icon"></i> <i
+                                    class="fab fa-adn"></i> <i class="fab fa-adversal"></i> <i class="fas fa-hashtag"></i><i
+                                    class="fas fa-photo-video"></i><i class="fas fa-video"></i> </p>
+                        </div> -->
+                    </div>
+        
+                    <div class="user">
+                        <p>Создатель темы:</p>
+                        <div class="username">
+                            <a href="#/"> Hamillioner</a>
+                        </div>
+        
+                    </div>
+        
+                    <div class="status status2">
+                        
+                        <button class="deaktiv">
+                            Активировать
+                        </button>
+                      
+                    </div>
+        <div class="buttons">
+            <button class="save-btn save-btn2"> Сохранить </button>
+            <button class="udalit">
+                Удалить
+            </button>
+    
+            <button class="otmen">
+                Отмена
+            </button>
+        </div>
+          
+        
+                  
+                </div>
+               
+                <div class="comment-part part2">
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="userinfo">
+                        <div class="circle">
+                           
+                                <img src="img/user4.png" alt="">
+                           
+                        </div>
+                        <div class="texts">
+                            <a href="#/">Hamillioner</a>
+                     
+                            <textarea class="text--input" name="" id="" cols="30" rows="3" placeholder="Здесь комментарии"></textarea>
+
+                            <div class="delete-btn">
+                                 <button class="save">Сохранить </button>
+                                <button class="del"> Удалить</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+        </div>
+        </div>
+      
+            
+        </div>
+
+
+       
+        <!-- <div class="openwindow2">
+            <div class="buts">
+                <div class="main but active">
+                    <p>Основные</p>
+                </div>
+                <div class="comment but ">
+                    <p>Комментарии</p>
+                </div>
+            </div>
+        
+        </div>  -->
+
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/forum/scirpt.js"></script>
+</body>
+
+<script>
+    // Replace the <textarea id="editor1"> with a CKEditor 4
+    // instance, using default configuration.
+    CKEDITOR.replace( 'textarea1' );
+    CKEDITOR.replace( 'textarea2' );
+    CKEDITOR.replace( 'textarea3' );
+    CKEDITOR.replace( 'textarea4' );
+
+</script>
+
+</html>

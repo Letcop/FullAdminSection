@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/mail/main.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/mail/style.css">
+    <script src="ckeditor/ckeditor.js"></script>
+    
+    <title> Работа с почтой</title>
+</head>
+<body class="admin_home">
+    <div class="wrap">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo_header">
+                  <a href="#/"><img src="icons/nav_logo.png" alt=""></a>
+                </div>
+                <div class="search">
+                  <input type="text" placeholder="Поиск">
+                  <div class="search_btn">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <div class="chat">
+                  <i class="fas fa-comment">
+                    <span>99</span>
+                  </i>
+                  <div class="chat_text">
+                    <ul>
+                      <li><a href="chats.html"><strong>Чаты администраторов</strong></a><br>
+                        Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с каждым
+                        пользователям от имени “Поддержки” (администрации)
+                      </li> <br>
+                      <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a><br>
+                        Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и контролировать
+                        правильность и корректность работы и общения между пользователями
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="quitBlock">
+                    <a href="#/">Выйти</a>
+                </div>
+                <div class="avatar">
+                  <img src="img/user4.png" alt="">
+                </div>
+            </div>
+            <div class="header_title">
+                <div class="menu">
+                    <div class="menu_item">
+                        <div class="all_category">
+                          Все категории
+                          <i class="fas fa-bars"></i>
+                        </div>
+                        <ul>
+                            <li><a href="index.html" class="menu_list first_menu">Главная страница<div>29</div></a></li>
+                            <li><a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии<div>379</div></a></li>
+                            <li><a href="#/" class="menu_list">Безопасный платеж 
+                                <i class="fas fa-level-down-alt todown"></i></a>
+                               <ul class="sub_menu">
+                                   <li><a href="securePayments.html">Ход работы<div>379</div></a></li>
+                                   <li><a href="securePayments.html">Движение средств<div>39</div></a></li>
+                                   <li><a href="securePayments.html">Платежные системы<div>79</div></a></li>
+                               </ul>
+                             </li>
+                            <!-- <li><a href="workshop.html" class="menu_list">Творческая мастерская<div>37</div></a></li>
+                            <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li> -->
+                            <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+                            <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+                            <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+                            <li><a href="forum.html" class="menu_list">Форум<div>23</div></a></li>
+                            <li><a href="pages.html" class="menu_list">Страницы</a></li>
+                            <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+                            <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                             <li><a href="#/" class="menu_list drop_menu_link_mail change_back">Работа с почтой <i class="fas fa-level-down-alt todown"></i> </a>
+                                <ul class="sub_menu">
+                                    <li><a data-open="first-section" class="drop_menu_mail_item change" href="#/">Список рассылок</a></li>
+                                    <li><a data-open="second-section" class="drop_menu_mail_item" href="#/">Шаблоны писем</a></li>
+                                    <li><a data-open="third-section" class="drop_menu_mail_item" href="#/">База почт</a></li>
+                                </ul>
+                            </li>
+                        <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">SEO-оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="seo.html">Общие настройки</a></li>
+                                <li><a href="seo.html">Заказы</a></li>
+                                <li><a href="seo.html">Магазин</a></li>
+                                <li><a href="seo.html">Пользователи</a></li>
+                                <li><a href="seo.html">Ответы</a></li>
+                                <li><a href="seo.html">Блог</a></li>
+                                <li><a href="seo.html">Статьи</a></li>
+                                <li><a href="seo.html">Новости</a></li>
+                                <li><a href="seo.html">Помощь</a></li>
+                                <li><a href="seo.html">Посадочные страницы</a></li>
+                                <li><a href="seo.html">Редиректы</a></li>
+                                <li><a href="seo.html">Настройки</a></li>
+                                <li><a href="seo.html">Аддон для главной страницы</a></li>
+                                <li><a href="seo.html">Open Graph</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                  <!-- rassilok pisem 1-razdel -->
+                  <div class="block rassilok_pisem " data-open="first-section" id="rassilok_pisem">
+                    <div class="block_rassilok" id="block_rassilok">
+                      <!-- header - rassilok -->
+                      <div class="header">
+          
+                          <div class="left_side">
+                              <div class="span">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </div>
+                              <div class="line"></div>
+                              <div class="header_text">Работа с почтой / Список рассылок</div>
+                          </div>
+                         
+                          <div class="right_side">
+                              <div class="drop_num">
+                                  <select name="number" id="number">
+                                      <option value="20">20</option>
+                                      <option value="40">40</option>
+                                      <option value="100">100</option>
+                                  </select>
+                              </div>
+                              <a class="start_mailing" id="link" onclick="show()" href="#/">+ Начать рассылку</a>
+                          </div> 
+                      </div>
+                      
+                      <div class="body">
+                          <div class="body_header ras">
+                              <div class="body_text">ID</div>
+                              <div class="body_text">Получателей</div>
+                              <div class="body_text">Отправлено</div>
+                              <div class="body_text">Начало</div>
+                              <div class="body_text">Статус</div>
+                              <div class="body_text">Действие</div>
+                          </div>
+                          <div class="text_place">Nothing found</div>
+                      </div>
+                  </div>
+                  <!-- second block rassilok -->
+                  <div class="block1_rassilok" id="block1_rassilok">
+                      <div class="header1">
+                          <div class="icon">
+                              <img src="icons/edit.webp" alt="">
+                          </div>
+                          <div class="line"></div>
+                          <div class="header_text">Работа с почтой / Список рассылок</div>
+                      </div>
+                      <div class="body">
+                          <div class="from">
+                              <div class="from_text">От</div>
+                              <input class="input_text" type="text">
+                              <input class="input_text1" type="text">
+                          </div>
+                          <div class="from">
+                              <div class="from_text">Тема</div>
+                              <input class="input_text2" type="text">
+                          </div>
+                          <div class="from">
+                              <div class="from_text">Сообщение</div>
+                              <div class="textarea">
+                               <textarea id="textarea1">
+   
+                               </textarea>
+                                  <label class="checkbox un">
+                                      <input type="checkbox" id="client1">Текст сообщения содержит HTML теги:
+                                      <span class="checkmark"></span>
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="from">
+                              <div class="from_text">Получатели</div>
+                              <div class="radio">
+                                  <div class="input_radio">
+                                      <input checked type="radio" id="radio" onclick="remove()" name="chose"></input>
+                                      <label for="radio">Все</label>
+                                  </div>
+                                  <div class="input_radio">
+                                      <input type="radio" id="radio1" onclick="push()" name="chose"></input>
+                                      <label for="radio1">Исполнители</label>
+                                  </div>
+                                  <div class="input_radio">
+                                      <input type="radio" id="radio2" onclick="remove()" name="chose"></input>
+                                      <label for="radio2">Заказчики</label>
+                                  </div>
+                              </div>
+                         
+                          </div>
+                          <div class="from">
+                              <div class="from_text">Шаблон</div>
+                              <div class="select">
+                                  <select name="shablon" id="shablon">
+                                      <option value="">Без Шаблона</option>
+                                      <option value="">Общий Шаблон</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="buttons">
+                          <button class="save_btn">Save</button>
+                          <button class="cancel_btn" id="cancel" onclick="cancel()">Cancel</button>
+                      </div>
+                  </div>
+                  </div>
+
+                  <!-- shablon pisem 2 razdel -->
+                  <div class="block shablon_pisem display-show" data-open="second-section" id="shablon_pisem">
+                    <div class="block_shablon" id="block_shablon">
+                        <div class="header">
+                            <div class="left_side">
+                                <div class="span">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="header_text">Шаблоны писем</div>
+                            </div>
+                           
+                            <div class="right_side">
+                                <a class="start_mailing" id="link" onclick="show1()" href="#/">+ Добавить шаблон</a>
+                            </div> 
+                        </div>
+                        
+                        <div class="body">
+                            <div class="body_header">
+                                <div class="body_left">
+                                    <div class="body_text">ID</div>
+                                    <div class="body_text">Название</div>
+                                </div>
+                                <div class="body_right">
+                                    <div class="body_text shab">HTML</div>
+                                    <div class="body_text shab">Дата создания</div>
+                                    <div class="body_text shab">Действие</div>
+                                </div>
+                            </div>
+                            <div class="saved_mail">
+                                <div class="mail_left">
+                                    <div class="mail_saved">1</div>
+                                    <div class="mail_saved">Общий шаблон</div>
+                                </div>
+                                <div class="mail_right">
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="client1">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="mail_saved">7 мая 2020</div>
+                                    <div class="mail_saved">
+                                        <div class='edit_btn' title="edit" onclick="show1()"><i class='fas fa-pencil-alt'></i></div>
+                                        <div class="delete" title="delete"><i class='fas fa-times-circle'></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="block1_shablon" id="block1_shablon">
+                        <div class="header1">
+                            <div class="icon">
+                                <img src="icons/edit.webp" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="header_text">Добавление шаблона</div>
+                        </div>
+                        <div class="body">
+                           
+                                <div class="from">
+                                <div class="from_text">Название</div>
+                                <input class="input_text3" type="text">
+                            </div>
+                            <div class="from">
+                                <div class="from_text">Сообщение</div>
+                                <div class="textarea">
+                                  
+                                <textarea id="textarea2">
+     
+                                </textarea>
+                                    <label class="checkbox un">
+                                        <input type="checkbox" id="client1">Текст сообщения содержит HTML теги:
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="save_btn">Save</button>
+                                <button class="cancel_btn" id="cancel" onclick="cancel_sh()">Cancel</button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                  </div>
+                  <!-- baza pocht 3-razdel -->
+                  <div class="block baza_pocht display-show" data-open="third-section" id="baza_pocht">
+                    <div class="block_pocht">
+                        <div class="header_baz">
+                            <div class="span">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header_text">База почт</div>
+                        </div>
+            
+                        <div class="body">
+                            <div class="section">
+                                <button class="copy" type="button">Скопировать всё</button>
+                                <input class="country" type="search" placeholder="Поиск по регионам">
+                                <input class="id" type="search" placeholder="Поиск по ID/email">
+                                
+                                <label class="checkbox">
+                                    <input type="checkbox" id="client">Заказчики
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" id="programer">Исполнители
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="body_header_pocht">
+                                <div class="body_text n">№</div>
+                                <div class="body_text login">Логин</div>
+                                <div class="body_text fio">ФИО</div>
+                                <div class="body_text pochta">Почта</div>
+                            </div>
+                            <div class="body_content">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+         
+         
+            </div>
+          
+            
+
+
+        </div>
+    </div>
+    <script>
+      // Replace the <textarea id="editor1"> with a CKEditor 4
+      // instance, using default configuration.
+      CKEDITOR.replace( 'textarea1' );
+  </script>
+   <script>
+    // Replace the <textarea id="editor1"> with a CKEditor 4
+    // instance, using default configuration.
+    CKEDITOR.replace( 'textarea2' );
+</script>
+  
+<script src="js/jquery.js"></script>
+<script src="js/mail/main.js"></script>    
+</body>
+</html>

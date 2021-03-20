@@ -1,0 +1,988 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+::-moz-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+html,
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: sans-serif; 
+
+}
+
+
+.mainActive{
+  color: #ffffff !important;
+  background: #00cf4d !important;
+}
+
+
+.menuActive{
+  color: #ffffff !important;
+  background: #00cf4d !important;
+}
+
+.admin_specializations{
+  background: url(../../img/1.jpg);
+  backdrop-filter: blur(2px);
+  height: 150vh;
+
+}
+
+.container{
+  max-width: 1170px !important;
+  margin-top: 10px;
+}
+
+.admin_specializations .header_admin {
+  height: 100vh;
+  padding: 10px 0;
+}
+
+.admin_specializations .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.admin_specializations .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_specializations .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -130px;
+}
+
+.admin_specializations .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.admin_specializations .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_specializations .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_specializations .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+  -ms-transform: 5s;
+  transform: 5s;
+}
+
+.admin_specializations .navbar .quitBlock a {
+  color: #ffffff;
+  -webkit-transform: 0.5s;
+  -ms-transform: 0.5s;
+  transform: 0.5s;
+}
+
+.admin_specializations .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+
+.admin_specializations .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_specializations .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.admin_specializations .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_specializations .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+}
+
+.admin_specializations .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_specializations .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_specializations .navbar .chat .chat_text li a {
+  color: #100f41;
+}
+
+.admin_specializations .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_specializations .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_specializations .menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.admin_specializations .menu .sub_menu {
+  display: none;
+}
+
+.admin_specializations .menu .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_specializations .menu .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_specializations .menu .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_specializations .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_specializations .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_specializations .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_specializations .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.admin_specializations .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.toup{
+  transform: rotate(180deg);
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+.admin_specializations .menu_item .menu_list .toup.upactive {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.admin_specializations .menu_item .menu_list .todown {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_specializations .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+.container .block main.main {
+  width: 800px;
+}
+
+
+.container .block main.main section.card_specializations {
+  width: 100%;
+}
+.container .block main.main section.card_specializations.display-none {
+  display: none;
+}
+.container .block main.main section.card_specializations .card_specializations_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_left .button_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_left .button_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_left .text_header {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 550;
+  color: #fff;
+  font-weight: 550;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_right button.add_item_spec {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0px;
+  color: #fff;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_right button.add_item_spec.display-none {
+  visibility: hidden;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_right button.add_item_spec:focus {
+  outline: none;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_right button.add_item_spec:hover {
+  text-decoration: underline;
+}
+.container .block main.main section.card_specializations .card_specializations_header .inSpecializations_header_right button.add_item_spec img {
+  height: 12px;
+  vertical-align: middle;
+}
+.container .block main.main section.card_specializations .card_specializations_body {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 14px;
+  background: url(../../img/userEditHeader.jpg);
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations {
+  width: 100%;
+  height: 606px;
+  overflow-y: auto;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations.display-none {
+  display: none;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  border-bottom: 1px solid #12114A;
+  color: #ffffff;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_header .action {
+  width: 20%;
+  text-align: center;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body {
+  width: 100%;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 15px 7px 0;
+  border-bottom: 1px solid #ccc;
+  transition: background-color .1s linear;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item:hover {
+  background: transparent !important;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item .name_specialization {
+  width: 70%;
+  overflow-x: hidden;
+  white-space: pre;
+  color: #fff !important;
+  text-overflow: ellipsis;
+  letter-spacing: 0.7px;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item .setting_specialization {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item .setting_specialization > .button {
+  height: 20px;
+  transition: all 0.1s linear;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item .setting_specialization > .button:hover {
+  box-shadow: 0px 4px 2px -2px #ccc;
+}
+.container .block main.main section.card_specializations .card_specializations_body .list_specializations .list_specializations_body .list_specializations_item .setting_specialization > .button img {
+  height: 100%;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization {
+  width: 100%;
+  padding: 30px 20px;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization.display-none,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization.display-none {
+  display: none;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .name_specialization,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .name_specialization {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .name_specialization label,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .name_specialization label {
+  display: block;
+  font-weight: bold;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .name_specialization input[type=text],
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .name_specialization input[type=text] {
+  width: 70%;
+  padding: 7px 12px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  caret-color: #00CF4D;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .name_specialization input[type=text]:focus,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .name_specialization input[type=text]:focus {
+  outline: none;
+  border: 1px solid #00CF4D;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .name_specialization input[type=text]::placeholder,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .name_specialization input[type=text]::placeholder {
+  color: crimson;
+  letter-spacing: 2px;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group button,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group button {
+  padding: 8px 16px;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  transition: box-shadow 0.2s ease-out;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group button:focus,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group button:focus {
+  outline: none;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group button.btn_save,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group button.btn_save {
+  background-color: #00CF4D;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group button.btn_save:hover,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group button.btn_save:hover {
+  box-shadow: 2px 2px 2px 0px black;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group button.btn_cancel,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group button.btn_cancel {
+  background-color: brown;
+  cursor: pointer;
+}
+.container .block main.main section.card_specializations .card_specializations_body .add_item_specialization .buttons_group button.btn_cancel:hover,
+.container .block main.main section.card_specializations .card_specializations_body .remove_item_specialization .buttons_group button.btn_cancel:hover {
+  box-shadow: 2px 2px 2px 0px #00CF4D;
+}
+.container .block main.main section.card_categories_specializations {
+  width: 100%;
+}
+.container .block main.main section.card_categories_specializations.display-none {
+  display: none;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b;
+  color: #fff !important;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_left .button_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_left .button_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_left .text_header {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_right.display-none {
+  visibility: hidden;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_right button.add_item_cat {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0px;
+  color: #fff;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_right button.add_item_cat.display-none {
+  visibility: hidden;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_right button.add_item_cat:focus {
+  outline: none;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_right button.add_item_cat:hover {
+  text-decoration: underline;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_header .inCategories_specializations_header_right button.add_item_cat img {
+  height: 12px;
+  vertical-align: middle;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 14px;
+  height: 558px;
+  background: url(../../img/userEditHeader.jpg); 
+
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations {
+  width: 100%;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations.display-none {
+  display: none;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  border-bottom: 1px solid #12114A;
+  color: #ffffff;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_header .action {
+  width: 20%;
+  text-align: center;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body {
+  width: 100%;
+  height: 495px;
+  overflow-y: auto;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color .1s linear;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item.active_list_categories_specializations_item {
+  background-color: #00cf4d;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item.active_list_categories_specializations_item .name_category {
+  text-decoration: underline;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item:hover {
+  background-color: #00cf4d;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .wrapped_name_icon_category {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .wrapped_name_icon_category .icon_category {
+  height: 20px;
+  width: 5%;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .wrapped_name_icon_category .icon_category img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .wrapped_name_icon_category .name_category {
+  width: 95%;
+  overflow-x: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+  letter-spacing: 0.7px;
+  color: #fff;
+  font-weight: bold;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .setting_category_specialization {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px 0;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .setting_category_specialization > .button {
+  height: 20px;
+  transition: all 0.1s linear;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .setting_category_specialization > .button:hover {
+  box-shadow: 0px 4px 2px -2px #ccc;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .list_categories_specializations_item .setting_category_specialization > .button img {
+  height: 100%;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .drop_menu_list_categories {
+  width: 100%;
+  overflow-y: hidden;
+  display: none;
+  transition: all 0.2s ease-out;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .drop_menu_list_categories.display-block {
+  display: block;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .list_categories_specializations .list_categories_specializations_body .wrapped_item_list_categories .drop_menu_list_categories .item_specialization_under_category {
+  width: 100%;
+  padding: 7px 30px;
+  border-bottom: 1px solid #ccc;
+  white-space: pre;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization {
+  width: 100%;
+  padding: 30px 20px;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization.display-none,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization.display-none {
+  display: none;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .name_category,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .name_category {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .name_category label,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .name_category label {
+  display: block;
+  font-weight: bold;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  color: #12114A;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .name_category input[type=text],
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .name_category input[type=text] {
+  width: 70%;
+  padding: 7px 12px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  caret-color: #00CF4D;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .name_category input[type=text]:focus,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .name_category input[type=text]:focus {
+  outline: none;
+  border: 1px solid #00CF4D;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .name_category input[type=text]::placeholder,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .name_category input[type=text]::placeholder {
+  color: crimson;
+  letter-spacing: 2px;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .specializations-list,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .specializations-list {
+  width: 100%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;  
+  height: 400px;
+  overflow-y: auto;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .specializations-list span.title,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .specializations-list span.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background: #00cf4d !important;
+  border-radius: 4px;
+  color: #fff !important;
+
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .specializations-list .spec-list-item,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .specializations-list .spec-list-item {
+  width: 50%;
+  padding: 4px 0 4px 80px;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .specializations-list .spec-list-item input,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .specializations-list .spec-list-item label,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .specializations-list .spec-list-item input,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .specializations-list .spec-list-item label {
+  vertical-align: middle;
+  color: #ffffff;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group button,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group button {
+  padding: 8px 16px;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  transition: box-shadow 0.2s ease-out;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group button:focus,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group button:focus {
+  outline: none;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group button.btn_save,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group button.btn_save {
+  background-color: #00CF4D;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group button.btn_save:hover,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group button.btn_save:hover {
+  box-shadow: 2px 2px 2px 0px black;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group button.btn_cancel,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group button.btn_cancel {
+  background-color: brown;
+  cursor: pointer;
+}
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .add_item_categories_specialization .buttons_group button.btn_cancel:hover,
+.container .block main.main section.card_categories_specializations .card_categories_specializations_body .remove_item_categories_specialization .buttons_group button.btn_cancel:hover {
+  box-shadow: 2px 2px 2px 0px #00CF4D;
+}
+.container .block main.main section.card_settings_specializations {
+  width: 100%;
+  border-radius: 10px !important;
+  border: none; 
+  background: url(../../img/userEditHeader.jpg);
+}
+.container .block main.main section.card_settings_specializations.display-none {
+  display: none;
+}
+.container .block main.main section.card_settings_specializations .card_settings_specializations_header {
+  width: 100%;
+  padding: 0px 15px;
+  border-bottom: 1px solid #12114A;
+  background-color: #01002b; 
+  border-radius: 10px;
+}
+.container .block main.main section.card_settings_specializations .card_settings_specializations_header .inSettings_specializations_header_left .button_icon {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #12114A;
+  padding: 10px 10px 10px 0px;
+}
+.container .block main.main section.card_settings_specializations .card_settings_specializations_header .inSettings_specializations_header_left .button_icon img {
+  width: 100%;
+  filter: invert(1);
+}
+.container .block main.main section.card_settings_specializations .card_settings_specializations_header .inSettings_specializations_header_left .text_header {
+  padding-left: 10px;
+  font-weight: 550;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body {
+  padding: 20px 15px;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body h4.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 4px; 
+  margin-bottom: 10px;
+
+
+  /* border-bottom: 2px solid #12114A; */
+  display: inline-block;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form {
+  width: 100%;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 0.1px solid #fee;
+  padding: 10px 0;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form .row .col-6 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form .row .col-6 span {
+  color: #fff;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form .row .col-6 .form-group {
+  margin-bottom: 10px; 
+  color: #fff !important;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form .row .col-6 .form-group input,
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form .row .col-6 .form-group label {
+  vertical-align: middle;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form button.button_submit {
+  margin: 10px;
+  padding: 8px 16px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #00CF4D;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out;
+  margin-left: 640px;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form button.button_submit:focus {
+  outline: none;
+}
+.container .block main.main section.card_settings_specializations .card_specializations_body form.settings_form button.button_submit:hover {
+  box-shadow: 2px 2px 2px 0px black;
+}
+
+/*# sourceMappingURL=main.css.map */

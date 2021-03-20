@@ -1,0 +1,1603 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  text-decoration: none;
+  list-style: none !important;
+}
+
+/* Изменение цвета выделения на старнице */
+::-moz-selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+::selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00CF4D !important;
+  color: #fff;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+button {
+  border: none;
+  background-color: #00cf4d;
+}
+
+button:hover,
+.start_new:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #00cf4d;
+  box-shadow: 0px 0px 13px 2px #00cf4d;
+  color: #ffffff !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.title_text {
+  font-size: 25px;
+  font-weight: 700;
+  color: #253556;
+  padding-bottom: 10px;
+}
+
+.products_item::-webkit-scrollbar,
+textarea::-webkit-scrollbar,
+.shops_item::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+/* Track */
+.products_item::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track,
+.shops_item::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.products_item::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb,
+.shops_item::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+.mainActive{
+  background: #00cf4d !important;
+  color: #ffffff !important;
+}
+.admin_workshop {
+  font-family: "Montserrat";
+  background: url("../../img/1.jpg");
+  backdrop-filter: blur(2px);
+  height: 150vh;
+  /* Track */
+  /* Handle */
+}
+
+.admin_workshop .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.admin_workshop textarea::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.admin_workshop textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.admin_workshop textarea::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_workshop .workshop {
+  height: 100vh;
+  padding: 10px 0;
+}
+
+.admin_workshop .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.admin_workshop .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_workshop .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -130px;
+}
+
+.admin_workshop .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.admin_workshop .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_workshop .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_workshop .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+      -ms-transform: 5s;
+          transform: 5s;
+}
+
+.admin_workshop .navbar .quitBlock a {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transform: 0.5s;
+      -ms-transform: 0.5s;
+          transform: 0.5s;
+}
+
+.admin_workshop .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+
+.admin_workshop .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_workshop .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.admin_workshop .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_workshop .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_workshop .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_workshop .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_workshop .navbar .chat .chat_text li a {
+  color: #000000;
+}
+
+.admin_workshop .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_workshop .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_workshop .workshop_body {
+  margin-top: 20px;
+}
+
+.admin_workshop .workshop_body .sub_menu {
+  display: none;
+}
+
+.admin_workshop .workshop_body .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_workshop .workshop_body .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_workshop .workshop_body .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_workshop .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_workshop .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_workshop .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.admin_workshop .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_workshop .menu_item .menu_list .todown {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_workshop .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.admin_workshop .workshop_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.admin_workshop .workshop_row {
+  width: 70%;
+}
+
+.admin_workshop .workshop .workshop_title {
+  width: 47%;
+  margin: 30px 0 30px 0;
+  position: relative;
+  margin-left: 15px;
+}
+
+.admin_workshop .workshop .workshop_title .products,
+.admin_workshop .workshop .workshop_title .shops {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #c1c4ca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: absolute;
+  bottom: -2PX;
+}
+
+.admin_workshop .workshop .workshop_title .products {
+  left: -15px;
+}
+
+.admin_workshop .workshop .workshop_title .shops {
+  right: -15px;
+}
+
+.admin_workshop .workshop .workshop_title .active {
+  background-color: #00cf4d;
+  color: #ffffff;
+  border: 2px solid #00cf4d;
+}
+
+.admin_workshop .workshop .products_page,
+.admin_workshop .workshop .shops_page {
+  margin-top: 50px;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title,
+.admin_workshop .workshop .products_page .shops_title .sup_title,
+.admin_workshop .workshop .shops_page .products_title .sup_title,
+.admin_workshop .workshop .shops_page .shops_title .sup_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_product,
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_shop,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_product,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_shop,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_product,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_shop,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_product,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  width: auto;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #c1c4ca;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_product .count_product,
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_shop .count_product,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_product .count_product,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_shop .count_product,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_product .count_product,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_shop .count_product,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_product .count_product,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_shop .count_product {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00cf4d;
+  border: 2px solid #ffffff;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_product .count_product input,
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_shop .count_product input,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_product .count_product input,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_shop .count_product input,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_product .count_product input,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_shop .count_product input,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_product .count_product input,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_shop .count_product input {
+  max-width: 30px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_product span,
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_shop span,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_product span,
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_shop span,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_product span,
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_shop span,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_product span,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_shop span {
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_product:not(:last-child),
+.admin_workshop .workshop .products_page .products_title .sup_title .btn_shop:not(:last-child),
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_product:not(:last-child),
+.admin_workshop .workshop .products_page .shops_title .sup_title .btn_shop:not(:last-child),
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_product:not(:last-child),
+.admin_workshop .workshop .shops_page .products_title .sup_title .btn_shop:not(:last-child),
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_product:not(:last-child),
+.admin_workshop .workshop .shops_page .shops_title .sup_title .btn_shop:not(:last-child) {
+  margin-right: 30px;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .active_product,
+.admin_workshop .workshop .products_page .shops_title .sup_title .active_product,
+.admin_workshop .workshop .shops_page .products_title .sup_title .active_product,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .active_product {
+  background-color: #00cf4d;
+  color: #ffffff;
+  border: 2px solid #00cf4d !important;
+}
+
+.admin_workshop .workshop .products_page .products_title .sup_title .active_shop,
+.admin_workshop .workshop .products_page .shops_title .sup_title .active_shop,
+.admin_workshop .workshop .shops_page .products_title .sup_title .active_shop,
+.admin_workshop .workshop .shops_page .shops_title .sup_title .active_shop {
+  background-color: #00cf4d;
+  color: #ffffff;
+  border: 2px solid #00cf4d !important;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop,
+.admin_workshop .workshop .products_page .shops_title .sub_title,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop,
+.admin_workshop .workshop .shops_page .products_title .sub_title,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop,
+.admin_workshop .workshop .shops_page .shops_title .sub_title,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #12114a;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category .category_item,
+.admin_workshop .workshop .products_page .products_title .sub_title .by_name,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .by_name,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category .category_item,
+.admin_workshop .workshop .products_page .shops_title .sub_title .by_name,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .by_name,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category .category_item,
+.admin_workshop .workshop .shops_page .products_title .sub_title .by_name,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .by_name,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category .category_item,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .by_name,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .by_name {
+  padding: 0 15px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #c1c4ca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category .category_item i,
+.admin_workshop .workshop .products_page .products_title .sub_title .by_name i,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category .category_item i,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .by_name i,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category .category_item i,
+.admin_workshop .workshop .products_page .shops_title .sub_title .by_name i,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category .category_item i,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .by_name i,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category .category_item i,
+.admin_workshop .workshop .shops_page .products_title .sub_title .by_name i,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category .category_item i,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .by_name i,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category .category_item i,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .by_name i,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category .category_item i,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .by_name i {
+  margin-top: 13px;
+  margin-left: 5px;
+  font-size: 25px;
+  color: #253556;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category .category_item,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category .category_item,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category .category_item,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category .category_item,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category .category_item,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category .category_item {
+  position: relative;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category_list,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category_list,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category_list,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category_list,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category_list,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category_list,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category_list,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category_list {
+  width: 156px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #ffffff;
+  border: 2px solid #c1c4ca;
+  border-top: none;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category_list li,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category_list li,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category_list li,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category_list li,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category_list li,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category_list li,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category_list li,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category_list li {
+  list-style: none;
+  height: 30px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category_list li a,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category_list li a,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category_list li a,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category_list li a,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category_list li a,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category_list li a,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category_list li a,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category_list li a {
+  text-decoration: none;
+  color: #253556;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category_list li:hover,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category_list li:hover,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category_list li:hover,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category_list li:hover,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category_list li:hover,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category_list li:hover,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category_list li:hover,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category_list li:hover {
+  background-color: #00cf4d;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .category_list li:hover a,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .category_list li:hover a,
+.admin_workshop .workshop .products_page .shops_title .sub_title .category_list li:hover a,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .category_list li:hover a,
+.admin_workshop .workshop .shops_page .products_title .sub_title .category_list li:hover a,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .category_list li:hover a,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .category_list li:hover a,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .category_list li:hover a {
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .search,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .search,
+.admin_workshop .workshop .products_page .shops_title .sub_title .search,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .search,
+.admin_workshop .workshop .shops_page .products_title .sub_title .search,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .search,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .search,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .search input,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .search input,
+.admin_workshop .workshop .products_page .shops_title .sub_title .search input,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .search input,
+.admin_workshop .workshop .shops_page .products_title .sub_title .search input,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .search input,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .search input,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .search input {
+  outline: none;
+  width: 300px;
+  height: 30px;
+  border: 2px solid #c1c4ca;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0 10px;
+  font-weight: 500;
+  color: #12114a;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .search input:focus,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .search input:focus,
+.admin_workshop .workshop .products_page .shops_title .sub_title .search input:focus,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .search input:focus,
+.admin_workshop .workshop .shops_page .products_title .sub_title .search input:focus,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .search input:focus,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .search input:focus,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .search input:focus {
+  border: 2px solid #00cf4d;
+  border-right: none;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .search .search_icon,
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .search .search_icon,
+.admin_workshop .workshop .products_page .shops_title .sub_title .search .search_icon,
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .search .search_icon,
+.admin_workshop .workshop .shops_page .products_title .sub_title .search .search_icon,
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .search .search_icon,
+.admin_workshop .workshop .shops_page .shops_title .sub_title .search .search_icon,
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .search .search_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00cf4d;
+  color: #ffffff;
+  width: 40px;
+  height: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .products_page .products_title .sub_title .list:not(:last-child),
+.admin_workshop .workshop .products_page .products_title .sup_title_shop .list:not(:last-child),
+.admin_workshop .workshop .products_page .shops_title .sub_title .list:not(:last-child),
+.admin_workshop .workshop .products_page .shops_title .sup_title_shop .list:not(:last-child),
+.admin_workshop .workshop .shops_page .products_title .sub_title .list:not(:last-child),
+.admin_workshop .workshop .shops_page .products_title .sup_title_shop .list:not(:last-child),
+.admin_workshop .workshop .shops_page .shops_title .sub_title .list:not(:last-child),
+.admin_workshop .workshop .shops_page .shops_title .sup_title_shop .list:not(:last-child) {
+  margin-right: 5px;
+  font-size: 12px
+}
+
+.admin_workshop .workshop .products_page .products_item,
+.admin_workshop .workshop .products_page .shops_item,
+.admin_workshop .workshop .shops_page .products_item,
+.admin_workshop .workshop .shops_page .shops_item {
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  margin-top: 50px;
+  border-top: 2px solid #c1c4ca;
+  border-bottom: 2px solid #c1c4ca;
+  padding: 20px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.admin_workshop .workshop .products_page .product_list,
+.admin_workshop .workshop .shops_page .product_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 30px;
+}
+
+.admin_workshop .workshop .products_page .product_list .photo_product,
+.admin_workshop .workshop .shops_page .product_list .photo_product {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: 1px solid #c1c4ca;
+}
+
+.admin_workshop .workshop .products_page .product_list .photo_product img,
+.admin_workshop .workshop .shops_page .product_list .photo_product img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.admin_workshop .workshop .products_page .product_list .infoName_product,
+.admin_workshop .workshop .shops_page .product_list .infoName_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .products_page .product_list .infoName_product strong,
+.admin_workshop .workshop .shops_page .product_list .infoName_product strong {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.admin_workshop .workshop .products_page .product_list .infoName_product i,
+.admin_workshop .workshop .shops_page .product_list .infoName_product i {
+  margin-left: 5px;
+  color: #00cf4d;
+  font-size: 18px;
+}
+
+.admin_workshop .workshop .products_page .product_list .infoName_product .link,
+.admin_workshop .workshop .shops_page .product_list .infoName_product .link {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #00cf4d;
+}
+
+.admin_workshop .workshop .products_page .product_list .infoName_product .product_text,
+.admin_workshop .workshop .shops_page .product_list .infoName_product .product_text {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.admin_workshop .workshop .products_page .product_list .infoName_product .product_text span,
+.admin_workshop .workshop .shops_page .product_list .infoName_product .product_text span {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.admin_workshop .workshop .products_page .product_list table,
+.admin_workshop .workshop .shops_page .product_list table {
+  width: 45%;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.admin_workshop .workshop .products_page .product_list table tbody,
+.admin_workshop .workshop .shops_page .product_list table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin_workshop .workshop .products_page .product_list table .table_list,
+.admin_workshop .workshop .shops_page .product_list table .table_list {
+  margin-top: 28px;
+}
+
+.admin_workshop .workshop .products_page .product_list table .table_list i,
+.admin_workshop .workshop .shops_page .product_list table .table_list i {
+  font-size: 25px;
+  color: #00cf4d;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .products_page .product_list table .table_list .exposed,
+.admin_workshop .workshop .shops_page .product_list table .table_list .exposed {
+  display: none;
+}
+
+.admin_workshop .workshop .products_page .product_list table tr,
+.admin_workshop .workshop .shops_page .product_list table tr {
+  width: 100%;
+}
+
+.admin_workshop .workshop .products_page .product_list table th,
+.admin_workshop .workshop .products_page .product_list table td,
+.admin_workshop .workshop .shops_page .product_list table th,
+.admin_workshop .workshop .shops_page .product_list table td {
+  width: 120px;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .products_page .product_list table th,
+.admin_workshop .workshop .shops_page .product_list table th {
+  font-size: 14px;
+}
+
+.admin_workshop .workshop .shops_page .shop_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_workshop .workshop .shops_page .shop_list .photo_shop {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .workshop .shops_page .shop_list .photo_shop img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.admin_workshop .workshop .shops_page .shop_list .infoName_shop {
+  margin-left: 15px;
+  margin-top: 7px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin_workshop .workshop .shops_page .shop_list .infoName_shop strong {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .shops_page .shop_list .infoName_shop i {
+  margin-left: 5px;
+  color: #00cf4d;
+  font-size: 18px;
+}
+
+th, td{
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .shops_page .shop_list .infoName_shop .link {
+  color: #00cf4d;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table {
+  width: 68%;
+  margin-left: auto;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table .table_list {
+  margin-top: 20px;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table .table_list i {
+  font-size: 25px;
+  color: #00cf4d;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table .table_list .exposed_shop {
+  display: none;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table tr {
+  width: 100%;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table th,
+.admin_workshop .workshop .shops_page .shop_list table td {
+  width: 160px;
+}
+
+.admin_workshop .workshop .shops_page .shop_list table th {
+  font-size: 14px;
+}
+
+.admin_workshop .workshop .shops_page .shop_list:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.admin_workshop .workshop .modal_page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0006;
+  height: 100vh;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  padding: 10px;
+  z-index: 999;
+}
+
+.admin_workshop .workshop .modal_page .modal_title {
+  width: 500px;
+  height: auto;
+  color: #253556;
+  border-radius: 10px;
+  margin-top: 50px !important;
+  background: url('../../img/userEditHeader.jpg');
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_header {
+  position: relative;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_header h3 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #00cf4d;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_header .close_modal {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_header .close_modal i {
+  color: #ff8fb4;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_header .close_modal i:hover {
+  color: tomato;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body {
+  margin: 20px 40px;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .name_work {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body a {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #00cf4d;
+  padding: 0 5px;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .product {
+  margin: 10px 0;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .product span {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body input {
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #c1c4ca;
+  font-size: 14px;
+  font-weight: 500;
+  width: 85%;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .price,
+.admin_workshop .workshop .modal_page .modal_title .modal_body .exposed_text,
+.admin_workshop .workshop .modal_page .modal_title .modal_body .status_text {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category {
+  position: relative;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_item {
+  display: inline-block;
+  border: 1px solid #c1c4ca;
+  border-radius: 10px;
+  width: 40%;
+  height: 30px;
+  padding: 0 10px;
+  font-weight: 500;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_item i {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_list {
+  width: 168px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #ffffff;
+  border: 1px solid #c1c4ca;
+  border-top: none;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_list li {
+  list-style: none;
+  height: 30px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_list li a {
+  text-decoration: none;
+  color: #253556;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_list li:hover {
+  background-color: #00cf4d;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .category .category_list li:hover a {
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .exposed_date {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .price_box,
+.admin_workshop .workshop .modal_page .modal_title .modal_body .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .modal_body .status {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images input[type='file'] {
+  display: none;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images .edit_avatar_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images .edit_avatar_img .avatar_img .add_product_icon {
+  color: #c1c4ca;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images .edit_avatar_img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images .edit_avatar_img .close_edit_product {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  background-color: #efefef;
+  color: #ff8fb4;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .avatar_edit_images .edit_avatar_img .close_edit_product:hover {
+  color: tomato;
+}
+
+.admin_workshop .workshop .modal_page .modal_title textarea {
+  width: 100%;
+  margin: 15px 0;
+  height: 100px;
+  overflow-y: auto;
+  resize: none;
+  border: 1px solid #c1c4ca;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.admin_workshop .workshop .modal_page .modal_title textarea:focus {
+  outline: none;
+  border: 1px solid #00cf4d;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .buttons button {
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .buttons button:last-child {
+  background-color: #ffffff;
+  border: 1px solid #ff8fb4;
+  background-color: #ff8fb4;
+  margin-left: 20px;
+}
+
+.admin_workshop .workshop .modal_page .modal_title .buttons button:last-child:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #ff8fb4;
+  box-shadow: 0px 0px 13px 2px #ff8fb4;
+  color: #ffffff !important;
+}
+
+.admin_workshop .workshop .shop_modal {
+  display: none;
+}
+
+.admin_workshop .workshop .shop_modal .modal_header {
+  margin-bottom: 30px !important;
+}
+
+.admin_workshop .workshop .shop_modal .user_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .logo {
+  width: 84px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  position: relative;
+  margin-right: 20px;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .logo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .name input {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #253556;
+}
+
+.admin_workshop .workshop .shop_modal .user_info input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.admin_workshop .workshop .shop_modal .user_info input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.admin_workshop .workshop .shop_modal .user_info input::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.admin_workshop .workshop .shop_modal .user_info input::placeholder {
+  text-transform: capitalize;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .creator {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .creator span {
+  font-weight: 500;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .creator a {
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.admin_workshop .workshop .shop_modal .user_info .created_time span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .shop_modal .info_status span {
+  font-weight: 500;
+  margin-right: 10px;
+  color: #ffffff;
+}
+.admin_workshop .workshop .shop_modal .info_status strong {
+  color: #ffffff;
+}
+
+
+.admin_workshop .workshop .shop_modal .info_status .status_shop {
+  margin: 20px 0 5px 0;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .shop_modal .info_status .general_sales {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.admin_workshop .workshop .shop_modal .buttons button {
+  margin-top: 20px;
+  width: 300px !important;
+}
+
+.admin_workshop .category_added_list {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/*# sourceMappingURL=main.css.map */

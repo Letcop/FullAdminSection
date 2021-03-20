@@ -1,0 +1,1790 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-moz-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00cf4d !important;
+  color: #fff;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+body{
+  background: url('../../img/1.jpg');
+  backdrop-filter: blur(2px);
+  height: 150vh;
+}
+.text .table th{
+  font-weight: 700;
+  background: #00cf4d;
+  border-radius: 4px;
+  color: #fff;
+  padding-left: 4px;
+}
+.text .table{
+  color: white;
+}
+table{
+  background: rgba(255, 255, 255, 0);
+  border-radius: 7px ;
+  margin-top: 6px;
+  padding: 10px;
+}
+/* table:hover{
+  background: rgb(240, 240, 240);
+  transition: 0.8s;
+} */
+
+button {
+  border: none;
+  background-color: #00cf4d;
+}
+
+button:hover, .start_new:hover {
+  -webkit-box-shadow: 0px 0px 13px 2px #00cf4d;
+  box-shadow: 0px 0px 13px 2px #00cf4d;
+  color: #ffffff !important;
+}
+
+::-moz-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #00cf4d;
+  color: #fff;
+}
+
+.admin_auction-services {
+  font-family: "Montserrat";
+}
+
+.admin_auction-services .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.admin_auction-services textarea::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.admin_auction-services textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.admin_auction-services textarea::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+  border-radius: 10px;
+}
+
+.admin_auction-services .header_admin {
+  padding: 10px 0 0;
+}
+
+.admin_auction-services .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.admin_auction-services .navbar .logo_header {
+  width: 270px;
+  text-align: center;
+}
+
+.admin_auction-services .navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -130px;
+}
+
+.admin_auction-services .navbar .search input {
+  width: 400px;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #efefef;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Montserrat";
+}
+
+.admin_auction-services .navbar .search input:focus {
+  border: 1px solid #00cf4d;
+}
+
+.admin_auction-services .navbar .search .search_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #00cf4d;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.admin_auction-services .navbar .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00cf4d;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+
+.admin_auction-services .navbar .avatar img {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.admin_auction-services .navbar .chat i {
+  cursor: pointer;
+  color: #00cf4d;
+  font-size: 35px;
+  position: relative;
+}
+
+.admin_auction-services .navbar .chat i span {
+  font-size: 14px;
+  position: absolute;
+  color: #ffffff;
+  left: 10px;
+  top: 10px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.admin_auction-services .navbar .chat .chat_text {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 600px;
+  top: 75px;
+  left: calc(100% / 2.05);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.admin_auction-services .navbar .chat .chat_text li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.admin_auction-services .navbar .chat .chat_text li a {
+  color: #000000;
+}
+
+.admin_auction-services .navbar .chat .chat_text li:hover a {
+  color: #00cf4d;
+}
+
+.admin_auction-services .navbar .chat .chat_text li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cf4d;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 20px;
+}
+
+.admin_auction-services main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.admin_auction-services main .menu {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.admin_home .menu {
+  margin-top: 20px;
+}
+
+.admin_home .menu .sub_menu {
+  display: none;
+}
+
+.admin_home .menu .sub_menu li {
+  width: 100%;
+  height: 30px;
+}
+
+.admin_home .menu .sub_menu li a {
+  width: 100%;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #2d303391;
+}
+
+.admin_home .menu .sub_menu li a:hover {
+  color: #ffffff;
+  background: #00cf4d;
+}
+
+.admin_home .menu_item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
+}
+
+.admin_home .menu_item ul li div {
+  border-radius: 50%;
+  background: #383636;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.admin_home .menu_item .all_category {
+  width: 100%;
+  height: 40px;
+  background-color: #01002b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_home .menu_item .menu_list {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #100f41;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.admin_home .menu_item .menu_list:hover {
+  background-color: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_home .menu_item .menu_list .todown {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  right: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_home .menu_item .menu_list .todown.upactive {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.admin_auction-services main .info .box {
+  width: 824px;
+}
+
+.admin_auction-services main .info .box-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .tabsBar {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_auction-services main .info .tabsBar span {
+  cursor: pointer;
+}
+
+.admin_auction-services main .info .tabsBar .tab {
+  padding: 10px 45px 10px 45px;
+  margin-right: 10px;
+  background: #ffffff;
+  border: 1px solid #00cf4d;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.admin_auction-services main .info .tabsBar .tab:hover {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .tabsBar .tab:hover a {
+  color: #ffffff;
+}
+
+.admin_auction-services main .info .tabsBar .tab a {
+  color: #100f41;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.admin_auction-services main .info .tabsBar .tab-active {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .tabsBar .tab-active a {
+  color: #ffffff;
+}
+
+.admin_auction-services main .info .actionBar .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_auction-services main .info .actionBar .form input {
+  padding: 5px;
+  margin-right: 10px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+.admin_auction-services main .info .actionBar .form input[type="text"] {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .actionBar .form button {
+  padding: 5px 15px;
+  background: #ffffff;
+  border: 1px solid #00cf4d;
+  color: #00cf4d;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_auction-services main .info .actionBar .form button:hover {
+  background: #00cf4d;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.admin_auction-services main .info table thead {
+  padding: 10px 0;
+}
+
+.admin_auction-services main .info table thead, .admin_auction-services main .info table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_auction-services main .info table th {
+  text-align: center;
+}
+
+.admin_auction-services main .info table td {
+  text-align: center;
+}
+
+.admin_auction-services main .info table .tbody {
+  display: block;
+  height: 410px;
+  overflow-y: auto;
+}
+
+.bannerBlock table th{
+  font-weight: 700;
+  background: #00cf4d;
+  border-radius: 4px;
+  color: #fff;
+padding-left: 16px;
+
+}
+.bannerBlock table{
+ color: white; 
+}
+
+.admin_auction-services main .info table .tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_auction-services main .info table .tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_auction-services main .info table .tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info table .tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_auction-services main .info table .tbody .stroke {
+  padding: 5px 0;
+}
+
+.admin_auction-services main .info table .tbody .stroke_user a {
+  text-decoration: underline;
+  color: #00cf4d !important; 
+}
+
+.admin_auction-services main .info .auctionBlock {
+  display: none;
+  /* background-color: white; */
+  padding: 6px;
+}
+
+.admin_auction-services main .info .auctionBlock .disactive {
+  display: none !important;
+}
+
+.admin_auction-services main .info .auctionBlock .rightTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_auction-services main .info .auctionBlock .rightTop a {
+  color: #d66e6ed2;
+  font-size: 20px;
+}
+
+.admin_auction-services main .info .auctionBlock .rightTop a:hover {
+  color: red;
+}
+
+.admin_auction-services main .info .auctionBlock .miniTabs {
+  margin: 20px 0;
+}
+
+.admin_auction-services main .info .auctionBlock .miniTabs .miniTab {
+  padding: 5px 20px;
+  color: #100f41;
+  border: 2px solid #00cf4d;
+  border-radius: 10px;
+  background-color: white ;
+  cursor: pointer;
+}
+
+.admin_auction-services main .info .auctionBlock .miniTabs .miniTab:hover {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_auction-services main .info .auctionBlock .miniTabs .miniTab.mini-active {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_auction-services main .info .auctionBlock .miniTabs .addAuction {
+  padding: 5px;
+  color: #00cf4d;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.admin_auction-services main .info .auctionBlock .miniTabs .addAuction:hover {
+  color: #100f41;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left .place {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0px 10px 10px 0;
+  width: 93px;
+  height: 50px;
+  border: 1px solid #100f41;
+  background: #eeeeee93;
+}
+.auction_right table {
+  background: rgba(255, 255, 255, 0.596) !important;
+z-index: 1;
+  margin: 0;
+  padding: 0;}
+.auction_left table {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.596);
+
+  padding: 0;}
+.auction_right table{
+  background: #71d696;
+}
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left .place:hover {
+  border: 1px solid #00cf4d;
+  background: #fff;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left .place:hover p {
+  display: none;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left .place:hover a {
+  display: block;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left .place p {
+  color: #100f41;
+  vertical-align: middle;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_left .place a {
+  display: none;
+  font-size: 14px;
+  color: #00cf4d;
+  font-weight: 700;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right {
+  height: 231px;
+  border: 2px solid #100f41;
+  border-radius: 10px;
+  background: #eeeeee93;
+  padding: 10px;
+}
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right:hover{
+  background: white;
+  transition: 0.5s;
+}
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right:hover  table{
+  background: rgba(255, 255, 255, 0.596);
+}
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_title {
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text strong {
+  display: flex;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock {
+  display: none;
+  font-weight: 700;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock input {
+  font-family: 'Montserrat';
+  border-radius: 5px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock .doneDateAuctionBtn {
+  color: #00cf4d;
+  font-size: 16px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock .closeDateAuctionBtn {
+  color: #cf0000;
+  font-size: 16px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text span {
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text:hover a {
+  display: inline !important;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text span .editDateAuctionBtn {
+  display: none;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list .auction_right_text span .editDateAuctionBtn i {
+  color: #00cf4d;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table {
+  border: 2px solid #100f41;
+  width: 100%;
+  margin-top: 5px;
+ 
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table thead {
+  padding: 0;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table thead, .admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table th {
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table td {
+  text-align: center;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody {
+  display: block;
+  overflow-y: auto;
+  height: 100px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody .auction-stroke {
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody .auction-stroke .stroke_user {
+  width: 120px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody .auction-stroke .stroke_user a {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody .auction-stroke .stroke_amount {
+  width: 150px;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody .auction-stroke .stroke_do a {
+  color: #00cf4d;
+  border: 1px solid #00cf4d;
+  padding: 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_auction-services main .info .auctionBlock .mainPage .auction_right .auction_right_list table tbody .auction-stroke .stroke_do a:hover {
+  background: #00cf4d;
+  color: #100f41;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers {
+  display: none;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left .place {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0px 10px 10px 0;
+  width: 93px;
+  height: 50px;
+  border: 1px solid #100f41;
+  background: #eeeeee93;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left .place:hover {
+  border: 1px solid #00cf4d;
+  background: #fff;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left .place:hover p {
+  display: none;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left .place:hover a {
+  display: block;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left .place p {
+  color: #100f41;
+  vertical-align: middle;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_left .place a {
+  display: none;
+  font-size: 14px;
+  color: #00cf4d;
+  font-weight: 700;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right {
+  height: 231px;
+  border: 2px solid #100f41;
+  border-radius: 10px;
+  background: #eeeeee93;
+  padding: 10px;
+}
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right:hover{
+  background: white;
+  transition: 0.5s;
+}
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_title {
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text strong {
+  display: flex;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock {
+  display: none;
+  font-weight: 700;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock input {
+  font-family: 'Montserrat';
+  border-radius: 5px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock .doneDateAuctionBtn {
+  color: #00cf4d;
+  font-size: 16px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text .editDateAuctionBlock .closeDateAuctionBtn {
+  color: #cf0000;
+  font-size: 16px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text span {
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text:hover .editDateAuctionBtn {
+  display: inline !important;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text span .editDateAuctionBtn {
+  display: none;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list .auction_right_text span .editDateAuctionBtn i {
+  color: #00cf4d;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table {
+  border: 2px solid #100f41;
+  width: 100%;
+  margin-top: 5px;
+  
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table thead {
+  padding: 0;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table thead, .admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table th {
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table td {
+  text-align: center;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody {
+  display: block;
+  overflow-y: auto;
+  height: 100px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody .auction-stroke {
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody .auction-stroke .stroke_user {
+  width: 120px;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody .auction-stroke .stroke_user a {
+  text-decoration: underline;
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody .auction-stroke .stroke_amount {
+  width: 150px;
+}
+
+
+
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody .auction-stroke .stroke_do a {
+  color: #00cf4d;
+  border: 1px solid #00cf4d;
+  padding: 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.admin_auction-services main .info .auctionBlock .allPerformers .auction_right .auction_right_list table tbody .auction-stroke .stroke_do a:hover {
+  background: #00cf4d;
+  color: #100f41;
+}
+
+.admin_auction-services main .info .auctionBlock .addedAuctionForMain, .admin_auction-services main .info .auctionBlock .addedAuctionForAp {
+  margin-top: 30px;
+  display: none !important;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper {
+  display: none;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock {
+  width: 400px;
+  height: 300px;
+  background: url(../../img/userEditHeader.jpg);
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+color: white;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form p {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form p input {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form p input[type="number"] {
+  width: 80px;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form select {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form .buttons {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+.admin_auction-services main .info .bannerBlock .applications {
+  display: none;
+}
+
+
+
+
+
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form .buttons .canceladdAuctionBtn {
+  margin-left: 10px;
+  background: none;
+  border: 1px solid #c05d5db4;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background: rgb(114, 28, 28);
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form .buttons .canceladdAuctionBtn:hover {
+  border: 1px solid #b60808;
+  background: #b10606;
+  -webkit-box-shadow: 0px 0px 13px 2px #c91212;
+  box-shadow: 0px 0px 13px 2px #c91212;
+}
+.mainActive{
+  background: #00cf4d !important;
+  color: white !important;
+}
+
+
+
+.admin_home .navbar .quitBlock {
+  display: none;
+  position: absolute;
+  right: 7px;
+  background: #00cf4d;
+  border-radius: 10px 0 0 10px;
+  padding: 4px;
+  -webkit-transform: 5s;
+      -ms-transform: 5s;
+          transform: 5s;
+}
+
+.admin_home .navbar .quitBlock a {
+  color: #ffffff;
+  -webkit-transform: 0.5s;
+      -ms-transform: 0.5s;
+          transform: 0.5s;
+}
+
+.admin_home .navbar .quitBlock a:hover {
+  color: #100f41;
+}
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form .buttons .addAuctionBtn {
+  background: none;
+  border: 1px solid #00cf4d;
+  color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .auctionBlock .addAuctionWrapper .addAuctionBlock form .buttons .addAuctionBtn:hover {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock {
+  display: none;
+}
+
+.admin_auction-services main .info .bannerBlock .bannerTabs {
+  margin: 20px 0;
+}
+
+.admin_auction-services main .info .bannerBlock .bannerTabs .bannerTab {
+  padding: 5px 20px;
+  color: #100f41;
+  border: 2px solid #00cf4d;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
+}
+
+.admin_auction-services main .info .bannerBlock .bannerTabs .bannerTab:hover {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_auction-services main .info .bannerBlock .bannerTabs .bannerTab.banner-active {
+  background: #00cf4d;
+  color: #ffffff;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .subBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .subBanner select {
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .subBanner .addBanner {
+  color: #00cf4d;
+  font-weight: 700;
+}
+.admin_auction-services main .info .bannerBlock .actives .subBanner .addBanner:hover{
+  color: #04a13e !important;
+
+} 
+
+.admin_auction-services main .info .bannerBlock .actives .subBanner .addBanner i {
+  margin-right: 5px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .subBanner .addBanner:hover {
+  color: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table thead, .admin_auction-services main .info .bannerBlock .actives table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table tbody {
+  display: block;
+  overflow-y: auto;
+  height: 375px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table tbody td {
+  padding: 5px 0;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_id {
+  width: 20px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_banner {
+  width: 250px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_banner i {
+  font-size: 15px;
+  color: #00cf4d;
+  margin-right: 3px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_start {
+  width: 90px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_end {
+  width: 90px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_show {
+  width: 90px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_click {
+  width: 80px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_ctr {
+  width: 90px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_do {
+  width: 114px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_do i {
+  font-size: 15px;
+  color: #00cf4d;
+  margin-right: 3px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_do .bannerInfo:hover i {
+  color: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_do .bannerEdit:hover i {
+  color: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .actives table .stroke_do .bannerDelete:hover i {
+  color: red;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper {
+  display: none;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock {
+  width: 500px;
+  height: 520px;
+  position: absolute;
+  top: 11%;
+  left: 34%;
+  background: #ffffff;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background: url(../../img/userEditHeader.jpg);
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock form p input {
+  width: 130px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock form button {
+  border-radius: 10px;
+  border: 1px solid #00cf4d;
+  color: #100f41;
+  padding: 5px 10px;
+  background: #ffffff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock form button:hover {
+  background: #00cf4d;
+  color: #ffffff;
+}
+.bannerInfoBlock p {
+  color: white;
+}
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result p {
+  margin-top: 10px;
+  color: white;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result a i {
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table thead, .admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody {
+  display: block;
+  overflow-y: auto;
+  height: 250px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody::-webkit-scrollbar-track {
+
+  background: url(../../img/userEditHeader.jpg);
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody td {
+  padding: 5px 0;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .result table tbody .stroke_date {
+  text-align: left;
+  width: 150px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .bannerInfoBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 45px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .bannerInfoBottom a {
+  padding: 5px 10px;
+  border: 1px solid #00cf4d;
+  border-radius: 10px;
+  background: #00cf4d;
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerInfoWrapper .bannerInfoBlock .bannerInfoBottom a:hover {
+  color: #100f41;
+  background: #ffffff;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper {
+  display: none;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock {
+  width: 500px;
+  height: 520px;
+  position: absolute;
+  top: 11%;
+  left: 34%;
+  background: #ffffff;
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+  background: url(../../img/userEditHeader.jpg);
+  color: white !important;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form p {
+  margin: 5px 0;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form select {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .bannerTypeBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .bannerTypeBlock input:checked~.checkbox .checked {
+  opacity: 1;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .bannerTypeBlock label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .bannerTypeBlock label .radio {
+  display: none;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .bannerTypeBlock .checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  border: 1px solid #00cf4d;
+  cursor: pointer;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .bannerTypeBlock .checkbox .checked {
+  opacity: 0;
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form #file {
+  color: #00cf4d;
+  display: none;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .uploadFile {
+  display: inline-block;
+  padding: 6px 0;
+  cursor: pointer;
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .uploadFile i {
+  color: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .link {
+  width: 100%;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .link input {
+  width: 85%;
+  margin-left: 13px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .title {
+  width: 100%;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .title input {
+  width: 85%;
+  margin-left: 33px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .alt {
+  width: 100%;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .alt input {
+  width: 85%;
+  margin-left: 33px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .note {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  vertical-align: top;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .note textarea {
+  resize: none;
+  width: 85%;
+  margin-left: 11px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .buttons {
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;  
+  
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: white;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .buttons .cancel {
+  margin-left: 10px;
+  background: none;
+  border: 1px solid #c05d5db4;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background: rgb(114, 28, 28);
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .buttons .cancel:hover {
+  border: 1px solid #b60808;
+  background: #b10606;
+  -webkit-box-shadow: 0px 0px 13px 2px #c91212;
+  box-shadow: 0px 0px 13px 2px #c91212;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .buttons .submit {
+  background: none;
+  border: 1px solid #00cf4d;
+  color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .actives .bannerEditWrapper .bannerEditBlock form .buttons .submit:hover {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .applications {
+  display: none;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table thead, .admin_auction-services main .info .bannerBlock .applications table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table tbody {
+  display: block;
+  overflow-y: auto;
+  height: 410px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table tbody::-webkit-scrollbar-thumb {
+  background: #00cf4d;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table tbody::-webkit-scrollbar-thumb:hover {
+  background: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table tbody td {
+  padding: 5px 0;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_id {
+  width: 20px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_user {
+  width: 150px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_user a {
+  font-size: 15px;
+  color: #00cf4d;
+  text-decoration: underline;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_term {
+  width: 100px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_wait {
+  width: 180px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_do {
+  width: 114px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_do i {
+  font-size: 15px;
+  color: #00cf4d;
+  margin-right: 3px;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_do .chat:hover i {
+  color: #100f41;
+}
+
+.admin_auction-services main .info .bannerBlock .applications table .stroke_do .adEdit:hover i {
+  color: #100f41;
+}

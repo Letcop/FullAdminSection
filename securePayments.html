@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Безопасный платеж</title>
+    <link rel="shortcut icon" href="icons/logo.svg">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/securePayment/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body class="admin_home">
+
+    <header class="header_admin">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo_header">
+                    <a href=""><img src="icons/nav_logo.png" alt=""></a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Поиск">
+                    <div class="search_btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comment">
+                        <span>99</span>
+                    </i>
+                    <div class="chat_text">
+                        <ul>
+                            <li><a href="chats.html"><strong>Чаты администраторов</strong></a> <br>
+                                Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с
+                                каждым
+                                пользователям от имени “Поддержки” (администрации)
+                            </li> <br>
+                            <li><a href="chatsUsers.html"><strong>Чаты пользователей</strong></a> <br>
+                                Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и
+                                контролировать
+                                правильность и корректность работы и общения между пользователями
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quitBlock">
+                    <a href="#/">Выйти</a>
+                </div>
+                <div class="avatar">
+                    <img src="img/user4.png" alt="">
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu_item">
+                    <div class="all_category">
+                        Все категории
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html" class="menu_list">Главная страница<div>29</div></a></li>
+                        <li><a href="ordersVacancies.html" class="menu_list">Заказы и Вакансии<div>379</div></a></li>
+                        <li><a href="#/" class="menu_list menuActive">Безопасный платеж <i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a class="activeToggles mainActive" href="#/">Ход работы<div>379</div></a></li>
+                                <li><a class="activeToggles" href="#/">Движение средств<div>39</div></a></li>
+                                <li><a class="activeToggles" href="#/">Платежные системы<div>79</div></a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="workshop.html" class="menu_list">Творческая мастерская<div>37</div></a></li>
+                        <li><a href="referal.html" class="menu_list">Реферальная программа<div>3</div></a></li> -->
+                        <li><a href="auctionsServices.html" class="menu_list">Услуги и аукцион<div>30</div></a></li>
+                        <li><a href="users.html" class="menu_list">Пользователи<div>78</div></a></li>
+                        <li><a href="#/" class="menu_list">Блог и новости<div>43</div></a></li>
+                        <li><a href="forum.html" class="menu_list">Форум<div>23</div></a></li>
+                        <li><a href="pages.html" class="menu_list">Страницы</a></li>
+                        <li><a href="notifications.html" class="menu_list">Уведомления</a></li>
+                        <li><a href="bonus.html" class="menu_list">Бонусы</a></li>
+                        <li><a href="#/" class="menu_list">Работа с почтой<i
+                                    class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="mail.html">Список рассылок</a></li>
+                                <li><a href="mail.html">Шаблоны писем</a></li>
+                                <li><a href="mail.html">База почт</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Специализации<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="specializations.html">Категории</a></li>
+                                <li><a href="specializations.html">Дополнительные навыки</a></li>
+                                <li><a href="specializations.html">Настройки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">SEO-оптимизация<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="seo.html">Общие настройки</a></li>
+                                <li><a href="seo.html">Заказы</a></li>
+                                <li><a href="seo.html">Магазин</a></li>
+                                <li><a href="seo.html">Пользователи</a></li>
+                                <li><a href="seo.html">Ответы</a></li>
+                                <li><a href="seo.html">Блог</a></li>
+                                <li><a href="seo.html">Статьи</a></li>
+                                <li><a href="seo.html">Новости</a></li>
+                                <li><a href="seo.html">Помощь</a></li>
+                                <li><a href="seo.html">Посадочные страницы</a></li>
+                                <li><a href="seo.html">Редиректы</a></li>
+                                <li><a href="seo.html">Настройки</a></li>
+                                <li><a href="seo.html">Аддон для главной страницы</a></li>
+                                <li><a href="seo.html">Open Graph</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/" class="menu_list">Настройка сайта<i class="fas fa-level-down-alt todown"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="settings.html">Общие настройки</a></li>
+                                <li><a href="settings.html">Системные настройки</a></li>
+                                <li><a href="settings.html">Счетчики и код</a></li>
+                                <li><a href="settings.html">Валюты</a></li>
+                                <li><a href="settings.html">Регионы</a></li>
+                                <li><a href="settings.html">Состояние системы</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="process_home">
+                    <div id="content-side">
+                        <div class="box">
+                            <div class="box-header">
+                                <h2>Ход работы</h2>
+                            </div>
+                            <div class="box-content">
+                                <div class="text">
+                                    <div class="tabsBar">
+                                        <span class="tab tab-active all"><a href="#/">Все</a></span>
+                                        <span class="tab Arbitrage"><a href="#/">Арбитраж (<span
+                                                    class="quantityArbitrageOne">22</span>)</a></span>
+                                        <span class="tab Process"><a href="#/">Выполняются (<span
+                                                    class="quantityProcess">5</span>)</a></span>
+                                        <span class="tab Ready"><a href="#/">Завершенные (<span
+                                                    class="quantityReadyOne">15</span>)</a></span>
+                                        <span class="tab Cancelled"><a href="#/">Отменены (<span
+                                                    class="quantityCancelled">2</span>)</a></span>
+                                    </div>
+                                    <div class="actionBar">
+                                        <form class="form">
+                                            <div class="left">
+                                                <input type="text" placeholder="ID / Ключевое слово">
+                                            </div>
+                                            <div class="left">
+                                                <input type="text" placeholder="ID / Логин / E-mail пользователя">
+                                            </div>
+                                            <button class="searchBtn">Поиск</button>
+                                        </form>
+                                    </div>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="table_header">
+                                                <th width="70">ID</th>
+                                                <th width="350" style="text-align: start; padding-left: 5px;">Заказ
+                                                </th>
+                                                <th width="210">Дата</th>
+                                                <th width="120">Активность</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody">
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke cancelled">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-times" title="Отменен"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke process">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-wrench" title="Выполняется"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke cancelled">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-times" title="Отменен"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke process">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-wrench" title="Выполняется"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke arbitrageFirst">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-question" title="Арбитраж"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke process">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-wrench" title="Выполняется"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke process">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-wrench" title="Выполняется"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke arbitrageFirst">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-question" title="Арбитраж"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke process">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-wrench" title="Выполняется"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт<i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="stroke ready">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Разработать
+                                                        веб-сайт
+                                                        <i class="fas fa-check" title="Завершенный"></i>
+                                                    </p>
+                                                </td>
+                                                <td></td>
+                                                <td class="date">9 ноября 2020</td>
+                                                <td class="stroke_chat">
+                                                    <a class="chat" title="Чат" href="#/"></i></a><a class="chatInfo"
+                                                        href="#/"><i class="fas fa-info" title="Заказ"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <div class="order-block">
+                                    <div class="container">
+                                        <div class="order-header">
+                                            <div class="order-category">
+                                                <a class="category-active" href="#/">Описание</a>
+                                                <a href="#/">Финансы</a>
+                                                <a href="#/">История</a>
+                                            </div>
+                                            <a href="#/" class="close"><i class="far fa-times-circle"></i></a>
+                                        </div>
+                                        <div class="title">
+                                            <h2>Заказ (ID <span>23</span>)</h2>
+                                        </div>
+                                        <div class="order-description">
+                                            <div class="description-text">
+                                                <p class="description-status">Статус: <span></span></p>
+                                                <p class="description-amount">Сумма заказа: 200$</p>
+                                                <p class="description-deadline">Срок выполнения 20 дней | 9 ноября</p>
+                                                <p class="description-category">Заказ: Разработать платформу на WP <a
+                                                        href="#/"><i class="fas fa-external-link-alt"></i></a></p>
+                                            </div>
+                                            <div class="description-sides">
+                                                <div class="left">
+                                                    <div class="avatar">
+                                                        <div class="avatar-img">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <p>Заказчик</p>
+                                                    </div>
+                                                    <div class="name">
+                                                        <p>Тимур Касымов</p>
+                                                        <a href="#/">hamillioner</a>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                                <div class="right">
+                                                    <div class="name">
+                                                        <p>Тимур Касымов</p>
+                                                        <a href="#/">hamillioner</a>
+                                                    </div>
+                                                    <div class="avatar">
+                                                        <div class="avatar-img">
+                                                            <img src="img/avatar.png" alt="">
+                                                        </div>
+                                                        <p>Исполнитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-finance">
+                                            <form>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr class="table_header">
+                                                            <th width="1050">Дата</th>
+                                                            <th width="100">Статус</th>
+                                                            <th width="300">Пользователь</th>
+                                                            <th width="100">Сумма</th>
+                                                            <th>Комиссия</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tbody">
+                                                        <tr class="finance_stroke">
+                                                            <td class="finance_date"></td>
+                                                            <td class="finance_status"></td>
+                                                            <td class="finance_account"><a href="#/">hamillioner</a></td>
+                                                            <td class="finance_amount">200$</td>
+                                                            <td class="finance_commission">10$</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+                                                <p class="finance_operation">Операция<select name="type">
+                                                        <option value="1">резервирование</option>
+                                                        <option value="2" selected="selected">выплата</option>
+                                                    </select></p>
+                                                <p class="finance_user">Пользователь<input type="email"
+                                                        placeholder="введите e-mail" required>
+                                                </p>
+                                                <p class="finance_amountPay">Сумма оплаты: <input type="number"
+                                                        placeholder="200.00" name="sum" required> $
+                                                </p>
+                                                <p class="finance_payCategory">Способ оплаты: <a href="#/"
+                                                        title="Visa / Mastercard"><img src="img/visa.png" alt=""
+                                                            style="width: 11%;"></a>
+                                                    <a href="#/" title="Яндекс Деньги"><img src="img/ymoney.png"
+                                                            alt=""></i></a>
+                                                    <a href="#/" title="Webmoney"><img src="img/webMoney.png"
+                                                            alt=""></i></a>
+                                                    <a href="#/" title="Qiwi"><img src="img/qiwimini.png"
+                                                            alt=""></i></a>
+                                                </p>
+                                                <p class="finance_comment">Примечания</p>
+                                                <textarea style="resize: none;"
+                                                    placeholder="Выплата суммы по договору: Разработка платформы"
+                                                    cols="54" rows="6"></textarea>
+                                                <div class="paybtn">
+                                                    <button>Выплатить</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="order-history">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr class="table_header">
+                                                        <th width="37">Дата</th>
+                                                        <th width="100">Описание</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="tbody">
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                    <tr class="history_stroke">
+                                                        <td class="history_date">9.11.2020 в 19:00</td>
+                                                        <td class="history_description">Заказчик успешно зарезервировал
+                                                            сумму 200.00 usd</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="paysys_home">
+                    <div class="payment_block">
+                        <h2>Платежные системы</h2>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-between">
+                                    <div class="col-3 my__cards">
+                                        <div class="my_card w-100">
+                                            <a href="#/" class="deleteBtn"><i class="far fa-times-circle"></i></a>
+                                            <img src="img/visabig.png" alt="" width="80%">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3 my__cards">
+                                        <div class="my_card w-100">
+                                            <a href="#/" class="deleteBtn"><i class="far fa-times-circle"></i></a>
+                                            <img src="img/webmoneybig.png" alt="" width="80%">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3 my__cards">
+                                        <div class="my_card w-100">
+                                            <a href="#/" class="deleteBtn"><i class="far fa-times-circle"></i></a>
+                                            <img src="img/qiwibig.png" alt="" width="80%">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3 my__cards">
+                                        <div class="my_card w-100">
+                                            <a href="#/" class="deleteBtn"><i class="far fa-times-circle"></i></a>
+                                            <img src="img/yandexbig.png" alt="" width="80%">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="plus">
+                                            <a href="#/"><i class="fas fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addBlock">
+                            <div class="addSystem">
+                                <div class="title">
+                                    <h3>Настройки платежных систем</h3>
+                                </div>
+                                <form>
+                                    <p class="addName">Наименование системы
+                                        <input type="text" required>
+                                    </p>
+                                    <p class="addCurrency">Валюта
+                                        <select class="currency_select">
+                                            <option value="1">USD</option>
+                                            <option value="2">RUB</option>
+                                            <option value="3">UZS</option>
+                                        </select>
+                                    </p>
+                                    <p class="addCategory">Категория клатежа
+                                        <select class="system_select">
+                                            <option value="">Наличными</option>
+                                            <option value="">Чеки</option>
+                                            <option value="">Международный перевод</option>
+                                            <option value="">Кредитная карта</option>
+                                            <option value="">Электронные банковские трансферы</option>
+                                        </select>
+                                    </p>
+                                    <div class="buttons">
+                                        <button class="addBtn" type="submit">Добавить</button>
+                                        <button class="cancelBtn">Отмена</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="funds_home">
+                    <div id="content-side">
+                        <div class="box">
+                            <div class="box-header">
+                                <h2>Движение средств</h2>
+                            </div>
+                            <div class="box-content">
+                                <div class="text">
+                                    <div class="tabsBar">
+                                        <span class="tab tab-active all"><a href="#/">Все</a></span>
+                                        <span class="tab Ready"><a href="#/">Выплаты (<span
+                                                    class="quantityReadyTwo">2</span>)</a></span>
+                                        <span class="tab Arbitrage"><a href="#/">Резервированные (<span
+                                                    class="quantityArbitrageTwo">22</span>)</a></span>
+                                    </div>
+                                    <div class="actionBar">
+                                        <form class="form">
+                                            <div class="left">
+                                                <input type="text" placeholder="ID / Ключевое слово">
+                                            </div>
+                                            <div class="left">
+                                                <input type="text" placeholder="ID / Логин / E-mail пользователя">
+                                            </div>
+                                            <button class="searchBtn">Поиск</button>
+                                        </form>
+                                    </div>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="table_header">
+                                                <th width="50">ID</th>
+                                                <th width="301" style="text-align: start; padding-left: 5px;">Ходы
+                                                    работ
+                                                </th>
+                                                <th width="142">Дата</th>
+                                                <th width="100">Пользователь</th>
+                                                <th width="73">Сумма</th>
+                                                <th width="50">Комиссия</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody">
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke readyTwo">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-down" title="Выплаты"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                            <tr class="stroke arbitrage">
+                                                <td class="stroke_id">23</td>
+                                                <td class="stroke_order">
+                                                    <p class="stroke_link"><a href="#/"><i
+                                                                class="fas fa-external-link-alt"></i></a>Создать логотип
+                                                        на PS для охранной службы
+                                                        <i class="fas fa-arrow-up" title="Резервированные"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="date">29 ноября 10:00</td>
+                                                <td class="stroke_user"><a href="#/">hamillioner</a></td>
+                                                <td class="stroke_amount">400$</td>
+                                                <td class="stroke_comission">20$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/securePayment/main.js"></script>
+</body>
+
+</html>
